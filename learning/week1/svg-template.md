@@ -53,7 +53,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200">
 {% for number in numbers %}
-    <rect x="{{loop.index * 20}}" width="20" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    <rect x="{{loop.index*30}}" width="20" height="100" style="{% if ((numbers+1-number) == 1) %} fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0) {% else %}  fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0) {% endif %} " />
 {% endfor %}
 </svg>
 
@@ -65,7 +65,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200">
 {% for number in numbers %}
-    <rect y="{{loop.index * 20}}" width="100" height="20" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    <rect y="{{loop.index * 30}}" width="100" height="20" style="{% if ((numbers+1-number) == 1) %} fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0) {% else %}  fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0) {% endif %} " />
 {% endfor %}
 </svg>
 
@@ -79,10 +79,14 @@ Draw negative numbers in red and positive numbers in green.
 * You will need to create a nested for loop.
 
 <table>
-    {% for rows in data %}
+    {% for row in data %}
         <tr>
             <!-- Add your code here  -->
-            <td>10</td><td>15</td>
+           
+            {% for index in row %}
+                <td>{{index}}</td> 
+                    
+            {% endfor %}
         </tr>
     {% endfor %}
 </table>
