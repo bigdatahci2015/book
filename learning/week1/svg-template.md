@@ -39,12 +39,8 @@ Draw negative numbers in red and positive numbers in green.
 
 {% set numbers = [43,21,-13,32,20,5,-8,29,9] %}
 {% for number in numbers %}
-    <li>{% if number < 0 %}
-        <font color="red">{{number}}</font>
-    {% else %}
-        <font color="green">{{number}}</font>
-    {% endif %}
-    </li>
+   <li><font color="{% if number < 0 %} red {% else %} green {% endif %}">{{number}}</font></li>
+    
 {% endfor %}
 
 ### Bar Chart
