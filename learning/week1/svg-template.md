@@ -42,6 +42,11 @@ Draw negative numbers in red and positive numbers in green.
 <li>{{number}}</li>
 {% endfor %}
 
+<svg width="500" height="200">
+{% for number in numbers %}
+    <rect x="{{loop.index*30}}" width="20" height="{{number}}" style="{% if (number < 0) %} fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0) {% else %}  fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0) {% endif %} " />
+{% endfor %}
+</svg>
 (Hint: use the [if tag](https://mozilla.github.io/nunjucks/templating.html#if))
 
 ### Bar Chart
@@ -53,7 +58,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200">
 {% for number in numbers %}
-    <rect x="{{loop.index*30}}" width="20" height="100" style="{% if ((numbers+1-number) == 1) %} fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0) {% else %}  fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0) {% endif %} " />
+    <rect x="{{loop.index*30}}" width="20" height="{{number}}" style="{% if ((numbers+1-number) == 1) %} fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0) {% else %}  fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0) {% endif %} " />
 {% endfor %}
 </svg>
 
@@ -65,7 +70,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200">
 {% for number in numbers %}
-    <rect y="{{loop.index * 30}}" width="100" height="20" style="{% if ((numbers+1-number) == 1) %} fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0) {% else %}  fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0) {% endif %} " />
+    <rect y="{{loop.index * 30}}" width="{{number}}" height="20" style="{% if ((numbers+1-number) == 1) %} fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0) {% else %}  fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0) {% endif %} " />
 {% endfor %}
 </svg>
 
