@@ -36,7 +36,8 @@ The answer is {{result}}.
 ## Who are the students liking Python the most?
 
 {% lodash %}
-var answer
+var answer = ""
+var ndx = 0
 for (i = 0; i < _.size(data.comments); i++) {
     var text = data.comments[i].body
     // console.log(text)
@@ -45,23 +46,20 @@ for (i = 0; i < _.size(data.comments); i++) {
 
     function splitString(stringToSplit, separator) {
         var arrayOfStrings = stringToSplit.split(separator)
-        var j
-        var count = 0
+        var name = arrayOfStrings[0]
+        var language = arrayOfStrings[2]
 
         // console.log('The original string is: "' + stringToSplit + '"')
         // console.log('The separator is: "' + separator + '"')
         // console.log('The array has ' + arrayOfStrings.length + ' elements: ' + arrayOfStrings.join(' / '))
 
-        var name = arrayOfStrings[0]
 	// console.log(name)
         // console.log(_.last(name.split('Name:')))
-        var language = arrayOfStrings[2]
 	// console.log(language)
         // console.log(_.last(language.split(':')))
 
         if (_.last(language.split(':')) == " Python") {
-            count++ 
-            console.log("******* FOUND PYTHON *******")
+            // console.log("******* FOUND PYTHON *******")
 	    return (_.last(name.split('Name:')))
         }
         else {
@@ -73,11 +71,12 @@ for (i = 0; i < _.size(data.comments); i++) {
 
     if (found_name != 'false') {
         console.log('-----> ' + found_name)
-        answer += found_name
+	answer += (found_name + ',')
+	// console.log(answer)
     }
     console.log("====================================")
 }
-return "[answer]"
+return answer
 {% endlodash %}
 
 Their names are {{result}}.
