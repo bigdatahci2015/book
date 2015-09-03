@@ -6,27 +6,27 @@ As a class, we brainstormed and came up with a long list of further questions we
 on the "self-introduction" data. Out of these questions, our team chose to tackle on
 the following:
 
-# (Question 1)
+# What percentage of the class are Computer Science students?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
 
-# (Question 2)
+# What are the favorite programming languages for the class participants?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
 
-# (Question 3)
+# How many students commented on the Introduction Issue before the first class?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
-# (Question 4)
+# How many students have updated their initial Introdcution comments?
 
 {% lodash %}
 return "[answer]"

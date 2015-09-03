@@ -24,7 +24,6 @@ for (i = 0; i < _.size(data.comments); i++) {
         }
         return count
     }
-
     found_count = splitString(search_string, ' ')
     total_count += found_count
 }
@@ -40,23 +39,12 @@ var answer = ""
 var ndx = 0
 for (i = 0; i < _.size(data.comments); i++) {
     var text = data.comments[i].body
-    // console.log(text)
-
     var found_name
 
     function splitString(stringToSplit, separator) {
         var arrayOfStrings = stringToSplit.split(separator)
         var name = arrayOfStrings[0]
         var language = arrayOfStrings[2]
-
-        // console.log('The original string is: "' + stringToSplit + '"')
-        // console.log('The separator is: "' + separator + '"')
-        // console.log('The array has ' + arrayOfStrings.length + ' elements: ' + arrayOfStrings.join(' / '))
-
-	// console.log(name)
-        // console.log(_.last(name.split('Name:')))
-	// console.log(language)
-        // console.log(_.last(language.split(':')))
 
         if (_.last(language.split(':')) == " Python") {
             // console.log("******* FOUND PYTHON *******")
@@ -70,11 +58,8 @@ for (i = 0; i < _.size(data.comments); i++) {
     found_name = splitString(text, '\r\n')
 
     if (found_name != 'false') {
-        console.log('-----> ' + found_name)
 	answer += (found_name + ',')
-	// console.log(answer)
     }
-    console.log("====================================")
 }
 return answer
 {% endlodash %}
@@ -84,15 +69,82 @@ Their names are {{result}}.
 ## Are there more Javascript lovers or Java lovers?
 
 {% lodash %}
-return "[answer]"
+var java_count = 0
+var javascript_count = 0
+
+for (i = 0; i < _.size(data.comments); i++) {
+    var text = data.comments[i].body
+    var found_language
+
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var language = arrayOfStrings[2]
+
+        found_language = _.last(language.split(':'))
+        if (found_language == " JAVA" || found_language == ' Java') {
+            java_count++
+        }
+        else if (found_language == " Javascript" || found_language == 'javascript') {
+            javascript_count++
+        }
+        else {
+	    return 'false'
+        }
+    }
+    found_language = splitString(text, '\r\n')
+}
+
+if (java_count > javascript_count) {answer = " there are more Java Lovers"}
+else if (javascript_count > java_count) {answer = " there are more Javascript Lover"}
+else {answer = " there are the same number of Java Lovers and Javascript Lovers..."}
+return answer
 {% endlodash %}
 
 The answer is {{result}}.
 
-## Who like the same food as `kjblakemore`?
+##  (1) Who like the same food as `kjblakemore`?
+##  (2) Who like the same food as `willzfarmer`?
 
 {% lodash %}
-return "[answer]"
+var food_string = ""
+var search_name = "kjblakemore"
+// var search_name = "willzfarmer"
+var answer = ""
+
+for (var n = 0; n < _.size(data.comments); n++) {
+    var text = data.comments[n].body
+    var login = data.comments[n].user.login
+    var food =  _.last(text.split('Food:'))
+
+    function splitString(stringToSplit, separator) {
+        var arrayOfStrings = stringToSplit.split(separator)
+        var j
+        var count = 0
+
+        for (j = 0; j < arrayOfStrings.length; j++) {
+            if (arrayOfStrings[j] == food) { count++ }
+        }
+        return count
+    }
+
+    if (login == search_name) {
+        food_string = food
+
+        for (i = 0; i < _.size(data.comments); i++) {
+            var new_text = data.comments[i].body
+            var login = data.comments[i].user.login
+            if (login != search_name) {
+                var search_string =  _.last(new_text.split('Food:'))
+                if (splitString(search_string, " ") != 0) {
+                    answer += login + ','
+                }
+            }
+        }
+    }
+}
+if (answer == "") {answer = "none"}
+return answer
 {% endlodash %}
 
-Their names are {{result}}.
+(1) Their names are {{result}}.
+
