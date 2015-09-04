@@ -32,6 +32,7 @@ return total_count
 
 The answer is {{result}}.
 
+
 ## Who are the students liking Python the most?
 
 {% lodash %}
@@ -45,12 +46,16 @@ for (i = 0; i < _.size(data.comments); i++) {
         var arrayOfStrings = stringToSplit.split(separator)
         var name = arrayOfStrings[0]
         var language = arrayOfStrings[2]
+        var strip = _.trimLeft(_.last(language.split(':')))
 
-        if (_.last(language.split(':')) == " Python") {
-	    return (_.last(name.split('Name:')))
+        var array = strip.split(' ')
+        var language = _.trimRight(_.first(array), ',')
+
+        if (language == "Python") {
+            return (_.last(name.split('Name:')))
         }
         else {
-	    return 'false'
+            return 'false'
         }
     }
 
