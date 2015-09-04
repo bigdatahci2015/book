@@ -47,7 +47,6 @@ for (i = 0; i < _.size(data.comments); i++) {
         var language = arrayOfStrings[2]
 
         if (_.last(language.split(':')) == " Python") {
-            // console.log("******* FOUND PYTHON *******")
 	    return (_.last(name.split('Name:')))
         }
         else {

@@ -38,11 +38,7 @@ The comment text is
 The code to retrieve the data about the favorite food is (hint: use [split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)).
 
 {% lodash %}
-var text = _.first(data.comments).body
-console.log(text)
-console.log(text.split('\n'))
-
-return _.last(text.split('Food:'))
+return _.last(_.first(data.comments).body.split('Food:'))
 {% endlodash %}
 
 So, {{name}}'s favorite food is {{result}}.
