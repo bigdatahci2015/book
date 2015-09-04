@@ -97,11 +97,38 @@ The favorite CSCI-4830 programming languages are: {{result}}.
 # How many students commented on the Introduction Issue before the first class?
 
 {% lodash %}
-return "[answer]"
+count = 0
+for (i = 0; i < _.size(data.comments); i++) {
+    var class_start = "2015-08-24T22:00:00"
+    var create_string = _.trimRight(data.comments[i].created_at, 'Z')
+    var update_string = _.trimRight(data.comments[i].updated_at, 'Z')
+    var CreateTime = new Date(create_string)
+    var ClassTime = new Date(class_start)
+
+    if( ( CreateTime.getTime() - ClassTime.getTime() ) > 0 ) { }
+    else { count++ }
+}
+return count 
 {% endlodash %}
 
-# How many students have updated their initial Introdcution comments?
+The number of CSCI-4830 students that commented initially on the class list before class started is: {{result}}
+
+# How many students have updated their initial Introduction comments?
 
 {% lodash %}
-return "[answer]"
+count = 0
+for (i = 0; i < _.size(data.comments); i++) {
+    var create_string = _.trimRight(data.comments[i].created_at, 'Z')
+    var update_string = _.trimRight(data.comments[i].updated_at, 'Z')
+
+    var CreateTime = new Date(create_string)
+    var UpdateTime = new Date(update_string)
+
+    if( ( UpdateTime.getTime() - CreateTime.getTime() ) > 0 ) { count++ }
+    else { }
+}
+return count 
 {% endlodash %}
+
+The number of CSCI-4830 students that updated/edited their initial forum comment is: {{result}}
+
