@@ -113,6 +113,7 @@ return count
 
 The number of CSCI-4830 students that commented initially on the class list before class started is: {{result}}
 
+
 # How many students have updated their initial Introduction comments?
 
 {% lodash %}
