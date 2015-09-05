@@ -19,28 +19,28 @@ including the controls, widgets ...etc.
 
 (write your answer based on the statistics you can find online)
 
-# (Question 1)
+# What percentage of the class are Computer Science students?
 
 ![screenshot](screenshot.png)
 
 (write your explanation for the reader as to where to look at this chart in order
     to see the answer)
 
-# (Question 2)
+# What are the favorite programming languages for the class participants?
 
 ![screenshot](screenshot.png)
 
 (write your explanation for the reader as to where to look at this chart in order
     to see the answer)
 
-# (Question 3)
+# # How many students commented on the Introduction Issue before the first class?
 
 ![screenshot](screenshot.png)
 
 (write your explanation for the reader as to where to look at this chart in order
     to see the answer)
 
-# (Question 4)
+# How many students have updated their initial Introduction comments?
 
 ![screenshot](screenshot.png)
 

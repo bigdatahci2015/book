@@ -16,11 +16,17 @@ for (i = 0; i < _.size(data.comments); i++) {
 
     function splitString(stringToSplit, separator) {
         var arrayOfStrings = stringToSplit.split(separator)
-        var department = arrayOfStrings[1]
-        var count = 0
+        var department_line = arrayOfStrings[1]
+        var department = _.trimLeft(_.last(department_line.split(':')))
+        var array = department.split(" ")
 
-        if (_.last(department.split(':')) == " Computer Science") {
-            count++
+        var count = 0
+        for (n = 0; n < array.length; n++) {
+            var major = _.trimRight(array[n], ',')
+            if (major == "Computer" || major == "CSCI" || major == "CS" || major == 'cs') {
+                if (_.last(array) == "Engineering") {}
+                else { count++ }
+            }
         }
         return count
     }
