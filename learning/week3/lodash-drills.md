@@ -73,10 +73,9 @@ What names begin with the letter J?
 ['John','Joe']
 
 {% solution %}
-
-var result = 'not done'
-return result
-
+return _.pluck(_.filter(data, function(d) {
+    return _.startsWith(d.name, 'J')
+}), 'name')
 {% endlodashexercise %}
 
 
@@ -96,9 +95,7 @@ How many Johns?
 3
 
 {% solution %}
-var result = 'not done'
-return result
-
+return _.size(_.filter(data, _.matches({'name': 'John'})))
 {% endlodashexercise %}
 
 
@@ -119,8 +116,9 @@ What are all the first names?
 ["John","Mary","Peter","Ben"]
 
 {% solution %}
-var result = 'not done'
-return result
+return _.map(data, function(d) {
+    return _.first(d.name.split(' '))
+})
 
 {% endlodashexercise %}
 
@@ -145,8 +143,10 @@ What are the first names of Smith?
 ["John","Mary","Ben"]
 
 {% solution %}
-var result = 'not done'
-return result
+return _.map(data, function(d) {
+    // return _.includes(_.last(d.name.split(' ')), "Smith")
+    return (_.includes(d.name, "Smith"))
+})
 {% endlodashexercise %}
 
 
