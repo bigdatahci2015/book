@@ -6,34 +6,5 @@ There are {{ data.comments.length }} students who gave a self-introduction. As a
 class, we brainstormed and came up with a long list of further questions we can
 ask based on this data. Our team chose to tackle on the following:
 
-# (Question 1)
+## NOTE: The Report was completed as Exercise #4 of the "Week 2 Hackathon:Classmates" submission: [here](../../hackathons/classmates/report.md)
 
-{% lodash %}
-return "[answer]"
-{% endlodash %}
-
-(writeup)
-
-# (Question 2)
-
-{% lodash %}
-return "[answer]"
-{% endlodash %}
-
-(writeup)
-
-# (Question 3)
-
-{% lodash %}
-return "[answer]"
-{% endlodash %}
-
-(writeup)
-
-# (Question 4)
-
-{% lodash %}
-return "[answer]"
-{% endlodash %}
-
-(writeup)

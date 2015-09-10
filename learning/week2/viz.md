@@ -19,30 +19,35 @@ including the controls, widgets ...etc.
 
 (write your answer based on the statistics you can find online)
 
-# (Question 1)
+CreativeBlog.com has a nice write-up on visualization packages at: http://www.creativebloq.com/design-tools/data-visualization-712402
 
-![screenshot](screenshot.png)
+Computer World has a very nice summary table (includes Tableau) of data visualization packages at: http://www.computerworld.com/article/2506820/business-intelligence/business-intelligence-chart-and-image-gallery-30-free-tools-for-data-visualization-and-analysis.html
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+There is a nice data visualization tools comparison (includes tableau) at: http://www.softwareadvice.com/bi/data-visualization-comparison/?layout=var_p1
 
-# (Question 2)
+If you do a google search on "data visualization tools comparison" it is interesting to note that Tableua is mentioned in most every article.  Plus Tableau is free so that is great - seems like a good tool!
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# What percentage of the class are Computer Science students?
 
-# (Question 3)
+![screenshot](Report-Q1-Pie-Chart.png)
 
-![screenshot](screenshot.png)
+The Tableau pie chart (above) shows the percentage of Computer Science (major and/or minor) in the Fall 2015 CSCI-4830 class.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# What are the favorite programming languages for the class participants?
 
-# (Question 4)
+![screenshot](Report-Q2-Bar-Chart.png)
 
-![screenshot](screenshot.png)
+The Tableau bar chart (above) shows the favorite language preference of the Fall 2015 CSCI-4830 class.  Python ranked the highest (we'll see if this changes following the completion of this class)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# # How many students commented on the Introduction Issue before the first class?
+
+![screenshot](Report-Q3-Pie-Chart.png)
+
+The pie chart above shows that for the Fall 2015 CSCI-4830 class 17 students commented on the class forum prior to the start of class and 9 students commented afterwards.
+
+# How many students have updated their initial Introduction comments?
+
+![screenshot](Report-Q4-Pie-Chart.png)
+
+The pie chart above shows that 2 of the Fll 2015 CSCI students updated their comment while 24 did not.
