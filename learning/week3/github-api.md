@@ -102,6 +102,7 @@ There are {{result}} repositories for [bigdatahci2015](https://github.com/bigdat
 var repo_names = _.pluck(data, 'name')
 var url = _.pluck(data, 'forks_url')
 answer = ""
+// FIXME: Do without a for loop
 for (i = 0; i < repo_names.length; i++) {
     var fork_size = _.size(url[i])
     if (i < repo_names.length - 1) {answer += repo_names[i] + ' has ' + fork_size + ' forks; '}

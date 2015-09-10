@@ -143,9 +143,13 @@ What are the first names of Smith?
 ["John","Mary","Ben"]
 
 {% solution %}
-return _.map(data, function(d) {
-    // return _.includes(_.last(d.name.split(' ')), "Smith")
-    return (_.includes(d.name, "Smith"))
+var f_data = _.filter(data, function(d) {
+    if (_.includes(d.name, "Smith")) {
+        return 1
+    }
+})
+return _.map(f_data, function(f) {
+    return _.first(f.name.split(' '))
 })
 {% endlodashexercise %}
 
@@ -170,8 +174,10 @@ Change the format to lastname, firstname
 [{name: 'Smith, John'}, {name: 'Kay, Mary'}, {name: 'Pan, Peter'}]
 
 {% solution %}
-var result = 'not done'
-return result
+return _.map(data, function(d) {
+    // return _.last(d.name.split(' ')) + ', ' + _.first(d.name.split(' '))
+    return d.name = 'foo'
+})
 {% endlodashexercise %}
 
 
@@ -192,8 +198,11 @@ How many women?
 
 {% solution %}
 
-var result = 'not done'
-return result
+// return _.size(_.filter(data, function(d) {
+//     if (d.gender == 'f') { return 1 }
+// }))
+
+return _.size(_.filter(data, {gender: 'f'}))
 
 {% endlodashexercise %}
 
@@ -219,8 +228,7 @@ How many men whose last name is Smith?
 
 {% solution %}
 
-var result = 'not done'
-return result
+return _.size(_.filter(data, {gender: 'm'}))
 
 {% endlodashexercise %}
 
@@ -271,8 +279,7 @@ What is Peter Pan's gender?
 
 {% solution %}
 
-var result = 'not done'
-return result
+return _.pluck(_.filter(data, {name: 'Peter Pan'}), 'gender')
 
 {% endlodashexercise %}
 
@@ -295,7 +302,7 @@ What is the oldest age?
 54
 
 {% solution %}
-
+// This might be a candidate for _.reduce
 var result = 'not done'
 return result
 
