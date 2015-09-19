@@ -1,4 +1,4 @@
-# Q: Which programming language is the top favorite among the students in our class?
+# Q: Which programming language is the top favorite among the students in our class? 
 
 ## Data
 
