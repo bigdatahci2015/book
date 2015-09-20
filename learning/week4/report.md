@@ -16,6 +16,21 @@ Coming up, we will incorporate variations of these questions into a future hacka
  and you are expected to be capable of reproducing and adapting your solutions.
 
 # (Question 1) by (Name)
+# Which courses have the highest enrollment total? by Matt Schroeder
+
+{% lodash %}
+var course = _.groupBy(data, function(x) { return x.CourseTitle})
+var enrolled = _.mapValues(course, function(grp) { return _.pluck(grp, 'N.ENROLL')})
+var enrolled = _.mapValues(enrolled, function(grp) {
+        var total = 0
+        _.map(grp, function(n) {
+        total += n
+        return total }) 
+        return total })
+enrolled = _.map(enrolled, function(value, key){ return {"Course": key, "Total Enrollment": value}})
+return _.sortBy(enrolled, "Total Enrollment").reverse()
+{% endlodash %}
+{{result | json}}
 
 # (Question 2) by (Name)
 
@@ -36,18 +51,8 @@ return "[answer]"
 return "[answer]"
 {% endlodash %}
 
-# Which courses have the highest enrollment total? by Matt Schroeder
+# (Question 5) by (Name)
 
 {% lodash %}
-var course = _.groupBy(data, function(x) { return x.CourseTitle})
-var enrolled = _.mapValues(course, function(grp) { return _.pluck(grp, 'N.ENROLL')})
-var enrolled = _.mapValues(enrolled, function(grp) {
-        var total = 0
-        _.map(grp, function(n) {
-        total += n
-        return total }) 
-        return total })
-enrolled = _.map(enrolled, function(value, key){ return {"Course": key, "Total Enrollment": value}})
-return _.sortBy(enrolled, "Total Enrollment").reverse()
+return "[answer]"
 {% endlodash %}
-{{result | json}}
