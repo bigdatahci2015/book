@@ -48,7 +48,7 @@
     <body>
         <!-- body:start -->
         
-    <div class="book" data-level="1.2.2" data-basepath="../.." data-revision="Sun Sep 20 2015 17:45:42 GMT-0500 (CDT)">
+    <div class="book" data-level="1.2.2" data-basepath="../.." data-revision="Sun Sep 20 2015 18:49:37 GMT-0500 (CDT)">
     
 
 <div class="book-summary">
@@ -751,34 +751,31 @@ was it downloaded just last week alone?</p>
 <p>[{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:45},{&quot;name&quot;:&quot;Mary&quot;,&quot;age&quot;:32},{&quot;name&quot;:&quot;Peter&quot;,&quot;age&quot;:54},{&quot;name&quot;:&quot;Jane&quot;,&quot;age&quot;:12}]</p>
 <h3 id="q-what-are-the-ages-of-these-people">Q: What are the ages of these people?</h3>
 <p><pre>
-<span class="comment">// replace this code with your solution that uses lodash</span>
-<span class="keyword">var</span> result = [<span class="number">45</span>, <span class="number">32</span>, <span class="number">54</span>, <span class="number">12</span>]
-<span class="keyword">return</span> result
+
+<span class="keyword">return</span> _.pluck(data, <span class="string">&apos;age&apos;</span>)
 </pre></p>
 <p>The names are 45,32,54,12</p>
 <h3 id="q-what-is-the-youngest-age">Q. What is the youngest age?</h3>
 <p><pre>
 <span class="comment">// replace this code with your solution that uses lodash</span>
 <span class="comment">// hint: use _.pluck and _.min</span>
-<span class="keyword">var</span> result = <span class="number">12</span>
-<span class="keyword">return</span> result
+
+<span class="keyword">return</span> _.min(_.pluck(data, <span class="string">&apos;age&apos;</span>))
 </pre></p>
 <p>The youngest age is 12.</p>
 <h3 id="q-what-is-the-oldest-age">Q. What is the oldest age?</h3>
 <p><pre>
 <span class="comment">// replace this code with your solution that uses lodash</span>
-<span class="keyword">var</span> result = <span class="number">54</span>
-<span class="keyword">return</span> result
+<span class="keyword">return</span> _.max(_.pluck(data, <span class="string">&apos;age&apos;</span>))
 </pre></p>
 <p>The oldest age is 54.</p>
 <h3 id="q-who-is-the-youngest-person">Q. Who is the youngest person?</h3>
 <p><pre>
 <span class="comment">// replace this code with your solution that uses lodash</span>
 <span class="comment">// hint: use your previous solution with _.find</span>
-<span class="keyword">var</span> result = data[<span class="number">3</span>]
-<span class="keyword">return</span> result
+<span class="keyword">return</span> _.find(data, _.min(_.pluck(data, <span class="string">&apos;age&apos;</span>)))
 </pre></p>
-<p>The youngest person is Jane.</p>
+<p>The youngest person is .</p>
 
                     
                     </section>
