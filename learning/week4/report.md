@@ -17,26 +17,6 @@ Coming up, we will incorporate variations of these questions into a future hacka
 
 # (Question 1) by (Name)
 
-# (Question 1) What should my major be if I want have a high gpa (AndreySHprengel)
-{% lodash %}
-var grps = _.groupBy(data, function(c){return c.Subject})
-var grades = _.mapValues(grps, function(grp){return _.compact(_.pluck(grp, 'AVG_GRD'))})
-var grades = _.mapValues(grades, function(group){
-var total = 0
-_.map(group, function(n){
-//console.log()
-total += n
-return total
-}
-)
-return total/(_.size(group))})
-grades = _.map(grades, function(value, key){
-return {"subject": key, "grade":value}})
-return _.sortBy(grades, "grade").reverse()
-{% endlodash %}
-{{result | json}}
-
-
 # (Question 2) by (Name)
 
 {% lodash %}
