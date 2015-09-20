@@ -56,22 +56,18 @@ return "[answer]"
 return "[answer]"
 {% endlodash %}
 
-# (Question 5) by (Name)
+# Which courses have the highest enrollment total? by Matt Schroeder
 
 {% lodash %}
-var grps = _.groupBy(data, function(n) {
-        return n.Subject})
-
-var hours = _.mapValues(grps, function(grp) {
-        return _.pluck(grp, 'Hrs_Wk')})
-
-var hours = _.mapValues(hours, function(grp) {
-        total = 0
+var course = _.groupBy(data, function(x) { return x.CourseTitle})
+var enrolled = _.mapValues(course, function(grp) { return _.pluck(grp, 'N.ENROLL')})
+var enrolled = _.mapValues(enrolled, function(grp) {
+        var total = 0
         _.map(grp, function(n) {
         total += n
+        return total }) 
         return total })
-        return total/(_.size(grp))
-})
-
-return "[answer]"
+enrolled = _.map(enrolled, function(value, key){ return {"Course": key, "Total Enrollment": value}})
+return _.sortBy(enrolled, "Total Enrollment").reverse()
 {% endlodash %}
+{{result | json}}
