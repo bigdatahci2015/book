@@ -8,8 +8,7 @@ Next, complete the following warmup exercises as a team.
 ## How many unique subject codes?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return 113
+return _.uniq(_.pluck(data, 'Subject')).length;
 {% endlodash %}
 
 They are {{ result }} unique subject codes.
@@ -27,37 +26,36 @@ They are {{ result }} computer science courses.
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
+return _.mapValues(_.groupBy(data, 'Subject'), function(group){
+return _.uniq(_.pluck(group, 'Course'))
+});
 {% endlodash %}
 
 <table>
 {% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
+<tr>
+<td>{{key}}</td>
+<td>{{value}}</td>
+</tr>
 {% endfor %}
 </table>
 
 ## What subset of these subject codes have more than 100 courses?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-var grps = _.groupBy(data, 'Subject')
-var ret = _.pick(_.mapValues(grps, function(d){
-    return d.length
-}), function(x){
-    return x > 100
-})
-return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
+return _.pick(_.mapValues(_.groupBy(data, 'Subject'), function(group){
+return group.length;
+}), function(n){
+return n > 100;
+});
 {% endlodash %}
 
 <table>
 {% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
+<tr>
+<td>{{key}}</td>
+<td>{{value}}</td>
+</tr>
 {% endfor %}
 </table>
 
@@ -65,15 +63,21 @@ return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
+return _.pick(_.mapValues(_.groupBy(data, 'Subject'), function(group){
+return _.reduce(group, function(sum, course){
+return sum+course.N.ENROLL;
+}, 0);
+}), function(n){
+return n > 5000
+});
 {% endlodash %}
 
 <table>
 {% for key, value in result %}
-    <tr>
-        <td>{{key}}</td>
-        <td>{{value}}</td>
-    </tr>
+<tr>
+<td>{{key}}</td>
+<td>{{value}}</td>
+</tr>
 {% endfor %}
 </table>
 
@@ -81,7 +85,9 @@ return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return ['4830','4830']
+return _.uniq(_.pluck(_.filter(data, function(course){
+return _.contains(_.pluck(course.Instructors, 'name'), 'YEH, PEI HSIU');
+}), 'Course'));
 {% endlodash %}
 
-They are {{result}}.
+They are {{result | json}}.

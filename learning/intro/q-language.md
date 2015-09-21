@@ -1,4 +1,4 @@
-# Q: Which programming language is the top favorite among the students in our class?
+# Q: Which programming language is the top favorite among the students in our class? 
 
 ## Data
 
@@ -6,7 +6,10 @@
 
 
 | Language | # of Students |
-| -- | -- |
+| ------| ---|
+|Python | 1 |
+|Java 	| 2 |
+|C++	| 3 |
 | Assembly | 0 |
 
 ((more rows to complete the table))
@@ -14,6 +17,9 @@
 ## Answer
 
 ((answer))
+<svg width="400" height="110">
+<rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+</svg>
 
 ## Visualization
 
