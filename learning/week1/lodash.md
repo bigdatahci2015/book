@@ -1,5 +1,11 @@
 # Lodash 101
 
+[Lodash](https://lodash.com/docs) is one of the most popular utility-belt library.
+It can make you very productive and effective in writing Javascript programs.
+
+Read Lodash's page on npm [here](https://www.npmjs.com/package/lodash). How many times
+was it downloaded just last week alone?
+
 ## Examples
 
 ### Array of numbers

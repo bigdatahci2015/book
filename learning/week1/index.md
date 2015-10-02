@@ -1,5 +1,8 @@
+# Team
 
+* Lodash 101
+* Template Engine
 
-{% set username = "joe" %}
+# Individual
 
-{{ username }}
+TBA
