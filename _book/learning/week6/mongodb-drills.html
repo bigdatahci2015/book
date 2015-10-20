@@ -1,0 +1,2048 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book book -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mongodb Drills | book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-bigdata/highlight.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-bigdata/jquery.jsonview.css">
+        
+    
+        
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../hackathons/index.html" />
+    
+    
+    <link rel="prev" href="../../learning/week6/mongodb-setup.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book" data-level="1.7.3" data-basepath="../.." data-revision="Mon Oct 05 2015 02:37:15 GMT-0600 (MDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="learning/index.html">
+            
+                
+                    <a href="../../learning/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Learning
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="learning/intro/index.html">
+            
+                
+                    <a href="../../learning/intro/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Intro
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="learning/intro/q-big-data.html">
+            
+                
+                    <a href="../../learning/intro/q-big-data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        Q. Big data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="learning/intro/q-language.html">
+            
+                
+                    <a href="../../learning/intro/q-language.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        Q. Programming language
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="learning/intro/q-packages.html">
+            
+                
+                    <a href="../../learning/intro/q-packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        Q. Packages
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="learning/week1/index.html">
+            
+                
+                    <a href="../../learning/week1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Week 1
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="learning/week1/svg-template.html">
+            
+                
+                    <a href="../../learning/week1/svg-template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.1.</b>
+                        
+                        Template Engine
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="learning/week1/lodash.html">
+            
+                
+                    <a href="../../learning/week1/lodash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.2.</b>
+                        
+                        Lodash
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="learning/week2/index.html">
+            
+                
+                    <a href="../../learning/week2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Week 2
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="learning/week2/report.html">
+            
+                
+                    <a href="../../learning/week2/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="learning/week2/viz.html">
+            
+                
+                    <a href="../../learning/week2/viz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.2.</b>
+                        
+                        Tableau Viz
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="learning/week3/index.html">
+            
+                
+                    <a href="../../learning/week3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Week 3
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="learning/week3/github-api.html">
+            
+                
+                    <a href="../../learning/week3/github-api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                        Github API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="learning/week3/lodash-drills.html">
+            
+                
+                    <a href="../../learning/week3/lodash-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                        Lodash Drills
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="learning/week3/lodash-groupby.html">
+            
+                
+                    <a href="../../learning/week3/lodash-groupby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.3.</b>
+                        
+                        Lodash GroupBy
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="learning/week4/index.html">
+            
+                
+                    <a href="../../learning/week4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Week 4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="learning/week4/report.html">
+            
+                
+                    <a href="../../learning/week4/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                        FCQ Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="learning/week4/viz.html">
+            
+                
+                    <a href="../../learning/week4/viz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                        FCQ Viz
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="learning/week5/index.html">
+            
+                
+                    <a href="../../learning/week5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Week 5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="learning/week5/birdstrike-report.html">
+            
+                
+                    <a href="../../learning/week5/birdstrike-report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        Birdstrike Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="learning/week5/viz-steps.html">
+            
+                
+                    <a href="../../learning/week5/viz-steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        Viz Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="learning/week5/viz-drills.html">
+            
+                
+                    <a href="../../learning/week5/viz-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        Viz Drills
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="learning/week5/viz-pokemon.html">
+            
+                
+                    <a href="../../learning/week5/viz-pokemon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.4.</b>
+                        
+                        Viz Pokemon
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="learning/week6/index.html">
+            
+                
+                    <a href="../../learning/week6/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        Week 6
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="learning/week6/design-study.html">
+            
+                
+                    <a href="../../learning/week6/design-study.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.1.</b>
+                        
+                        Design pattern changes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="learning/week6/mongodb-setup.html">
+            
+                
+                    <a href="../../learning/week6/mongodb-setup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.2.</b>
+                        
+                        Mongodb Setup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="learning/week6/mongodb-drills.html">
+            
+                
+                    <a href="../../learning/week6/mongodb-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.3.</b>
+                        
+                        Mongodb Drills
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="hackathons/index.html">
+            
+                
+                    <a href="../../hackathons/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Hackathons
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="hackathons/tinker/index.html">
+            
+                
+                    <a href="../../hackathons/tinker/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Tinker
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="hackathons/tinker/method.html">
+            
+                
+                    <a href="../../hackathons/tinker/method.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Method
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="hackathons/tinker/report.html">
+            
+                
+                    <a href="../../hackathons/tinker/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="hackathons/classmates/index.html">
+            
+                
+                    <a href="../../hackathons/classmates/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Classmates
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="hackathons/classmates/data.html">
+            
+                
+                    <a href="../../hackathons/classmates/data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        Data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="hackathons/classmates/warmup.html">
+            
+                
+                    <a href="../../hackathons/classmates/warmup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        Warmup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="hackathons/classmates/analysis.html">
+            
+                
+                    <a href="../../hackathons/classmates/analysis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        Analysis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="hackathons/classmates/report.html">
+            
+                
+                    <a href="../../hackathons/classmates/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="hackathons/fcq/index.html">
+            
+                
+                    <a href="../../hackathons/fcq/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        FCQ
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="hackathons/fcq/warmup.html">
+            
+                
+                    <a href="../../hackathons/fcq/warmup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                        Warmup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="hackathons/fcq/report.html">
+            
+                
+                    <a href="../../hackathons/fcq/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="hackathons/birdstrikes/index.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Birdstrikes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="hackathons/birdstrikes/report.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="hackathons/open/index.html">
+            
+                
+                    <a href="../../hackathons/open/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Open
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="hackathons/open/warmup.html">
+            
+                
+                    <a href="../../hackathons/open/warmup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                        Warmup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="hackathons/open/report.html">
+            
+                
+                    <a href="../../hackathons/open/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.2.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mongodb-drills">Mongodb Drills</h1>
+<h2 id="1-find-the-listing-detail-information-for-the-evernote-app">1- Find the listing detail information for the Evernote app.</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;n&quot;:&quot;com.evernote&quot;}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528ce6&quot;,
+  &quot;cadd&quot;: &quot;305 Walnut Street\nRedwood City, CA 94063&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Evernote Corporation&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Evernote+Corporation&quot;,
+  &quot;dct&quot;: 100000000,
+  &quot;desc&quot;: &quot;Evernote is the modern workspace that syncs between all of your devices. Work everywhere and stay productive: &#x2022; Write notes, checklists, and research &#x2022; Organize web articles, docs, and photos  &#x2022; Discuss your work with others, right within the app ---  &#x201C;When it comes to taking all manner of notes and getting work done, Evernote is an indispensable tool.&#x201D; &#x2013; PC Mag --- 100 million people use it to move projects forward: WRITE &amp; ORGANIZE &#x2022; Stay focused: write in an uncluttered workspace &#x2022; Get things done: make to-do&apos;s and checklists &#x2022; Attach files: keep Office docs, PDFs, and photos &#x2022; Get organized: notebooks and tags keep work tidy &#x2022; Find anything: searchable text in notes and photos  DISCUSS &amp; COLLABORATE &#x2022; Work chat: discuss notes without leaving the app &#x2022; Work together: share notebooks for team projects &#x2022; Meeting prep: create agendas and action items YOUR DIGITAL ASSISTANT &#x2022; Make connections: turn biz cards into contacts  &#x2022; Track expenses: organize receipts, bills &amp; invoices &#x2022; Plan travel: save research and reservations ACCOMPLISH EVEN MORE WITH EVERNOTE PREMIUM Evernote is free to download and use. Evernote Premium unlocks even more productivity: &#x2605; Offline access - work anywhere, even without a connection &#x2605; More space - get more done with 10 GB of new uploads each month &#x2605; Better search - search inside Office docs and attachments &#x2605; Greater privacy - add a passcode lock on mobile &#x2605; PDF annotation - use shapes and comments to give visual feedback &#x2605; Unlimited business card scans - scan biz cards, save to contacts, and connect on LinkedIn  Two subscription levels: 1) Evernote Premium 2) Evernote Plus --- \&quot;Use Evernote as the place you put everything...don&#x2019;t ask yourself which device it&#x2019;s on&#x2014;it&#x2019;s in Evernote\&quot; &#x2013; The New York Times --- Price may vary by location. Subscriptions will be charged to your credit card through your Google Play account. Your subscription will automatically renew unless canceled at least 24 hours before the end of the current period. You will not be able to cancel the subscription once activated. Manage your subscriptions in Account Settings after purchase.&quot;,
+  &quot;dtp&quot;: &quot;September 22, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100,000,000 - 500,000,000&quot;,
+  &quot;n&quot;: &quot;com.evernote&quot;,
+  &quot;new&quot;: &quot;Bug fixes and miscellaneous improvements&quot;,
+  &quot;os&quot;: &quot;Varies with device&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://evernote.com/privacy/&amp;sa=D&amp;usg=AFQjCNHTyefT6GQ6A6mnOKPeqKUA_qjesg&quot;,
+  &quot;rate&quot;: 4.6,
+  &quot;rct&quot;: 1313925,
+  &quot;sz&quot;: &quot;Varies with device&quot;,
+  &quot;t&quot;: &quot;Evernote&quot;,
+  &quot;verc&quot;: &quot;5432&quot;,
+  &quot;id&quot;: &quot;com.evernote-5432&quot;
+ }
+]</pre>
+
+<p>There are 1 apps.
+The star rating of the first Evernote app is: 4.6</p>
+<h2 id="2-how-many-apps-developed-by-go-launcher-ex">2- How many apps developed by GO Launcher EX?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;crt&quot;:&quot;GO Launcher EX&quot;},{&quot;n&quot;:1}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5272f3&quot;,
+  &quot;n&quot;: &quot;com.jb.gosms.theme.getjar.savagelagoon&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5273cc&quot;,
+  &quot;n&quot;: &quot;com.jiubang.goscreenlock.plugin.lockscreen&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5273cd&quot;,
+  &quot;n&quot;: &quot;com.jiubang.goscreenlock.plugin.side&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290a7&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.gowidget.newcalendarwidget.fullscreen&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290d5&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.theme.defaultthemethree&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911a&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.dynamicsbg.Peanuts&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911b&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.dynamicsbg.enjoylife&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911c&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.dynamicsbg.nature&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911e&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.outsideskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911f&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.peanuts&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529120&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.tasteskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529121&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.unknowplanetskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529122&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.sw.dynamicsbg.penguin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529123&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.graceskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529135&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.miuistyleskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529136&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.moonlightskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529137&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.scenery.semele&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529138&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.theme.gowidget.blacktransparentskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529139&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.theme.gowidget.quietlyelegantskinfree&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52913c&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.sr&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52913d&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.id&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290ab&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.gowidget.weatherwidget&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290a6&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.gowidget.gopowermaster&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529124&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.elegantskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529125&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.venusskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529126&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.dynamicsbg.defaultv1&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529127&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.pt_br&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529128&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.ro&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529129&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.dynamicsbg.defaultv2&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912a&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.dynamicsbg.defaultv3&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912b&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.sk&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912c&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.tr&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912d&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.uk&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912e&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.vi&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912f&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.blacktransparentskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529130&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.bluegearskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529131&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.bottleskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529132&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.conciseblack&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529133&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.concisewhite&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529134&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.defaultskin&quot;
+ }
+]</pre>
+
+<p>There are 40 apps.</p>
+<h2 id="3-how-many-apps-have-been-downloaded-more-than-10-000-000">3- How many apps have been downloaded more than 10,000,000?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;dct&quot;: {&quot;$gt&quot;: 10000000}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a528196&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Notes&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Notes&quot;,
+  &quot;dct&quot;: 50000000,
+  &quot;desc&quot;: &quot;ColorNote&#xAE; is a simple and awesome notepad app. It gives you a quick and simple notepad editing experience when you write notes, memos, e-mails, messages, shopping lists and to-do lists. Taking notes with ColorNote&#xAE; Notepad is easier than any other notepad or memo pad app. * Notice * - If you cannot find the widget, then please read the FAQ below. - When you&apos;re finished using the notepad, an automatic save command preserves your individual note. * Product Description * ColorNote&#xAE; features two basic note taking formats, a lined-paper styled text option, and a checklist option. Add as many as you want to your master list, which appears on the app&apos;s home screen each time the program opens. This list may be viewed in traditional ascending order, in grid format, or by note color. - Taking a Note - Serving as a simple word processing program, the text option allows for as many characters as you&apos;re willing to type. Once saved, you can edit, share, set a reminder, or check off or delete the note through your device&apos;s menu button. When checking off a text note, the app places a slash through the list&apos;s title, and this will be displayed on the main menu. - Making To-do List or Shopping List - In the checklist mode, you can add as many items as you&apos;d like and arrange their order with drag buttons activated in the edit mode. After the list is finished and saved, you may check or uncheck each line on your list with a quick tap, which will toggle a line slash. If all items have been checked, then the list&apos;s title is slashed as well. * Features * - Organize notes by color (color notebook) - Sticky note memo widget (Put your notes on your home screen) - Checklist notes for To do list &amp; Shopping list. (Quick and simple list maker) - Checklist notes to get things done (GTD) - Organize your schedule by note in calendar - Write a diary and journal in calendar - Password Lock note : Protect your notes with passcode - Secured backup notes to SD storage - Supports online back up and sync. You can sync notes between phone and tablet. - Reminder notes on status bar - List/Grid View - Search notes - Notepad supports ColorDict Add-on - Powerful task reminder : Time Alarm, All day, Repetition.(lunar calendar) - Quick memo / notes - Wiki note link : [[Title]] - Share notes via SMS, e-mail or Twitter * Online backup and sync cloud service * - Notes will be encrypted before uploading notes by using the AES standard, which is the same encryption standard used by banks to secure customer data. - It does not send any of your notes to the server without you signing in. - Sign-in with Google or Facebook. * Permissions * - Internet Access: For online backup &amp; sync notes - Modify/delete SD card contents: For backup notes to SD card - Prevent phone from sleeping, control vibrator, automatically start at boot: For reminder notes * FAQ * Q: How do you put a sticky note widget on the home screen? A: Go to the home screen and hold down your finger on an empty space and choose widget, Color Note will then be desplayed so you can stick on the page.  Q: Why don&apos;t the widget, the alarm and notes remider functions work? A: If the app is installed on the SD card, your widget, reminder, etc. will not work properly because Android doesn&apos;t support these features when installed on an SD card! If you have already moved the app to an SD card, but want those features, then you have to move the app back on the device and reboot your phone. Settings - Applications - Manage Applications - Color Note - Move to Device Q: Where are backed up notes data on the SD card? A: &apos;/data/colornote&apos; or &apos;/Android/data/com.socialnmobile.dictapps.notepad.color.note/files&apos; on SD card  Q: I forgot my master password. How can I change it? A: Menu &#x2192; Settings &#x2192; Master Password &#x2192; Menu Button &#x2192; Clear Password. You will lose your current locked notes when you clear the password! Q: How can I create todo list note? A: New - Select checklist note - Put items - Save. Tap an item to strikethrough.&quot;,
+  &quot;dtp&quot;: &quot;May 17, 2015&quot;,
+  &quot;dtxt&quot;: &quot;50,000,000 - 100,000,000&quot;,
+  &quot;n&quot;: &quot;com.socialnmobile.dictapps.notepad.color.note&quot;,
+  &quot;new&quot;: &quot;** If you cannot find widgets, you have to move the app back to device in application settings and reboot your phone! ** The best way to report bugs of the update is to send an email. 3.9.82 - Android 5.0, 5.1 Lollipop bugs fixed - Samsung Galaxy Lollipop crash bugs fixed. (A reboot can be required) 3.9.60 - Summer/Winter time bug fixed. - Open the drawer by swiping from the left edge of the screen. 3.9.13 - Auto link setting changed : Settings -&gt; Auto Link -&gt; Auto link phone number&quot;,
+  &quot;os&quot;: &quot;Varies with device&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://www.colornote.com/privacy-policy.html&amp;sa=D&amp;usg=AFQjCNEz_86oQyLakpQLy4T0s_us6bISUg&quot;,
+  &quot;rate&quot;: 4.5,
+  &quot;rct</pre>
+
+<p>There are 33 apps that have been downloaded more than 10,000,000 times.</p>
+<h2 id="4-how-many-apps-have-the-word-share-in-their-description">4- How many apps have the word &quot;share&quot; in their description?</h2>
+<p>Hint: the desc field is indexed with a text index. Use the $text operator.</p>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$text&quot;: {&quot;$search&quot;: &quot;share&quot;}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;560445b0703498dd2a52b51b&quot;,
+  &quot;cadd&quot;: &quot;S&#x1ED1; 10 Tr&#x1EA7;n Ph&#xFA; Str. H&#xE0; &#x110;&#xF4;ng Dist. H&#xE0; N&#x1ED9;i, Vi&#x1EC7;t Nam&quot;,
+  &quot;cat&quot;: &quot;Entertainment&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Spirit Studio&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Spirit+Studio&quot;,
+  &quot;dct&quot;: 10000,
+  &quot;desc&quot;: &quot;5S Online - M&#x1ED9;t format sitcom m&#x1EDB;i n&#x1A1;i b&#x1EA1;n t&#xEC;m th&#x1EA5;y t&#x1EA5;t c&#x1EA3; c&#xE1;c &#x111;&#x1ECB;nh ngh&#x129;a c&#x1EE7;a tu&#x1ED5;i 9X nay &#x111;&#xE3; c&#xF3; m&#x1EB7;t tr&#xEA;n Android v&#x1EDB;i &#x1EE9;ng d&#x1EE5;ng  - &#x1EE8;ng d&#x1EE5;ng c&#x1EAD;p nh&#x1EAD;t nhanh nh&#x1EA5;t t&#x1EAD;p phim m&#x1EDB;i c&#x1EE7;a b&#x1ED9; phim t&#x1EEB; k&#xEA;nh youtube 5sonlinevietnam:  https://www.youtube.com/channel/UCL2BnoeVmDODuNEPuxobpug - N&#x1ED9;i dung &#x111;&#x1ED3;ng b&#x1ED9; tr&#x1EF1;c ti&#x1EBF;p v&#x1EDB;i fanpage 5S Online:  https://www.facebook.com/5sOnline - Kho&#x1EA3;nh kh&#x1EAF;c 5S l&#xE0; c&#xE1;c clip ng&#x1EAF;n 7-15s ghi l&#x1EA1;i nh&#x1EEF;ng kho&#x1EA3;nh kh&#x1EAF;c vui nh&#x1ED9;n, h&#xE0;i h&#x1B0;&#x1EDB;c; nh&#x1EEF;ng c&#xE2;u n&#xF3;i, c&#xE2;u ch&#xE9;m gi&#xF3; b&#x1EA5;t h&#x1EE7;,...trong c&#xE1;c t&#x1EAD;p phim.   - Full tr&#x1ECD;n b&#x1ED9; t&#x1EA5;t c&#x1EA3; c&#xE1;c t&#x1EAD;p phim v&#x1EDB;i ch&#x1EA5;t l&#x1B0;&#x1EE3;ng HD C&#xE1;c t&#xED;nh n&#x103;ng n&#x1ED5;i b&#x1EAD;t kh&#xE1;c: + T&#x1EF1; &#x111;&#x1ED9;ng c&#x1EAD;p nh&#x1EAD;t v&#xE0; th&#xF4;ng b&#xE1;o t&#x1EAD;p phim m&#x1EDB;i, News Feed m&#x1EDB;i t&#x1EEB; Fanpage.  + Xem v&#xE0; b&#xEC;nh lu&#x1EAD;n Facebook.  + Like/Share l&#xEA;n c&#xE1;c m&#x1EA1;ng x&#xE3; h&#x1ED9;i Facebook, Twitter,...  + Copy v&#xE0; chia s&#x1EBB; nh&#x1EEF;ng &#x111;o&#x1EA1;n v&#x103;n, nh&#x1EEF;ng c&#xE2;u n&#xF3;i hay m&#xE0; b&#x1EA1;n th&#xED;ch tr&#xEA;n &#x1EE9;ng d&#x1EE5;ng 1 c&#xE1;ch d&#x1EC3; d&#xE0;ng.  + &#x110;&#xE1;nh d&#x1EA5;u c&#xE1;c b&#xE0;i vi&#x1EBF;t, h&#xEC;nh &#x1EA3;nh, video hay &#x111;&#x1EC3; xem l&#x1EA1;i.  + T&#x1EA1;o Widget ngay m&#xE0;n h&#xEC;nh ch&#xED;nh ti&#x1EC7;n cho vi&#x1EC7;c theo d&#xF5;i, n&#x1EAF;m b&#x1EAF;t th&#xF4;ng tin.  + Thay &#x111;&#x1ED5;i giao di&#x1EC7;n theo &#xFD; th&#xED;ch. Ch&#x1EC9; c&#x1EAD;p nh&#x1EAD;t tin t&#x1EE9;c khi b&#x1EA1;n s&#x1EED; d&#x1EE5;ng k&#x1EBF;t n&#x1ED1;i Wifi, ti&#x1EBF;t ki&#x1EC7;m chi ph&#xED; 3G.  + &#x1EA8;n/Hi&#x1EC7;n c&#xE1;c tin &#x111;&#xE3; &#x111;&#x1ECD;c. C&#xF3; th&#x1EC3; c&#xE0;i &#x111;&#x1EB7;t t&#x1EF1; &#x111;&#x1ED9;ng d&#x1ECD;n d&#x1EB9;p tin &#x111;&#xE3; &#x111;&#x1ECD;c, ch&#x1B0;a &#x111;&#x1ECD;c. Quy t&#x1EE5; m&#x1ED9;t d&#xE0;n hot boy, hot girl n&#x1ED5;i ti&#x1EBF;ng &#x111;&#xE3; th&#x1ED5;i m&#x1ED9;t l&#xE0;n gi&#xF3; m&#x1EDB;i trong d&#xF2;ng phim Sitcom ch&#x1EE9; kh&#xF4;ng r&#x1A1;i v&#xE0;o qu&#xEA;n l&#xE3;ng nh&#x1B0; nh&#x1EEF;ng b&#x1ED9; phim tr&#x1B0;&#x1EDB;c. N&#x1ED9;i dung ch&#xED;nh c&#x1EE7;a phim xoay quanh nh&#xF3;m b&#x1EA1;n tr&#x1EBB; l&#xE0;m vi&#x1EC7;c trong m&#x1ED9;t v&#x103;n ph&#xF2;ng s&#xE1;ng t&#xE1;c truy&#x1EC7;n tranh bao g&#x1ED3;m Quy&#x1EBF;t (M&#x1EA1;nh Qu&#xE2;n), Ki&#x1EC1;u Linh (V&#xE2;n Navy), Trung (Anh V&#x169;), Nana (Chi Pu), T&#x1B0;&#x1EDD;ng Vi (Qu&#x1EF3;nh Anh Shyn) v&#xE0; Phan (B&#xEA; Tr&#x1EA7;n). B&#x1EB1;ng &#x111;am m&#xEA;, s&#x1EDF; tr&#x1B0;&#x1EDD;ng c&#x1EE7;a b&#x1EA3;n th&#xE2;n, nh&#xF3;m b&#x1EA1;n t&#x1EEB;ng b&#x1B0;&#x1EDB;c x&#xE2;y d&#x1EF1;ng n&#xEA;n b&#x1ED9; truy&#x1EC7;n tranh d&#xE0;nh cho gi&#x1EDB;i tr&#x1EBB; v&#xE0; ghi d&#x1EA5;u &#x1EA5;n c&#xE1; nh&#xE2;n l&#xEA;n nh&#x1EEF;ng nh&#xE2;n v&#x1EAD;t m&#xEC;nh &#x111;&#x1EA3;m nhi&#x1EC7;m. Ti&#xEA;u ch&#xED; c&#x1EE7;a nh&#xF3;m h&#x1B0;&#x1EDB;ng &#x111;&#x1EBF;n 5 ch&#x1EEF; S: S&#xE1;ng t&#x1EA1;o, S&#xE0;nh &#x111;i&#x1EC7;u, Say m&#xEA;, S&#x1ED1;c v&#xE0; Sinh l&#x1EE3;i. 5 th&#xE0;nh vi&#xEA;n c&#x1EE7;a nh&#xF3;m &#x2013; 5 t&#xED;nh c&#xE1;ch tr&#xE1;i ng&#x1B0;&#x1EE3;c, m&#xE2;u thu&#x1EAB;n v&#xE0; b&#x1ED5; sung l&#x1EAB;n cho nhau. C&#xF2;n Online t&#x1B0;&#x1EE3;ng tr&#x1B0;ng cho m&#x1EA1;ng Internet, khi &#x111;&#xE2;y l&#xE0; y&#x1EBF;u t&#x1ED1; &#x1EA3;nh h&#x1B0;&#x1EDF;ng nhi&#x1EC1;u nh&#x1EA5;t &#x111;&#x1EBF;n gi&#x1EDB;i tr&#x1EBB; b&#xE2;y gi&#x1EDD;. B&#x1ED9; phim l&#xE0; minh ch&#x1EE9;ng cho th&#x1EA5;y gi&#x1EDB;i tr&#x1EBB; ng&#xE0;y nay kh&#xF4;ng h&#x1EC1; th&#x1EDD; &#x1A1; tr&#x1B0;&#x1EDB;c nh&#x1EEF;ng th&#xF4;ng tin th&#x1EDD;i s&#x1EF1; n&#xF3;ng h&#x1ED5;i, h&#x1ECD; v&#x1EAB;n c&#xF3; ti&#x1EBF;ng n&#xF3;i ri&#xEA;ng c&#x1EE7;a m&#xEC;nh v&#xE0; mu&#x1ED1;n &#x111;&#x1B0;&#x1EE3;c th&#x1EC3; hi&#x1EC7;n ch&#xED;nh ki&#x1EBF;n &#x111;&#xF3;. B&#x1EB1;ng l&#x1ED1;i di&#x1EC5;n xu&#x1EA5;t t&#x1EF1; nhi&#xEA;n, h&#xE0;i h&#x1B0;&#x1EDB;c v&#xE0; g&#x1EA7;n g&#x169;i, d&#xE0;n cast c&#x1EE7;a 5S Online hy v&#x1ECD;ng s&#x1EBD; truy&#x1EC1;n t&#x1EA3;i &#x111;&#x1B0;&#x1EE3;c th&#xF4;ng &#x111;i&#x1EC7;p c&#x1EE7;a b&#x1ED9; phim t&#x1EDB;i ng&#x1B0;&#x1EDD;i xem qua m&#x1ED7;i t&#x1EAD;p phim. Ngo&#xE0;i d&#xE0;n di&#x1EC5;n vi&#xEA;n tr&#x1EBB; &#x111;&#x1EB9;p, t&#xE0;i n&#x103;ng &#x111;ang &#x111;&#x1B0;&#x1EE3;c kh&#xE1;n gi&#x1EA3; tr&#x1EBB; h&#xE2;m m&#x1ED9;, 5S Online c&#xF2;n &#x111;&#x1B0;&#x1EE3;c x&#xE2;y d&#x1EF1;ng b&#x1EDF;i &#xEA; kip l&#xE0;m phim chuy&#xEA;n nghi&#x1EC7;p d&#xE0;y d&#x1EB7;n kinh nghi&#x1EC7;m nh&#x1B0; bi&#xEA;n t&#x1EAD;p Phi Ti&#x1EBF;n S&#x1A1;n, &#x111;&#x1EA1;o di&#x1EC5;n Nguy&#x1EC5;n H&#x1EEF;u Tr&#x1ECD;ng, nh&#xE0; quay phim t&#x1EEB;ng &#x111;o&#x1EA1;t gi&#x1EA3;i LHP Cannes L&#xFD; Th&#xE1;i D&#x169;ng. S&#x1EF1; tr&#x1EDF; l&#x1EA1;i c&#x1EE7;a c&#xE1;c hotboy, hotgirl m&#x1ED9;t th&#x1EDD;i B&#x1ED9; phim c&#xF3; th&#x1EC3; n&#xF3;i l&#xE0; sitcom quy t&#x1EE5; d&#xE0;n di&#x1EC5;n vi&#xEA;n tr&#x1EBB; &#x111;&#x1EB9;p, t&#xE0;i n&#x103;ng l&#xE0; c&#xE1;c hotboy, hotgirl l&#x1EDB;n nh&#x1EA5;t t&#x1EEB; tr&#x1B0;&#x1EDB;c t&#x1EDB;i nay, &#x111;&#x1EB7;c bi&#x1EC7;t l&#xE0; Chi Pu &#x2013; hotgirl n&#x1ED5;i &#x111;&#xEC;nh &#x111;&#xE1;m nh&#x1EA5;t n&#x103;m 2013. &#x110;i&#x1EC1;u th&#xFA; v&#x1ECB; h&#x1A1;n, 3 trong s&#x1ED1; 5 di&#x1EC5;n vi&#xEA;n ch&#xED;nh t&#x1EEB;ng c&#xF9;ng tham gia m&#x1ED9;t sitcom kh&#xE1;c &#x111;&#xEC;nh &#x111;&#xE1;m kh&#xF4;ng k&#xE9;m c&#xE1;ch &#x111;&#xE2;y v&#xE0;i n&#x103;m l&#xE0; Nh&#x1EAD;t K&#xFD; V&#xE0;ng Anh. So v&#x1EDB;i nh&#x1EEF;ng sitcom kh&#xE1;c d&#xE0;nh cho teen nh&#x1B0; Nh&#x1EEF;ng ph&#xF3;ng vi&#xEA;n vui nh&#x1ED9;n, C&#x1EED;a s&#x1ED5; th&#x1EE7;y tinh, B&#x1ED9; t&#x1EE9; 10A8, &#x2026; 5S Online c&#xF3; l&#x1EE3;i th&#x1EBF; v&#x1B0;&#x1EE3;t tr&#x1ED9;i h&#x1A1;n h&#x1EB3;n. B&#x1ED9; phim &#x111;&#xE1;nh d&#x1EA5;u s&#x1EF1; tr&#x1EDF; l&#x1EA1;i c&#x1EE7;a M&#x1EA1;nh Qu&#xE2;n, V&#xE2;n Navy v&#xE0; Anh V&#x169; sau m&#x1ED9;t th&#x1EDD;i gian t&#x1EA1;m xa r&#x1EDD;i v&#x1EDB;i kh&#xE1;n gi&#x1EA3; teen v&#xEC; nh&#x1EEF;ng d&#x1EF1; &#xE1;n, c&#xF4;ng vi&#x1EC7;c ri&#xEA;ng. Kh&#xE1;n gi&#x1EA3; c&#x1EE7;a h&#x1ECD; l&#x1EA7;n n&#xE0;y &#x1EDF; &#x111;&#x1ED9; tu&#x1ED5;i 9x s&#x1EBD; c&#xF3; s&#x1EF1; kh&#xE1;c bi&#x1EC7;t nh&#x1ECF; so v&#x1EDB;i th&#x1EDD;i Nh&#x1EAD;t K&#xFD; V&#xE0;ng Anh. V&#x1EDB;i B&#xEA; Tr&#x1EA7;n v&#xE0; Chi Pu, 5S Online c&#x169;ng c&#xF3; &#xFD; ngh&#x129;a l&#x1EDB;n b&#x1EDF;i &#x111;&#xE2;y l&#xE0; sitcom &#x111;&#x1EA7;u ti&#xEA;n h&#x1ECD; tham gia, &#x111;&#x1EB7;c bi&#x1EC7;t v&#x1EDB;i B&#xEA; Tr&#x1EA7;n l&#x1EA7;n &#x111;&#x1EA7;u th&#x1EED; s&#x1EE9;c v&#x1EDB;i di&#x1EC5;n xu&#x1EA5;t d&#xE0;i h&#x1A1;i. B&#x1ED9; phim h&#x1EE9;a h&#x1EB9;n s&#x1EBD; t&#x1EA1;o n&#xEA;n hi&#x1EC7;u &#x1EE9;ng t&#xED;ch c&#x1EF1;c t&#x1EDB;i cu&#x1ED9;c s&#x1ED1;ng c&#x1EE7;a gi&#x1EDB;i tr&#x1EBB; d&#x1EF1;a n&#x1ED9;i dung h&#x1EA5;p d&#x1EAB;n, g&#x1EA7;n g&#x169;i v&#xE0; b&#xE1;m s&#xE1;t th&#x1EF1;c t&#x1EBF;.&quot;,
+  &quot;dtp&quot;: &quot;May 13, 2015&quot;,
+  &quot;dtxt&quot;: &quot;10,000 - 50,000&quot;,
+  &quot;n&quot;: &quot;com.app.Sonline&quot;,
+  &quot;new&quot;: &quot;C&#x1EAD;p nh&#x1EAD;t m&#x1ED9;t s&#xF4; t&#xED;nh n&#x103;ng m&#x1EDB;i.&quot;,
+  &quot;os&quot;: &quot;4.0 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://wahay.tv&amp;sa=D&amp;usg=AFQjCNHtqxSbmA7KxsZ43FcxC8ZELpR0bg&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 411,
+  &quot;sz&quot;: &quot;5.7M&quot;,
+  &quot;t&quot;: &quot;5S Online: The Movies&quot;,
+  &quot;verc&quot;: &quot;2651&quot;,
+  &quot;id&quot;: &quot;com.app.Sonline-2651&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526807&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Music &amp; Audio&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;LEX Andra&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=LEX+Andra&quot;,
+  &quot;dct&quot;: 100,
+  &quot;desc&quot;: &quot;Ottawa Music in HQ format. Download and enjoy the world of Music! This is a collection of Ottawa Music channels. Free Internet Radio Stations. Listen to all of the best Ottawa Radios!  - refresh list of streams - internet connexion starting with 24 Kbit/sec - instant Track Info - share button - most popular channels Receive a call and the radio is automatically off! Only the original broadcast with highest quality! Please use a fast internet connection for top app performance. If you find errors, please report and we will refresh the channels. We offer 24 hour customer support! KCRS - </pre>
+
+<p>There are 4197 apps that have the word &quot;share&quot; in their description.</p>
+<h2 id="5-find-apps-that-are-categorized-in-any-of-the-following-categories-productivity-business-or-finance">5- Find apps that are categorized in any of the following categories: Productivity, Business, or Finance?</h2>
+<p>Hint: Use the $in operator.</p>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;cat&quot;: {&quot;$in&quot;: [&quot;Productivity&quot;, &quot;Business&quot;, &quot;Finance&quot;]}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044568703498dd2a5243f8&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Business&quot;,
+  &quot;crat&quot;: &quot;Unrated&quot;,
+  &quot;crt&quot;: &quot;NewCenturyEdge&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=NewCenturyEdge&quot;,
+  &quot;dct&quot;: 5,
+  &quot;desc&quot;: &quot;Team Reyes is a Multi-Award Winning Real Estate Team based at RE/MAX Top Producers in Diamond Bar, CA. We specialize in Buying, Selling, Commercial and Investment Properties. We are professional, fast, and thorough with our work. Team Reyes treats their client&apos;s time and investments with special care.&quot;,
+  &quot;dtp&quot;: &quot;March 30, 2015&quot;,
+  &quot;dtxt&quot;: &quot;5 - 10&quot;,
+  &quot;n&quot;: &quot;com.a262949193547bbb3aa0a9b6a.a55002610a&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;$7.99&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 0,
+  &quot;rct&quot;: 0,
+  &quot;sz&quot;: &quot;4.2M&quot;,
+  &quot;t&quot;: &quot;Team Reyes Homes&quot;,
+  &quot;verc&quot;: &quot;6484&quot;,
+  &quot;id&quot;: &quot;com.a262949193547bbb3aa0a9b6a.a55002610a-6484&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044568703498dd2a524430&quot;,
+  &quot;cadd&quot;: &quot;PO Box 5978 Basildon Essex SS14 0WD&quot;,
+  &quot;cat&quot;: &quot;Business&quot;,
+  &quot;crat&quot;: &quot;Unrated&quot;,
+  &quot;crt&quot;: &quot;ALF Media&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=ALF+Media&quot;,
+  &quot;dct&quot;: 1000,
+  &quot;desc&quot;: &quot;Connect with the hydraulic industry with Completely Hydraulic. Use the Car Locator and Barcode Scanner amongst others as useful tools in your day to day business.&quot;,
+  &quot;dtp&quot;: &quot;December 3, 2014&quot;,
+  &quot;dtxt&quot;: &quot;1,000 - 5,000&quot;,
+  &quot;n&quot;: &quot;com.a572548969528fc802382cc8a.a96958648a&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.7,
+  &quot;rct&quot;: 13,
+  &quot;sz&quot;: &quot;4.4M&quot;,
+  &quot;t&quot;: &quot;Completely Hydraulic&quot;,
+  &quot;verc&quot;: &quot;6&quot;,
+  &quot;id&quot;: &quot;com.a572548969528fc802382cc8a.a96958648a-6&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044568703498dd2a52444e&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Business&quot;,
+  &quot;crat&quot;: &quot;Unrated&quot;,
+  &quot;crt&quot;: &quot;Proapptive&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Proapptive&quot;,
+  &quot;dct&quot;: 500,
+  &quot;desc&quot;: &quot;The Cork - a bar for every occasion. The Cork App brings you all the latest Cork information right to your phone: Facebook &amp; Twitter feeds, latest news and events, our menu and opening hours PLUS exclusive access to discount vouchers only available through the app. Located in the heart of the bustling city of Bath, The Cork offers you the perfect place to socialise, relax and simply enjoy the surroundings in the upstairs bar, out on the terrace or in the stylish vaults bar.&quot;,
+  &quot;dtp&quot;: &quot;July 21, 2014&quot;,
+  &quot;dtxt&quot;: &quot;500 - 1,000&quot;,
+  &quot;n&quot;: &quot;com.a68005602250251ef0c2cf24a.a22739136a&quot;,
+  &quot;new&quot;: &quot;New design and new features&quot;,
+  &quot;os&quot;: &quot;2.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 3,
+  &quot;rct&quot;: 7,
+  &quot;sz&quot;: &quot;8.1M&quot;,
+  &quot;t&quot;: &quot;The Cork&quot;,
+  &quot;verc&quot;: &quot;284&quot;,
+  &quot;id&quot;: &quot;com.a68005602250251ef0c2cf24a.a22739136a-284&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a524813&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Business&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Starline Techno&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Starline+Techno&quot;,
+  &quot;dct&quot;: 1000,
+  &quot;desc&quot;: &quot;Agroya Bullion Corporation (ABC) is a leading company in Pune, India which deals in bullion, specializing in bars and coins of various precious metals like Gold and Silver. Being a company which facilitates investment in precious metals, ABC endeavors to combine our technical and market experience with hard work and dedication to provide our clients the ability to make informed investment decisions.&quot;,
+  &quot;dtp&quot;: &quot;September 7, 2015&quot;,
+  &quot;dtxt&quot;: &quot;1,000 - 5,000&quot;,
+  &quot;n&quot;: &quot;com.agroyabullion&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;2.2 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 42,
+  &quot;sz&quot;: &quot;1.9M&quot;,
+  &quot;t&quot;: &quot;Agroya Bullion Corporation&quot;,
+  &quot;verc&quot;: &quot;7832&quot;,
+  &quot;id&quot;: &quot;com.agroyabullion-7832&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a524824&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Business&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;ahex technologies&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=ahex+technologies&quot;,
+  &quot;dct&quot;: 100,
+  &quot;desc&quot;: &quot;Don&apos;t worry for business cards to be creased and dirty.   Card-e-Holder can make collecting and keeping visiting cards  safer and smarter than ever before and it  can also be used to retrieve  business information about a company or individual with different search option available.  Card-e-Holder app is designed specially for business professionals and can be widely used for personal and office purpose. Card-e-Holder is  very helpful as it can hold all business cards and  you can carry  all business cards along. You can store name, designation, company and note along with snapshot of business cards from gallery or by taking photo with camera or with scanned copy. It will help you to keep all your business cards safely and you can search them in no time. Eventually cards are prevented from misplacement and  sticking by welted pockets.&quot;,
+  &quot;dtp&quot;: &quot;May 2, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100 - 500&quot;,
+  &quot;n&quot;: &quot;com.ahextechnologies.visitingcardmanager&quot;,
+  &quot;new&quot;: &quot;Added Email Address and Phone Number Fields in Add new card screen. You can now search your cards by email and by phone number.&quot;,
+  &quot;os&quot;: &quot;4.0 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://ahextechnologies.com/web_findme/privacy.html&amp;sa=D&amp;usg=AFQjCNGk_hZkOtKONLxyflCrHR0iEKg0QA&quot;,
+  &quot;rate&quot;: 4.2,
+  &quot;rct&quot;: 4,
+  &quot;sz&quot;: &quot;2.3M&quot;,
+  &quot;t&quot;: &quot;Card-e-Holder&quot;,
+  &quot;verc&quot;: &quot;9943&quot;,
+  &quot;id&quot;: </pre>
+
+<p>There are 3179 apps that are categorized as Productivity, Business or Finance.</p>
+<h2 id="6-find-apps-that-have-been-downloaded-10-000-000-or-more-but-have-star-rating-lower-than-3-stars">6- Find apps that have been downloaded 10,000,000 or more but have star rating lower than 3 stars?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;dct&quot;: {&quot;$gte&quot;: 10000000}}, {&quot;rate&quot;: {&quot;$lt&quot;: 3}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526fda&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Entertainment&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;RQ Droid&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=RQ+Droid&quot;,
+  &quot;dct&quot;: 10000000,
+  &quot;desc&quot;: &quot;XRay Scan application is a prank fake xray scanner to trick your friends that you have awesome phone app that can X-ray their left hand. This app XRay Scanner app display fake image xray skeletal left hand. Control the movement by touching your phone screen, scroll your finger will scroll the xray skelatal screen, retouch will reverse the scroll movement. This is a fake xray scanner, not a real X-ray, it&apos;s a prank xray app with moving x-ray skeletal left hand image, this app is for entertainment only.&quot;,
+  &quot;dtp&quot;: &quot;July 29, 2014&quot;,
+  &quot;dtxt&quot;: &quot;10,000,000 - 50,000,000&quot;,
+  &quot;n&quot;: &quot;xrayscan.regque&quot;,
+  &quot;new&quot;: &quot;Updated to latest sponsor library code.&quot;,
+  &quot;os&quot;: &quot;2.2 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 2.9,
+  &quot;rct&quot;: 88532,
+  &quot;sz&quot;: &quot;290k&quot;,
+  &quot;t&quot;: &quot;Xray Scan&quot;,
+  &quot;verc&quot;: &quot;8997&quot;,
+  &quot;id&quot;: &quot;xrayscan.regque-8997&quot;
+ }
+]</pre>
+
+<p>There is 1 app.</p>
+<p>Hint: The query matches one app in the dataset and the link to its Google Play listing page is:
+<a href="https://play.google.com/store/apps/details?id=xrayscan.regque" target="_blank">https://play.google.com/store/apps/details?id=xrayscan.regque</a> Read the reviews to find out why?</p>
+<h2 id="7-find-the-title-and-creator-of-apps-that-have-been-rated-above-4-stars-by-1-000-000-or-more-users">7- Find the title and creator of apps that have been rated above 4 stars by 1,000,000 or more users?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;dct&quot;: {&quot;$gte&quot;: 1000000}}, {&quot;rate&quot;: {&quot;$gt&quot;: 4}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a524975&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Lifestyle&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Alarm.com Mobile&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Alarm.com+Mobile&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;desc&quot;: &quot;With an Alarm.com-enabled security system, you can monitor and control your home or business in real-time and from anywhere.  Alarm.com&#x2019;s interactive security, video monitoring, energy management, and home automation solutions give you instant awareness and remote control for the places you care about most.   Note: This app requires a compatible system and an interactive Alarm.com service plan. Feature availability varies based on system, equipment, and service plan.  Visit www.alarm.com for more information. Remote features: &#x2713; See what&#x2019;s happening at your property  &#x2713; Arm or disarm your security panel &#x2713; Watch live video and recorded clips from your security cameras &#x2713; Turn on or off lights &#x2713; Set the ideal temperature  &#x2713; Lock or unlock doors    &#x2713; View images of important activity captured by Alarm.com image sensors &#x2713; Search your complete system event history &#x2713; And much more!      With Alarm.com, you can also receive real-time email, text message, and push notifications for the specific events that matter to you.  Beyond important emergency related events, you can also immediately know when: &#x2022; Your kids get home from school &#x2022; You left for work or vacation and forgot to arm your system  &#x2022; The housekeeper arrives or leaves &#x2022; The garage door is left open &#x2022; The dog walker or cat sitter arrives  &#x2022; There&apos;s flooding or a water leak in your basement &#x2022; Your children open your medicine or liquor cabinets &#x2022; Someone changes your thermostat settings  &#x2022; Your security system is disarmed (and who disarmed it) &#x2022; Someone attempts to log into your account &#x2022; And much more!&quot;,
+  &quot;dtp&quot;: &quot;September 22, 2015&quot;,
+  &quot;dtxt&quot;: &quot;1,000,000 - 5,000,000&quot;,
+  &quot;n&quot;: &quot;com.alarm.alarmmobile.android&quot;,
+  &quot;new&quot;: &quot;&#x2022; Minor fixes/enhancements&quot;,
+  &quot;os&quot;: &quot;Varies with device&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://www.alarm.com/privacy_policy.aspx&amp;sa=D&amp;usg=AFQjCNED4K7JDG19INn6lIKWYVzEaTyBPg&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 14639,
+  &quot;sz&quot;: &quot;Varies with device&quot;,
+  &quot;t&quot;: &quot;Alarm.com&quot;,
+  &quot;verc&quot;: &quot;1399&quot;,
+  &quot;id&quot;: &quot;com.alarm.alarmmobile.android-1399&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a52497b&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Trivia&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Brett Plummer&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Brett+Plummer&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;desc&quot;: &quot;Bible Trivia game will quiz your knowledge of the holy book.  Some of the questions are bible quotes in which you choose the word or phrase that finishes the well-known Bible quotation.  Other questions center around the people and events that take place in the Bible: Jesus Christ, Noah, Moses, David, Peter, David, the Virgin Mary, and many more.  A good game to play around Christmas, Easter, or any time of year. Profile info optional, just save a Profile and play for Free! Also check out my \&quot;Bible Quiz - Who Am I?\&quot; Android app. Updated for gingerbread and jellybean.&quot;,
+  &quot;dtp&quot;: &quot;July 25, 2015&quot;,
+  &quot;dtxt&quot;: &quot;1,000,000 - 5,000,000&quot;,
+  &quot;n&quot;: &quot;com.alaskajim.bible&quot;,
+  &quot;new&quot;: &quot;February 2015: Update for Lollipop September 2014: Update for Kitkat June 2014 - Update to show Incorrect Answers properly on newer devices.&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://apps-quizzes-trivia.blogspot.com/p/privacy-policy.html&amp;sa=D&amp;usg=AFQjCNHO4t59tZc8n19YPdHTvx_1XWjTcw&quot;,
+  &quot;rate&quot;: 4.3,
+  &quot;rct&quot;: 4382,
+  &quot;sz&quot;: &quot;6.4M&quot;,
+  &quot;t&quot;: &quot;Bible Trivia&quot;,
+  &quot;verc&quot;: &quot;9579&quot;,
+  &quot;id&quot;: &quot;com.alaskajim.bible-9579&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a524a21&quot;,
+  &quot;cadd&quot;: &quot;Palace Mansions, Earsby Street, London, W14 8EQ&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Marton Veges&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Marton+Veges&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;desc&quot;: &quot;It has the best graphing experience available on the Play Store. Draw functions, find intersections and show a table of values of the functions with an easy to use interface.   Use the following unique features to help you with your Calculus and Algebra class: *Symbolic Differentiation *Definite Integrals *Calculate Taylor-series *Solve Equations Algeo has every feature a scientific calculator needs: *Trigonometric and Hyperbolic Functions *Radians and Degree Support *Result History *Variables *Scientific Notation *Supports Landscape Mode If you need help press Menu button -&gt; Help or send an e-mail! If trigonometric functions give an incorrect answer, make sure you are in the correct angle mode.  You can check it in the upper right corner. To change it press more-&gt;DEG/RAD.&quot;,
+  &quot;dtp&quot;: &quot;June 16, 2015&quot;,
+  &quot;dtxt&quot;: &quot;1,000,000 - 5,000,000&quot;,
+  &quot;n&quot;: &quot;com.algeo.algeo&quot;,
+  &quot;new&quot;: &quot;Fixed unreadable menu on Android 5.1 Added thousands separator&quot;,
+  &quot;os&quot;: &quot;Varies with device&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.3,
+  &quot;rct&quot;: 13832,
+  &quot;sz&quot;: &quot;Varies with device&quot;,
+  &quot;t&quot;: &quot;Algeo Graphing Calculator&quot;,
+  &quot;verc&quot;: &quot;329&quot;,
+  &quot;id&quot;: &quot;com.algeo.algeo-3</pre>
+
+<p>There are 917 apps.</p>
+<p></p><p><b>Ten Apps with High Ratings and Many Downloads</b></p><p></p>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Creator</th>
+    </tr>
+
+    <tr>
+        <td>com.alarm.alarmmobile.android</td>
+        <td>Alarm.com Mobile</td>
+    </tr>
+
+    <tr>
+        <td>com.alaskajim.bible</td>
+        <td>Brett Plummer</td>
+    </tr>
+
+    <tr>
+        <td>com.algeo.algeo</td>
+        <td>Marton Veges</td>
+    </tr>
+
+    <tr>
+        <td>com.alim.pusula</td>
+        <td>Alim S. Gokkaya</td>
+    </tr>
+
+    <tr>
+        <td>com.allbiblestories.tja.AOUKREXJIQDBGHHUV</td>
+        <td>AmaliaDev</td>
+    </tr>
+
+    <tr>
+        <td>com.alokmandavgane.hinducalendar</td>
+        <td>Alok Mandavgane</td>
+    </tr>
+
+    <tr>
+        <td>com.alonsoruibal.chessdroid.lite</td>
+        <td>mobialia.com</td>
+    </tr>
+
+    <tr>
+        <td>com.alrwabee.learnenglishconversationfree</td>
+        <td>Rwabee</td>
+    </tr>
+
+    <tr>
+        <td>com.amazon.clouddrive.photos</td>
+        <td>Amazon Mobile LLC</td>
+    </tr>
+
+    <tr>
+        <td>com.amphibius.zombieinvasion_escape</td>
+        <td>Amphibius Developers</td>
+    </tr>
+
+</table>
+
+
+<h2 id="8-find-apps-whose-content-rating-is-teen-but-not-categorized-in-any-of-the-following-categories-card-entertainment-comics-and-puzzle">8- Find apps whose content rating is Teen but not categorized in any of the following categories: Card, Entertainment, Comics, and Puzzle?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;crat&quot;: &quot;Teen&quot;}, {&quot;cat&quot;: {&quot;$not&quot;: {&quot;$in&quot;: [&quot;Card&quot;, &quot;Entertainment&quot;, &quot;Comics&quot;, &quot;Puzzle&quot;]}}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044568703498dd2a5243d2&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Sports&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;123app4me&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=123app4me&quot;,
+  &quot;dct&quot;: 500,
+  &quot;desc&quot;: &quot;The Youth Baseball Nationals is the premier youth baseball tournament in the nation! The Nationals is a week-long national tournament for 9U, 10U, 11U, 12U, 13U, 14U and 15U baseball teams. There&#x2019;s nothing quite like the Nationals in youth baseball. The event features teams from all over the country, each week from the seven different age groups.  Key App Features: Live standings updates Updates and news through push notifications Maps to access important tournament locations Frequently asked questions Specials and discounts Share your tournament images More tournament info: Each team plays 6-10 games during the tournament. Schedules are carefully determined by placing teams with similar classification and skill level against each other during the 4 days of pool play to promote an even playing level with parity among participating teams. This is unique to the Nationals. We make every effort to create an atmosphere where every team can compete, regardless of skill level. Our objective is to promote an equal playing level within the field during the pool play portion of the tournament. Teams are then seeded for the elimination round based on their performance and strength of schedule.&quot;,
+  &quot;dtp&quot;: &quot;June 4, 2015&quot;,
+  &quot;dtxt&quot;: &quot;500 - 1,000&quot;,
+  &quot;n&quot;: &quot;com.a1ec5cee3_b7e7_474c_ae87_f6706e546661&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;4.1 and up&quot;,
+  &quot;pri&quot;: &quot;$7.99&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 3,
+  &quot;rct&quot;: 6,
+  &quot;sz&quot;: &quot;30M&quot;,
+  &quot;t&quot;: &quot;2015 Youth Baseball Nationals&quot;,
+  &quot;verc&quot;: &quot;8187&quot;,
+  &quot;id&quot;: &quot;com.a1ec5cee3_b7e7_474c_ae87_f6706e546661-8187&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044568703498dd2a5243fc&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Sports&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;sportingapps&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=sportingapps&quot;,
+  &quot;dct&quot;: 1000,
+  &quot;desc&quot;: &quot;Newcastle Football News gives you all the latest information, transfers, Scores and results for Newcastle United Football club. This unofficial fan app gives you access to videos, photos and social media about NUFC. Find out about the latest football transfer news and latest stories about the Magpies and its current players and Manager.   Newcastle United FC are one of the top teams in English football and this free app will help you keep up-to-date with all the goings on during the current Premier league season and the FA Cup. Download this free toon army app today!&quot;,
+  &quot;dtp&quot;: &quot;June 29, 2015&quot;,
+  &quot;dtxt&quot;: &quot;1,000 - 5,000&quot;,
+  &quot;n&quot;: &quot;com.a248218658520d4ee04aec54a.a25507330a&quot;,
+  &quot;new&quot;: &quot;Fixed video feed and icon change&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.2,
+  &quot;rct&quot;: 13,
+  &quot;sz&quot;: &quot;4.1M&quot;,
+  &quot;t&quot;: &quot;Newcastle Football News&quot;,
+  &quot;verc&quot;: &quot;3171&quot;,
+  &quot;id&quot;: &quot;com.a248218658520d4ee04aec54a.a25507330a-3171&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a524814&quot;,
+  &quot;cadd&quot;: &quot;57 Al-Faya AlRiyad Kingdom of Saudi Arabia&quot;,
+  &quot;cat&quot;: &quot;Action&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;Absolute Game Studio&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Absolute+Game+Studio&quot;,
+  &quot;dct&quot;: 100000,
+  &quot;desc&quot;: &quot;Have you wanted an exclusive dino pet Trex from the jurassic world.  Here is your virtual dinosaur, the most deadly Trex to create havoc from prehistoric times. This wild dinosaur simulator brings you a terrifying dino quest for  some exquisite hunting expedition in dense African jungles.  Destroy and attack  diplodocus, pterandon and triceratops.  Embark on the safari survival adventure in jungles of Africa.  Hunt down the docile ankylosaurus ,brontosaurus and spinosaur,   to quench the hunger of the terrifying Tyrannosaurus.  The paleontologists would never believe that the era of dinosaurs has returned. This dinosaur simulator portrays the african jungle filled with prehistoric dinos turning it into the dinosaur world. All the wild animals, cheetah, lion are fighting for their space. This vicious jurassic beast is ready to hunt and eat all kinds of docile and deadly beasts carnivores and herbivores. The vicious apatosauris, allosaurus and ankylosaurus are hidden in further deadly levels. Beware of the jungle hunters that have deadly aresenal  to kill the powerful dinosaur on encounter. Select your dinosaur from Trex ( Tyrannosaurus), brontosaurus or Triceratops and match the speed and strength of present time carnivore animals.  Features: &#x2022;\tHuge African safari Jungle Map &#x2022;\tAwesome action packed levels. &#x2022;\tFatal attacks with arsenals, bazooka and fights between wild jurassic beasts &#x2022;\tLargest collection cretaceous dinosaurs  &#x2022;\tBonus level fight with pterandon, diplodocus and lion &#x2022;\tKeep a record of your hunting success.&quot;,
+  &quot;dtp&quot;: &quot;March 18, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100,000 - 500,000&quot;,
+  &quot;n&quot;: &quot;com.ags.dinosaur.chase.deadly.attack&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 3.8,
+  &quot;rct&quot;: 1100,
+  &quot;sz&quot;: &quot;39M&quot;,
+  &quot;t&quot;: &quot;Dinosaur Chase: Deadly Attack&quot;,
+  &quot;verc&quot;: &quot;1346&quot;,
+  &quot;id&quot;: &quot;com.ags.dinosaur.chase.deadly.attack-1346&quot;
+ },
+ {
+  &quot;_id&quot;: </pre>
+
+<p>There are 1520 apps.</p>
+<h2 id="9-find-the-title-category-download-count-and-star-rating-of-apps-with-the-phrase-in-app-purchase-in-their-description-and-download-count-greater-than-10-000-000">9- Find the title, category, download count, and star rating of apps with the phrase &quot;in-app purchase&quot; in their description and download count greater than 10,000,000?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;$text&quot;: {&quot;$search&quot;: &quot;\&quot;in-app purchase\&quot;&quot;}}, {&quot;dct&quot;: {&quot;$gt&quot;: 10000000}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f76&quot;,
+  &quot;cadd&quot;: &quot;Gameloft S.E\n14 rue Auber,\n75009 Paris,\nFrance&quot;,
+  &quot;cat&quot;: &quot;Casual Action &amp; Adventure&quot;,
+  &quot;crat&quot;: &quot;Everyone 10+&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;curl&quot;: &quot;/store/apps/dev?id=6258770168633898802&quot;,
+  &quot;dct&quot;: 100000000,
+  &quot;desc&quot;: &quot;Experience the brand-new Despicable Me: Minion Rush! Gru&#x2019;s loyal, yellow, mischievous Minions are ready for their tastiest challenge yet: Collecting exotic fruits to make yummy jelly! Jump, roll, dodge and scramble against others in fun, fast-paced missions.   ALL THE FUN AND ANTICS OF DESPICABLE ME &#x2022; Enjoy unpredictably hilarious Minion moments  &#x2022; Perform despicable acts through hundreds of missions &#x2022; Run through iconic locations that are full of surprises, secrets and tricky obstacles: Gru&#x2019;s Lab, Gru&#x2019;s Residential Area, El Macho&#x2019;s Lair, Minion Beach and Super Silly Fun Land from Despicable Me &#x2022; Customize your Minion with unique costumes, weapons, and power-ups &#x2022; Battle Vector, El Macho, the Villaintriloquist and all the new villains exclusively created for the game AN INNOVATIVE AND ORIGINAL GAME &#x2022; Encounter secret areas, unique boss fights and amazing power-ups  &#x2022; Experience custom animation and voice-overs, and state-of-the-art 3D graphics &#x2022; Enjoy multiple dynamic camera angles  &#x2022; Engage in various bonus gameplay modes:     &#x2192; Destroy things as Mega Minion    &#x2192; Collect bananas while riding the Fluffy Unicorn    &#x2192; Hang on to Gru&#x2019;s Rocket for the ride of your life    &#x2192; Unlock a new Power-Up and get ready for a Mission to the Moon! &#x2022; Have fun with your friends! See their best scores during your run, send them funny Minion taunts and challenges to show them who&#x2019;s going to win Minion of the Year! ______________________________________________ You can download and play this game for free. Please be informed that it also allows you to play using virtual currency, which can be acquired as you progress through the game, or by deciding to watch certain advertisements, or by paying with real money. Purchases of virtual currency using real money are performed using a credit card, or other form of payment associated with your account, and are activated when you input your Google Play account password, without the need to re-enter your credit card number or PIN.  In-app purchases can be restricted by adjusting the authentication settings within your Play Store settings (Google Play Store Home &gt; Settings &gt; Require authentication for purchases) and setting up a password for each purchase / Every 30 minutes or Never.  Disabling password protection may result in unauthorized purchases. We strongly encourage you to keep password protection turned on if you have children or if others could have access to your device. This game contains advertising for Gameloft&#x2019;s products or some third parties which will redirect you to a third-party site. You can disable your device&#x2019;s ad identifier being used for interest-based advertising in the settings menu of your device. This option can be found in the Settings app &gt; Accounts (Personal) &gt; Google &gt; Ads (Settings and Privacy) &gt; Opt out of interest-based ads. Certain aspects of this game will require the player to connect to the Internet.  _____________________________________________ Visit our official site at  http://www.gameloft.com Follow us on Twitter at  http://glft.co/GameloftonTwitter  or like us on Facebook at  http://facebook.com/Gameloft  to get more info about all our upcoming titles. Discover our blog at  http://glft.co/Gameloft_Official_Blog  for the inside scoop on everything Gameloft. Privacy Policy :  http://www.gameloft.com/privacy-notice/ Terms of Use :  http://www.gameloft.com/conditions/ End User License Agreement :  http://www.gameloft.com/eula/&quot;,
+  &quot;dtp&quot;: &quot;September 16, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100,000,000 - 500,000,000&quot;,
+  &quot;n&quot;: &quot;com.gameloft.android.ANMP.GloftDMHM&quot;,
+  &quot;new&quot;: &quot;Go back to school with the Minions in this new update for Despicable Me: Minion Rush! &#x2022; Now 4 MORE COSTUMES will power up your Gadgets &#x2022; Outrun the clock in the challenging new TIME-ATTACK MODE in Minion Races &#x2022; MINION RACES are now headed to the Mall &#x2022; BACK-TO-SCHOOL SPECIAL EVENT: Gear up for class by grabbing Backpacks, Notebooks, and Lunchboxes &#x2022; SCOOTER MINI-GAME: Pull off some speedy stunts and collect bonus back-to-school items &#x2022; 15 NEW LEVELS in the Jelly Lab&quot;,
+  &quot;os&quot;: &quot;2.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://www.gameloft.com/privacy-notice/&amp;sa=D&amp;usg=AFQjCNGX3aQPRQ30ew0bAf31IqNsPjF4eQ&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 7679653,
+  &quot;sz&quot;: &quot;&quot;,
+  &quot;t&quot;: &quot;Despicable Me&quot;,
+  &quot;verc&quot;: &quot;3017&quot;,
+  &quot;id&quot;: &quot;com.gameloft.android.ANMP.GloftDMHM-3017&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f80&quot;,
+  &quot;cadd&quot;: &quot;Gameloft S.E\n14 rue Auber,\n75009 Paris,\nFrance&quot;,
+  &quot;cat&quot;: &quot;Casual&quot;,
+  &quot;crat&quot;: &quot;Everyone 10+&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;curl&quot;: &quot;/store/apps/dev?id=6258770168633898802&quot;,
+  &quot;dct&quot;: 50000000,
+  &quot;desc&quot;: &quot;Embark on a fun and frozen journey through the Ice Age universe! In his hunt for his favourite acorn, across the froze</pre>
+
+<p>There are 2 apps.</p>
+<p></p><p><b>Apps Downloaded Frequently From an App</b></p><p></p>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Downloads</th>
+        <th>Rating</th>
+    </tr>
+
+    <tr>
+        <td>com.gameloft.android.ANMP.GloftDMHM</td>
+        <td>Casual Action &amp; Adventure</td>
+        <td>100000000</td>
+        <td>4.4</td>
+    </tr>
+
+    <tr>
+        <td>com.gameloft.android.ANMP.GloftIAHM</td>
+        <td>Casual</td>
+        <td>50000000</td>
+        <td>4.4</td>
+    </tr>
+
+</table>
+
+<h2 id="10-find-the-title-and-address-of-the-creator-of-apps-with-download-count-greater-than-1-000-000-and-star-rating-greater-than-4-5">10- Find the title and address of the creator of apps with download count greater than 1,000,000 and star rating greater than 4.5?</h2>
+<p>Hint: ensure that the results include apps that have creator address (not equal &quot;&quot;)</p>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;dct&quot;: {&quot;$gt&quot;: 1000000}}, {&quot;rate&quot;: {&quot;$gt&quot;: 4.5}}, {&quot;cadd&quot;: {&quot;$ne&quot;: &quot;&quot;}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526263&quot;,
+  &quot;cadd&quot;: &quot;4880 Santa Rosa Rd\nCamarillo, CA 93012&quot;,
+  &quot;cat&quot;: &quot;Books &amp; Reference&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Salem Web Network&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Salem+Web+Network&quot;,
+  &quot;dct&quot;: 5000000,
+  &quot;desc&quot;: &quot;DailyBible is the most liked Bible app on Android.  Daily Bible Verse  Daily Bible Reading Plan Easy &amp; Fast Search any Bible verse of topic. Daily Bible devotionals. Bible Index Supports many versions( NIV, KJV, ESV, etc.) Save or Share Bible verse or plan or devotions easily  on Facebook, Twitter, etc Home widget for daily Bible verse ------------------------------------ Daily Bible Verse :     - Start your day with a daily Bible verse. You will get automatic daily notification. You can read or just listen. Choose Bible verse in different versions like KJV, NIV, ESV, etc Daily Bible Reading Plan :    - Choose from a wide range of Bible reading plans and read Holy Bible. DailyBible can play back the reading plan. You can read or just listen. Easy &amp; Fast Search any Bible verse or topic:   - Easily search any verse of any topic. Search from a wide range of Bible Versions like KJV, ESV, NIV and lots more. Just speak to search. Daily Bible devotionals.   - Listen to a wide range of Biblical Christian Devotions. Choose from a huge list of devotional podcasts. Read or listen from devotions.    - Save a Bibe devotional podcast and listen to it offline - Bible Index    Read or Listen to any chapter from any book in Holy Bible easily. Supports multiple Bible versions like KJV, NIV, ESV, etc.    - Save or Share Bible verse or plan or devotions easily  on Facebook, Twitter, email, text etc. ----------------------- Permissions requested by DailyBible, how it is used and why it is needed ------------------------- 1) android.permission.INTERNET -  Needed to refresh daily Bible verse, daily Bible plans, devotions and searches. 2) android.permission.READ_PHONE_STATE -  To automatically stop the audio (devotions, daily verse, etc) playing if any, when an incoming call comes. 3) android.permission.WRITE_EXTERNAL_STORAGE -  To Save verse, plan and podcasts to external storage, when you choose to save it. 4) android.permission.WAKE_LOCK -  So that the audio can be played in background without stopping when phone goes to sleep. 5) android.permission.RECEIVE_BOOT_COMPLETED -  For refreshing daily verse after phone is rebooted. ---------------------------------------&quot;,
+  &quot;dtp&quot;: &quot;September 11, 2015&quot;,
+  &quot;dtxt&quot;: &quot;5,000,000 - 10,000,000&quot;,
+  &quot;n&quot;: &quot;joansoft.dailybible&quot;,
+  &quot;new&quot;: &quot;Updated DFS ads Bug fixing&quot;,
+  &quot;os&quot;: &quot;2.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.7,
+  &quot;rct&quot;: 140431,
+  &quot;sz&quot;: &quot;3.9M&quot;,
+  &quot;t&quot;: &quot;Daily Bible&quot;,
+  &quot;verc&quot;: &quot;9646&quot;,
+  &quot;id&quot;: &quot;joansoft.dailybible-9646&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52901a&quot;,
+  &quot;cadd&quot;: &quot;999 N Sepulveda Blvd, Ste 150, El Segundo, CA, United States&quot;,
+  &quot;cat&quot;: &quot;Arcade&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;GAMEVIL Inc.&quot;,
+  &quot;curl&quot;: &quot;/store/apps/dev?id=8370361226290054499&quot;,
+  &quot;dct&quot;: 5000000,
+  &quot;desc&quot;: &quot;Cartoon Wars: Gunner+ Cartoon Wars: Gunner+ is a side scrolling, action-packed game incorporating elements from RPG and adventure genre. &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  SCENARIO In the midst of war in the Cartoon World, a king devised a deadly plan to slay the much-praised Captain J, as his presence was threatening the king&apos;s position. Chased with ferocious troops on his back, Captain J fled into the mountains with a serious injury. The arrogant king, who once hailed his troops for the victory, faces an iminent danger yet again with his foe, Captain J. &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500; FEATURES MULTIPLE CHARACTERS FOR UNLIMITED ACTION Fight against 30 different type of enemies- each with unique skill sets and attacking range WEAPON MASTERY Choose from 11 unique array of weapons and master them as you fight against evil troops VENGEANCE PREVAIL Gain valuable skills by upgrading weapons and go head-to-head with the evil army to bring back the glory UPGRADABLE SKILLS Become the ultimate hero by upgrading and activating the weapons to either active or passive skills BOOST EARNINGS Vastly increase Gold and MP earnings by wisely choosing from different type of weapons &#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;  NEWS &amp; EVENTS  Website  http://www.gamevil.com   Facebook  http://facebook.com/gamevil   Twitter  http://twitter.com/gamevil   YouTube  http://youtube.com/gamevil&quot;,
+  &quot;dtp&quot;: &quot;August 19, 2014&quot;,
+  &quot;dtxt&quot;: &quot;5,000,000 - 10,000,000&quot;,
+  &quot;n&quot;: &quot;com.gamevil.cartoonwars.gunner.global&quot;,
+  &quot;new&quot;: &quot;- Minor bugs fixed Contact GAMEVIL Inc. @ Tips &amp; Tricks: http://iphone.gamevil.com Facebook: http://facebook.com/gamevil Twitter: http://twitter.com/gamevil YouTube: http://youtube.com/gamevil Email: contact@gamevilusa.com&quot;,
+  &quot;os&quot;: &quot;2.2 and up&quot;,
+  &quot;pri&quot;: &quot;$0.99&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://us.gamevil.com/news.php?m%3Dpolicy&amp;sa=D&amp;usg=AFQjCNG9nUZVpGZ16sqZlhU6_LzEAHJaXg&quot;,
+  &quot;rate&quot;: 4.6,
+  &quot;rct&quot;: 197688,
+  &quot;sz&quot;: &quot;18M&quot;,
+  &quot;t&quot;: &quot;Cartoon Wars: Gunner+&quot;,
+  &quot;verc&quot;: &quot;1519&quot;,
+  &quot;id&quot;: &quot;com.gamevil</pre>
+
+<p>There are 17 apps.</p>
+<p></p><p><b>Title and Creator Address of Apps with High Ratings and Many Downloads</b></p><p></p>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Address</th>
+    </tr>
+
+    <tr>
+        <td>joansoft.dailybible</td>
+        <td>4880 Santa Rosa Rd
+Camarillo, CA 93012</td>
+    </tr>
+
+    <tr>
+        <td>com.gamevil.cartoonwars.gunner.global</td>
+        <td>999 N Sepulveda Blvd, Ste 150, El Segundo, CA, United States</td>
+    </tr>
+
+    <tr>
+        <td>com.strava</td>
+        <td>Strava, Inc
+500 Third Street, Suite 110
+San Francisco, CA 94107</td>
+    </tr>
+
+    <tr>
+        <td>it.android.demi.elettronica</td>
+        <td>Reggio Calabria, Italy</td>
+    </tr>
+
+    <tr>
+        <td>com.ezone.Diversion</td>
+        <td>Perth, Western Australia</td>
+    </tr>
+
+    <tr>
+        <td>com.spilgames.mydolphinshow</td>
+        <td>Mussenstraat 15
+1223 RB Hilversum</td>
+    </tr>
+
+    <tr>
+        <td>com.glu.gladiator2</td>
+        <td>500 Howard St. Suite 300
+San Francisco CA 94105</td>
+    </tr>
+
+    <tr>
+        <td>com.glu.ewarriors2</td>
+        <td>500 Howard St. Suite 300
+San Francisco CA 94105</td>
+    </tr>
+
+    <tr>
+        <td>com.glu.samuzombie</td>
+        <td>500 Howard St. Suite 300
+San Francisco CA 94105</td>
+    </tr>
+
+    <tr>
+        <td>gbis.gbandroid</td>
+        <td>9737 Washingtonian Blvd, Suite 200
+Gaithersburg, MD 20878</td>
+    </tr>
+
+    <tr>
+        <td>com.NextFloor.DragonFlightKakao</td>
+        <td>8F, 479, Gangnam-daero, Seocho-gu, Seoul
+06541</td>
+    </tr>
+
+    <tr>
+        <td>com.scores365</td>
+        <td>Zippora street, Dekk House
+Providence industrial estate
+Mahe
+Seychelles</td>
+    </tr>
+
+    <tr>
+        <td>net.audiko2</td>
+        <td>SOLEC 81B LOK A-51, Warsaw, Poland.</td>
+    </tr>
+
+    <tr>
+        <td>com.seventeenbullets.android.island</td>
+        <td>Suite 05, 20th Floor, Tower One, Lippo Centre, 89 Queensway
+Hong Kong</td>
+    </tr>
+
+    <tr>
+        <td>com.glu.gladiator</td>
+        <td>500 Howard St. Suite 300
+San Francisco CA 94105</td>
+    </tr>
+
+    <tr>
+        <td>com.popularapp.periodcalendar</td>
+        <td>UNIT04&#xFF0C; 7/F, BRIGHT WAY TOWER, NO.33 MONG KOK ROAD , KOWLOON , HK</td>
+    </tr>
+
+    <tr>
+        <td>com.evernote</td>
+        <td>305 Walnut Street
+Redwood City, CA 94063</td>
+    </tr>
+
+</table>
+
+<h2 id="11-find-the-title-category-download-count-and-rating-of-apps-with-download-count-of-1-000-000-or-more-but-have-no-privacy-statements">11- Find the title, category, download count, and rating of apps with download count of 1,000,000 or more but have no privacy statements?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;dct&quot;: {&quot;$gte&quot;: 1000000}}, {&quot;purl&quot;: {&quot;$eq&quot;: &quot;&quot;}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044568703498dd2a524297&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;crat&quot;: &quot;Unrated&quot;,
+  &quot;crt&quot;: &quot;Vignesh&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Vignesh&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;desc&quot;: &quot;Making caller ID fun with stickers. Get Information about the caller along with his customised caller screen and Facebook details. Are you getting calls from unknown number? Do you want to find from where that person is calling? Now you can use Mobile Number Tracker to find from which state/telecom operator a mobile number belongs to. It shows caller info during incoming call. You can also view the details of mobile number in the call log. FEATURES: - Locate phone number area and state. - Find address from map. - Analyse you call logs information - View call logs along with operators information - Sleek UI - No Internet connection required - Updated Mobile number database.  - Regular updates - Shows Caller Information during the call. - Customize Caller Info display duration Supports USA and India. Other countries will be added soon. The MNP ported numbers are not traceable by the app. - This app cannot show you the physical location of the caller. - MNT(MobileNumberTracker) may also use Google Analytics to collect anonymous usage data in order to help build improvements to the app.&quot;,
+  &quot;dtp&quot;: &quot;October 18, 2014&quot;,
+  &quot;dtxt&quot;: &quot;1,000,000 - 5,000,000&quot;,
+  &quot;n&quot;: &quot;com.ViQ.Productivity.MobileNumberTracker&quot;,
+  &quot;new&quot;: &quot;2.1 * Show your cool customised call screen to your friends via Call Stickers!!! 2.0 * Link Facebook profile to phone numbers. 1.8.2 *Added map to search screen. 1.8.0 *Map search screen added *Added new operator codes for India 1.7.4 *fixed date range issues of Analytic screen Thanks for trying out our app. Your suggestions are most welcome. P.S: The MNP ported numbers are not traceable by the app.&quot;,
+  &quot;os&quot;: &quot;2.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 3.9,
+  &quot;rct&quot;: 21426,
+  &quot;sz&quot;: &quot;4.6M&quot;,
+  &quot;t&quot;: &quot;Mobile Number Tracker&quot;,
+  &quot;verc&quot;: &quot;6933&quot;,
+  &quot;id&quot;: &quot;com.ViQ.Productivity.MobileNumberTracker-6933&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044568703498dd2a5243a8&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Entertainment&quot;,
+  &quot;crat&quot;: &quot;Unrated&quot;,
+  &quot;crt&quot;: &quot;GO APPS&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=GO+APPS&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;desc&quot;: &quot;Crush Secrets Guide This is an Unofficial Candy Crush  Secrets Guide,!!! This app  is designed to bring the latest tips and tactics on candy crush and secrets that no one wants to tell you about. What is included: -best strategies + tactics -full video tutorials all 500+ levels  - hints  -tricks -unlimited moves - unlimited moves zero -boosters -news  -wikipedias etc Download Crush Secrets Guide Now to be the best players that everyone envy I hope you can get useful secrets and guide 100% free. This is no candy in crush except many useless cheats. ******* Top Reviews:***** \&quot; The best candy secrets that i ever seen and crush in any saga....and it is totally FREE\&quot; \&quot; I can now be the best candy  player in my crush team\&quot; \&quot; Very informative\&quot; Legal Notice: This app is not authorized or created by the authors or legal representatives of \&quot;Candy Crush Saga\&quot;. This application complies with US Copyright law guidelines of \&quot;fair use\&quot;. If you feel there is a direct copyright or trademark violation that doesn&apos;t follow within the \&quot;fair use\&quot; guidelines please contact us to discuss. This app provides an interface to interact, browse and watch YouTube video content. All characters and their names, places, events and all other aspects concerning the game are the property of their respective owners. All trademark and copyright concerning the game series are the property of their respective owners. We make no claim to and do not have any rights to any of the foregoing. Images in this application are used only to convey what the application is about. If you believe that there has been a contravention of your proprietary rights then email us using Email Developer below. If you are a copyright owner and you feel that our fan application violates your terms, please contact us first before submitting complaint to Google Play. Disclaimer: \&quot;This app will add a new icon on your home screen that links to a Games, Apps and Android Tricks mobile web page. If you do not want to use this awesome page, you can either ignore it or delete it. If you do use it, we get help promoting this app and make a few cents, it will also help us keep developing more great apps. \&quot;&quot;,
+  &quot;dtp&quot;: &quot;January 13, 2014&quot;,
+  &quot;dtxt&quot;: &quot;1,000,000 - 5,000,000&quot;,
+  &quot;n&quot;: &quot;com.a17350648352d48db91a4413a.a89436633a&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;2.2 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 3.7,
+  &quot;rct&quot;: 5450,
+  &quot;sz&quot;: &quot;1.4M&quot;,
+  &quot;t&quot;: &quot;Crush Secrets Guide&quot;,
+  &quot;verc&quot;: &quot;7660&quot;,
+  &quot;id&quot;: &quot;com.a17350648352d48db91a4413a.a89436633a-7660&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a524867&quot;,
+  &quot;cadd&quot;: &quot;Calle Manufactura, 2\nPiso 1, Puerta C\n41927 Mairena del Aljarafe (Sevilla)&quot;,
+  &quot;cat&quot;: &quot;Racing&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;AxesInMotion Racing&quot;,
+  &quot;curl&quot;: &quot;/store/apps/dev?id=7842996855899014066&quot;</pre>
+
+<p>There are 913 apps.</p>
+<p></p><p><b>Ten Apps with High Download Counts, but no Privacy Statements</b></p><p></p>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Downloads</th>
+        <th>Rating</th>
+    </tr>
+
+
+    <tr>
+        <td>com.ViQ.Productivity.MobileNumberTracker</td>
+        <td>Tools</td>
+        <td>1000000</td>
+        <td>3.9</td>
+    </tr>
+
+    <tr>
+        <td>com.a17350648352d48db91a4413a.a89436633a</td>
+        <td>Entertainment</td>
+        <td>1000000</td>
+        <td>3.7</td>
+    </tr>
+
+    <tr>
+        <td>com.aim.suvrally</td>
+        <td>Racing</td>
+        <td>1000000</td>
+        <td>3.8</td>
+    </tr>
+
+    <tr>
+        <td>com.ajas.coinflip</td>
+        <td>Entertainment</td>
+        <td>1000000</td>
+        <td>3.8</td>
+    </tr>
+
+    <tr>
+        <td>com.alexappcommpany.TestName</td>
+        <td>Trivia</td>
+        <td>1000000</td>
+        <td>3.2</td>
+    </tr>
+
+    <tr>
+        <td>com.alexappcommpany.Im_Psychic</td>
+        <td>Trivia</td>
+        <td>1000000</td>
+        <td>3.5</td>
+    </tr>
+
+    <tr>
+        <td>com.algeo.algeo</td>
+        <td>Productivity</td>
+        <td>1000000</td>
+        <td>4.3</td>
+    </tr>
+
+    <tr>
+        <td>com.alibaba.intl.android.apps.poseidon</td>
+        <td>Business</td>
+        <td>1000000</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>com.alignsoftware.volumebooster</td>
+        <td>Music &amp; Audio</td>
+        <td>1000000</td>
+        <td>3.9</td>
+    </tr>
+
+    <tr>
+        <td>com.alim.pusula</td>
+        <td>Tools</td>
+        <td>1000000</td>
+        <td>4.2</td>
+    </tr>
+
+</table>
+
+<h2 id="12-find-apps-that-have-been-released-or-updated-this-month-september-2015">12- Find apps that have been released or updated this month (September 2015)?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;dtp&quot;: {&quot;$regex&quot;: &quot;^September.*2015$&quot;}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a525033&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Communication&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Multimedios 506&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Multimedios+506&quot;,
+  &quot;dct&quot;: 100000,
+  &quot;desc&quot;: &quot;Contiene los siguiente peri&#xF3;dicos de Costa Rica: -La Naci&#xF3;n (Acceso Limitado) -La Extra -La Teja (Acceso Limitado) -La Prensa Libre -La Rep&#xFA;blica (Acceso Limitado) -El Financiero (Acceso Limitado) -La Gaceta -Medios Universitarios -Diarios Digitales y Revistas -Noticieros de Radio y TV -Busco Empleo -Loter&#xED;as ***Si conocen de alg&#xFA;n otro medio, escr&#xED;banme y con gusto lo agregamos*** *****ACLARACI&#xD3;N: Esta aplicaci&#xF3;n no tiene relaci&#xF3;n con ninguno de los diarios que en ella se encuentran, la actualizaci&#xF3;n y producci&#xF3;n es total y absolutamente propiedad de las mismas, aqu&#xED; simplemente las agrupamos y ordenamos de manera que sea m&#xE1;s f&#xE1;cil para el lector tenerlas a la mano y en una misma aplicaci&#xF3;n.*****&quot;,
+  &quot;dtp&quot;: &quot;September 1, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100,000 - 500,000&quot;,
+  &quot;n&quot;: &quot;com.andromo.dev34618.app192937&quot;,
+  &quot;new&quot;: &quot;Mejoras generales&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 1550,
+  &quot;sz&quot;: &quot;3.4M&quot;,
+  &quot;t&quot;: &quot;Diarios de Costa Rica y m&#xE1;s&quot;,
+  &quot;verc&quot;: &quot;7751&quot;,
+  &quot;id&quot;: &quot;com.andromo.dev34618.app192937-7751&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a5250b3&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Lifestyle&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Afrika Inspire&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Afrika+Inspire&quot;,
+  &quot;dct&quot;: 500000,
+  &quot;desc&quot;: &quot;We are here to showcase the most relevant fashion styles from Madivas - Africa&apos;s largest fashion magazine.  Check out pictures on what to wear for that wedding, birthday party or how to apply the best foundation for that pretty makeup face.  Checkout trending African prints - Asoebi, Ankara, French lace, Vulvet and Corporate styles for events, weddings, burial, naming ceremony or birthdays.   What ever your fashion needs are, we have your back with the latest fashion styles in Nigeria and Africa at large.  Also feel free to use app to send us some of your amazing pictures and get featured on our website with over 500,000  daily page views and our Facebook page with over 600,000 likes.  Some of the interesting segments on the app includes Asoebi Styles Amazing Hair Styles Celebrity Styles Office Corporate Styles Friday Night Styles Sunday Church Styles MakeUp Essentials Amazing Shoes Wedding Digest UPDATES: Faster uploads of pictures for users with slow internet access. More updates on hair styles and makeup trends. Get notifications when the most interesting and trendy pictures currently in vogue is available for your consumption. Share your latest outfit and trendy styles easily with your friends.  Got suggestions? We want to hear them! Send your comments and suggestions to us at:  fashionpolicenigeria@gmail.com&quot;,
+  &quot;dtp&quot;: &quot;September 1, 2015&quot;,
+  &quot;dtxt&quot;: &quot;500,000 - 1,000,000&quot;,
+  &quot;n&quot;: &quot;com.andromo.dev415642.app399075&quot;,
+  &quot;new&quot;: &quot;Faster Upload Of Images. Cleaner User Interface&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.1,
+  &quot;rct&quot;: 3545,
+  &quot;sz&quot;: &quot;3.2M&quot;,
+  &quot;t&quot;: &quot;Latest Fashion Styles Africa&quot;,
+  &quot;verc&quot;: &quot;2099&quot;,
+  &quot;id&quot;: &quot;com.andromo.dev415642.app399075-2099&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a52598d&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Photography&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Bapu Ki Apps&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Bapu+Ki+Apps&quot;,
+  &quot;dct&quot;: 10000,
+  &quot;desc&quot;: &quot;Most dared people of the world, called Army man, who are going to protect against war and attack. There is android apps which will provide Army dress based on your thinking power. Lot&apos;s of dresses available all seems like jental man. Cool android apps to show your photo with Army dress. All country army dress available. \tIndian Army dress. \tAmerican Army dress. \tAustralian Army dress. \tSwitzerland Army dress. it seems like real Army man . Features:     100% free android apps.      You can share over the social network like whatsapp,facebook,twitter etc.      You can save,store and show later to other.  Note: We should salute to Army man, give respect to them. because they gives protection to country and save lots of life during war.&quot;,
+  &quot;dtp&quot;: &quot;September 1, 2015&quot;,
+  &quot;dtxt&quot;: &quot;10,000 - 50,000&quot;,
+  &quot;n&quot;: &quot;com.my.efrt.special.army.allv1&quot;,
+  &quot;new&quot;: &quot;New Features Added&quot;,
+  &quot;os&quot;: &quot;2.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.2,
+  &quot;rct&quot;: 211,
+  &quot;sz&quot;: &quot;3.8M&quot;,
+  &quot;t&quot;: &quot;Army Photo Suit&quot;,
+  &quot;verc&quot;: &quot;1870&quot;,
+  &quot;id&quot;: &quot;com.my.efrt.special.army.allv1-1870&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525f7a&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Education&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Orthographe Projet Voltaire&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Orthographe+Projet+Voltaire&quot;,
+  &quot;dct&quot;: 100000,
+  &quot;desc&quot;: &quot;Pour dire adieu aux fautes d&apos;orthographe et de grammaire (conjugaison, accords...), Projet Voltaire vous propose une m&#xE9;thode unique d&apos;entra&#xEE;nement et de remise &#xE0; niveau - avec des tests et des exercices d&apos;orthographe et de grammaire - qui est la seule &#xE0; s&apos;adapter automatiquement &#xE0; vos lacunes et &#xE0; votre rythme d&apos;</pre>
+
+<p>There are 3202 apps</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../learning/week6/mongodb-setup.html" class="navigation navigation-prev " aria-label="Previous page: Mongodb Setup"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../hackathons/index.html" class="navigation navigation-next " aria-label="Next page: Hackathons"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.js"></script>
+    
+
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/jquery.jsonview.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book book -->
+</html>

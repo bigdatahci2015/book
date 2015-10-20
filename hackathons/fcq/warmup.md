@@ -8,26 +8,32 @@ Next, complete the following warmup exercises as a team.
 ## How many unique subject codes?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return 113
+return _.compact(_.uniq(_.pluck(data, 'Subject')))
+
 {% endlodash %}
 
-They are {{ result }} unique subject codes.
+They are {{ result.length }} unique subject codes.
 
 ## How many computer science (CSCI) courses?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return 63
+
+return _.size(_.filter(data,'Subject','CSCI'))
+
+
 {% endlodash %}
 
-They are {{ result }} computer science courses.
+There are {{ result | json }} computer science courses.
 
 ## What is the distribution of the courses across subject codes?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
+
+var grps = _.groupBy(data, 'Subject')
+return _.mapValues(grps, function(d){
+    return d.length
+})
+
 {% endlodash %}
 
 <table>
@@ -49,7 +55,7 @@ var ret = _.pick(_.mapValues(grps, function(d){
 }), function(x){
     return x > 100
 })
-return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
+return ret
 {% endlodash %}
 
 <table>
@@ -64,8 +70,20 @@ return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
 ## What subset of these subject codes have more than 5000 total enrollments?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
+var grps = _.groupBy(data, 'Subject')
+var ret = _.pick(_.mapValues(grps, function(d){
+    return d.length
+}), function(x){
+    return x > 100
+})
+var ret1 = _.pick(_.mapValues(grps, function(d){
+  var enrollNumbers = _.pluck(d, 'N.ENROLL')
+  return _.sum(enrollNumbers)
+  }), function(x){
+    return x > 5000
+  })
+return ret1
+
 {% endlodash %}
 
 <table>
@@ -80,8 +98,12 @@ return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
 ## What are the course numbers of the courses Tom (PEI HSIU) Yeh taught?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return ['4830','4830']
+var tomClass = _.filter(data, function(d){
+  x = _.where(d['Instructors'], {'name':"YEH, PEI HSIU"})
+  return _.size(x)
+  })
+  return _.pluck(tomClass, 'Course')
+
 {% endlodash %}
 
-They are {{result}}.
+They are {{result }}.

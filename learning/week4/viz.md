@@ -19,37 +19,35 @@ how to transform this JSON file into a format that can be fed into Tableau. As
 a junior and senior, you are expected to be able to look around the Internet
 to problem solve.
 
-# (Question 1)
+# How many instructors have taught each subject? Kari
 
-![screenshot](screenshot.png)
+![screenshot](karifcq.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+At the bottom you can see that WRTG and LAWS have the highest amount of instructors for each subject.
 
-# (Question 2)
+# Does the instruction tends to give out higher grades if they teach more classes? or the reverse? Ming
 
-![screenshot](screenshot.png)
+![screenshot](mingfcq.png)
+![screenshot](Mingfcq1.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+This was difficult to show so I just put an avg grade and the total of subjects which I think correlated to the instructors avg. grade.
 
-# (Question 3)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# Which department has the lowest enrollment? John
 
-# (Question 4)
+![screenshot](johnfcq.png)
 
-![screenshot](screenshot.png)
+As you can clearly see RASE has the lowest enrollment. The chart is ordered from least to greatest.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# Which subject is most in demand,based on the total number of enrollment? Sussant
 
-# (Question 5)
+![screenshot](sussantfcq.png)
 
-![screenshot](screenshot.png)
+Math has the highest enrollment. The chart is ordered from greatest to least.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)    
+# Which course has the highest enrollment? Andrew
+
+![screenshot](andrewfcq.png)
+
+For this one you can see that First year writing has the highest enrollment.

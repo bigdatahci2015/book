@@ -19,30 +19,26 @@ including the controls, widgets ...etc.
 
 (write your answer based on the statistics you can find online)
 
-# (Question 1)
+# How many submitted on or before the deadline? (8/24/15)
 
-![screenshot](screenshot.png)
+![screenshot](Screenshot(6).PNG)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+Code being applied to all users that looks for created_at dates before 8/24/2015. The answer is 21.
 
-# (Question 2)
 
-![screenshot](screenshot.png)
+# How many submitted after the deadline?
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot1](Screenshot(7).png)
 
-# (Question 3)
+Same as the first question but applying it to people that submitted after 24. The answer is 5.
 
-![screenshot](screenshot.png)
+# How many people are CSCI majors?
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot2](Screenshot(5).png)
 
-# (Question 4)
+The answer is 21 if you count up the ones that include the parameters (Computer, CS, and cs).
 
-![screenshot](screenshot.png)
+# Who has the ID "13950166"?
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot3](Screenshot(4).png)
+The user ID matches with the user Login. It is highlighted.
