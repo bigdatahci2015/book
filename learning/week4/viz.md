@@ -19,37 +19,31 @@ how to transform this JSON file into a format that can be fed into Tableau. As
 a junior and senior, you are expected to be able to look around the Internet
 to problem solve.
 
-# (Question 1)
+# Which course has the highest enrollment? by Andrew Berumen
 
-![screenshot](screenshot.png)
+![screenshot](CourseEnrollment.png)
+The chart shows the class title of the 10 most enrolled classes.  The highest enrolled class is on the left side of graph.
+# Which department has the lowest enrollment?  by John Rasely
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](DeptEnrollBottom20.png)
 
-# (Question 2)
+The department RASE is highlighted on the left side of the bar graph, with an enrollment of 30.
+The 20 smallest departments are shown in graph.
 
-![screenshot](screenshot.png)
+# How many instructors have taught each subject? by Kari
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](num_instructors.png)
 
-# (Question 3)
+The chart shows the number of instructors that have taught each subject.  The height of each bar represents the number of instructors.
 
-![screenshot](screenshot.png)
+# Does the instruction tends to give out higher grades if they teach more classes? or the reverse? by Ming
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](avggradebynumclasses.png)
 
-# (Question 4)
+The top chart shows number of classes each instructor has taught. The bottom graph shows the average grade of the instructors classes. There does not seem to be a trend between teaching many classes and average GPA given out.
 
-![screenshot](screenshot.png)
+# Which subject is most in demand,based on the total number of enrollment?  by Sussant
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](SubjEnroll.png)
 
-# (Question 5)
-
-![screenshot](screenshot.png)
-
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)    
+This graph shows enrollment counts for each subject. The columns are sorted in descending order, so the first column, MATH has the highest enrollment.

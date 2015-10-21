@@ -21,7 +21,7 @@
     * [Week 5](learning/week5/index.md)        
         * [Birdstrike Report](learning/week5/birdstrike-report.md)        
         * [Viz Intro](learning/week5/viz-steps.md)        
-        * [Viz Drills](learning/week5/viz-drills.md)    
+        * [Viz Drills](learning/week5/viz-drills.md)                
         * [Viz Pokemon](learning/week5/viz-pokemon.md)                
     * [Week 6](learning/week6/index.md)        
         * [Design pattern changes](learning/week6/design-study.md)        

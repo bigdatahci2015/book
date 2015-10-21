@@ -15,8 +15,6 @@ about this server are provided below:
 - port: 41663
 - user name: bigdatahci
 - password: bigdatahci2015
-- db: apps
-- collection: listings
 
 Read the documentation to figure out what command to run in order to _dump_
 all the data into a file: [mongodump](http://docs.mongodb.org/manual/reference/program/mongodump/).
@@ -47,11 +45,9 @@ Issue a query:
 ```
 The goal is to be able to see something like below in the terminal.
 
-![screenshot](./query.png)
+![screenshot](./screenshot.png)
 
-(Replace this screenshot with a screenshot of each individual's own computer.
- Include the entire desktop in the screenshot so we can know this screenshot
- does belong to an individual)
+Kari's screenshot
 
  ## Data
  ## Example:

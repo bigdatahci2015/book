@@ -21,8 +21,13 @@ function computeHeight(d, i) {
     return 20
 }
 
-function computeWidth(d, i) {
-    return 20 * i + 100
+function computeWidth(d, i, data) {
+    var width = 300; // max desired width
+    var maxPop = _.max(data,function(d){
+        return d.pop;
+        });
+    var scale = width / maxPop.pop;
+    return d.pop * scale;
 }
 
 function computeY(d, i) {
@@ -33,12 +38,12 @@ function computeColor(d, i) {
     return 'red'
 }
 
-var viz = _.map(data, function(d, i){
+var viz = _.map(data, function(d, i, data){
             return {
                 x: computeX(d, i),
                 y: computeY(d, i),
                 height: computeHeight(d, i),
-                width: computeWidth(d, i),
+                width: computeWidth(d, i, data),
                 color: computeColor(d, i)
             }
          })

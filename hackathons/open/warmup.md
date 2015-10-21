@@ -21,44 +21,56 @@ var groups = _.groupBy(data, function(d){
     return d['CrsPBAColl']
 })
 
-// TODO: add real code to convert groups (which is an object) into an array like below
-// This array should have a lot more elements.
-var counts = [{"name": "AS","count": 3237},
-    {"name": "BU","count": 378},
-    {"name": "EB","count": 139},
-    {"name": "EN","count": 573}]
+var counts = _.map(groups, function(d, key) {
+    var obj = {}
+    obj.name = key;
+    obj.count = _.size(d);
+    return obj;
+});
+
 
 console.log(counts)
 
 // TODO: modify the code below to produce a nice vertical bar charts
 
 function computeX(d, i) {
-    return 0
+    return i*20
 }
 
-function computeHeight(d, i) {
-    return 20
+function computeHeight(d, i, data) {
+    // max returns an obj, not a number!!
+    var maxObj = _.max(data,'count');
+    console.log(maxObj);   
+    var scale = 400/maxObj.count;
+    return d.count * scale;
 }
 
 function computeWidth(d, i) {
-    return 20 * i + 100
+    return 20 
 }
 
-function computeY(d, i) {
-    return 20 * i
+function computeY(d, i,data) {
+    return 400 - computeHeight(d,i,data);
 }
 
 function computeColor(d, i) {
-    return 'red'
+    return 'red';
 }
 
-var viz = _.map(counts, function(d, i){
+function computeLabel(d, i) {
+    return d.name;
+}
+
+var viz = _.map(counts, function(d, i,data){
+ 
             return {
                 x: computeX(d, i),
-                y: computeY(d, i),
-                height: computeHeight(d, i),
+                y: computeY(d, i,data),
+                height: computeHeight(d, i, data),
                 width: computeWidth(d, i),
-                color: computeColor(d, i)
+                color: computeColor(d, i),
+                label: computeLabel(d,i)
+
             }
          })
 console.log(viz)
@@ -71,9 +83,9 @@ return result.join('\n')
 
 {% template %}
 
-<rect x="0"
+<rect x="${d.x}"
       y="${d.y}"
-      height="20"
+      height="${d.height}"
       width="${d.width}"
       style="fill:${d.color};
              stroke-width:3;

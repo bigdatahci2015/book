@@ -9,16 +9,17 @@ Next, complete the following warmup exercises as a team.
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return 113
+return _.compact(_.uniq(_.pluck(data, 'Subject')))
 {% endlodash %}
 
-They are {{ result }} unique subject codes.
+They are {{ result.length }} unique subject codes.
 
 ## How many computer science (CSCI) courses?
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return 63
+var size = _.size(_.filter(data,'Subject','CSCI'));
+return size
 {% endlodash %}
 
 They are {{ result }} computer science courses.
@@ -26,8 +27,11 @@ They are {{ result }} computer science courses.
 ## What is the distribution of the courses across subject codes?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
+var groups = _.groupBy(data, 'Subject');
+var subjCount = _.mapValues(groups, function(d){
+    return d.length;
+})
+return subjCount
 {% endlodash %}
 
 <table>
@@ -42,14 +46,15 @@ return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
 ## What subset of these subject codes have more than 100 courses?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-var grps = _.groupBy(data, 'Subject')
-var ret = _.pick(_.mapValues(grps, function(d){
-    return d.length
-}), function(x){
-    return x > 100
-})
-return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
+var groups = _.groupBy(data, 'Subject');
+var subjCount = _.mapValues(groups, function(d){
+    return d.length;
+});
+var subj100 =  _.pick(subjCount, function(d){
+    return d > 100;
+});
+return subj100;
+
 {% endlodash %}
 
 <table>
@@ -64,6 +69,16 @@ return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
 ## What subset of these subject codes have more than 5000 total enrollments?
 
 {% lodash %}
+var groups = _.groupBy(data, 'Subject');
+var subjCount = _.mapValues(groups, function(d){
+    var enrollNumbers = _.pluck(d, 'N.ENROLL')
+    return _.sum(enrollNumbers)
+})
+
+var subj5000 =  _.pick(subjCount, function(d){
+    return d > 5000;
+});
+return subj5000;
 // TODO: replace with code that computes the actual result
 return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
 {% endlodash %}
@@ -81,7 +96,17 @@ return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return ['4830','4830']
+var tomClass = _.filter(data,function(d){ 
+    x = _.where(d['Instructors'], { 'name': "YEH, PEI HSIU" });
+    //if (_.size(x) >0) {console.log(x)}
+    return _.size(x);
+});
+
+//console.log (tomClass)
+
+return _.pluck(tomClass,'Course')
+
+
 {% endlodash %}
 
 They are {{result}}.

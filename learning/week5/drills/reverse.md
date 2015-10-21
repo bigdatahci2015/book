@@ -29,6 +29,8 @@ function computeColor(d, i) {
     return 'red'
 }
 
+// reverse data array
+_(data).reverse().value();
 var viz = _.map(data, function(d, i){
             return {
                 x: computeX(d, i),
@@ -37,6 +39,8 @@ var viz = _.map(data, function(d, i){
                 color: computeColor(d, i)
             }
          })
+
+
 console.log(viz)
 
 var result = _.map(viz, function(d){

@@ -51,8 +51,9 @@ What are the names?
 {% solution %}
 
 return _.map(data, function(d){
-    return d.name
+   return d.name
 })
+//return _.map(data, (d) => d.name)
 
 {% endlodashexercise %}
 
@@ -73,9 +74,14 @@ What names begin with the letter J?
 ['John','Joe']
 
 {% solution %}
+// both soln work!  which is better??
+//return _.filter(_.pluck(data,'name'),function(str){
+//    return _.startsWith(str,'J');
+//})
 
-var result = 'not done'
-return result
+return _.pluck(_.filter(data,function(entry){
+    return _.startsWith(entry.name,'J');
+}),'name');
 
 {% endlodashexercise %}
 
@@ -96,7 +102,8 @@ How many Johns?
 3
 
 {% solution %}
-var result = 'not done'
+var johns = _.filter(data, 'name', 'John');
+var result = johns.length;
 return result
 
 {% endlodashexercise %}
@@ -119,8 +126,10 @@ What are all the first names?
 ["John","Mary","Peter","Ben"]
 
 {% solution %}
-var result = 'not done'
-return result
+function getFirstName(fullName) {  
+  return _.first(_.words(fullName)); // assume first name is just first word
+}
+return _.map(_.pluck(data,'name'), getFirstName);
 
 {% endlodashexercise %}
 
@@ -145,13 +154,16 @@ What are the first names of Smith?
 ["John","Mary","Ben"]
 
 {% solution %}
-var result = 'not done'
-return result
+function isSmith(entry){
+  return _.last(_.words(entry.name)) == 'Smith';
+}
+function getFirstName(entry) {  
+  return _.first(_.words(entry.name)); // assume first name is just first word
+}
+
+var smiths = _.filter(data, isSmith);
+return _.map(smiths, getFirstName);
 {% endlodashexercise %}
-
-
-
-
 
 
 
@@ -170,8 +182,14 @@ Change the format to lastname, firstname
 [{name: 'Smith, John'}, {name: 'Kay, Mary'}, {name: 'Pan, Peter'}]
 
 {% solution %}
-var result = 'not done'
-return result
+return _.map(data, function(entry){
+  // assume first name is always one word, the rest is last name
+  var nameArr = _.words(entry.name);
+  var firstName = _.first(nameArr);
+  var lastName = _.rest(nameArr).join(' ');
+  return {"name":lastName+', '+firstName}
+})
+
 {% endlodashexercise %}
 
 
@@ -192,8 +210,8 @@ How many women?
 
 {% solution %}
 
-var result = 'not done'
-return result
+var women = _.filter(data,'gender','f');
+return women.length
 
 {% endlodashexercise %}
 
@@ -218,9 +236,14 @@ How many men whose last name is Smith?
 2
 
 {% solution %}
+var men = _.filter(data,'gender','m');
+isSmith = function(entry){
+  return _.last(_.words(entry.name)) == 'Smith';
+}
 
-var result = 'not done'
-return result
+var menSmith = _.filter(men, isSmith);
+return menSmith.length
+
 
 {% endlodashexercise %}
 
@@ -231,6 +254,7 @@ return result
 
 
 {% lodashexercise %}
+{% title %}
 
 Are there more men than women?
 
@@ -243,9 +267,8 @@ Are there more men than women?
 true
 
 {% solution %}
-
-var result = 'not done'
-return result
+var genderCountArr = _.countBy(data,'gender');
+return genderCountArr.m > genderCountArr.f
 
 {% endlodashexercise %}
 
@@ -270,9 +293,8 @@ What is Peter Pan's gender?
 'm'
 
 {% solution %}
+return _.find(data,'name','Peter Pan').gender
 
-var result = 'not done'
-return result
 
 {% endlodashexercise %}
 
@@ -296,8 +318,11 @@ What is the oldest age?
 
 {% solution %}
 
-var result = 'not done'
-return result
+var largest = _.reduce(_.pluck(data, 'age'), function(largest,n) {
+    return largest >= n? largest: n
+})
+
+return largest
 
 {% endlodashexercise %}
 
@@ -323,8 +348,9 @@ true
 {% solution %}
 
 // use _.all
-var result = 'not done'
-return result
+return _.all(data,function(entry){
+  return entry.age < 60;
+})
 
 {% endlodashexercise %}
 
@@ -348,8 +374,9 @@ true
 {% solution %}
 
 // use _.some
-var result = 'not done'
-return result
+return _.some(data,function(entry){
+  return entry.age < 18;
+})
 
 {% endlodashexercise %}
 
@@ -374,9 +401,10 @@ How many people whose favorites include food?
 3
 
 {% solution %}
-
-var result = 'not done'
-return result
+var foodies = _.filter(data,function(entry) {
+  return _.includes(entry.favorites,'food')
+});
+return foodies.length;
 
 {% endlodashexercise %}
 
@@ -403,9 +431,11 @@ Who are over 40 and love travel?
 ['Mary Smith', 'Joe Johnson']
 
 {% solution %}
+var oldTravelers = _.filter(data,function(entry) {
+  return (_.includes(entry.favorites,'travel') && entry.age > 40);
+});
+return _.pluck(oldTravelers, 'name');
 
-var result = 'not done'
-return result
 
 {% endlodashexercise %}
 
@@ -431,7 +461,15 @@ Who is the oldest person loving food?
 'John Smith'
 
 {% solution %}
+var foodies = _.filter(data,function(entry) {
+  return _.includes(entry.favorites,'food')
+});
+var oldest = _.reduce(foodies, function (oldestFoodie,entry) {
+    return oldestFoodie.age > entry.age ? oldestFoodie : entry
+ 
+})
 
+return oldest.name;
 var result = 'not done'
 return result
 
@@ -467,9 +505,9 @@ What are all the unique favorites?
 {% solution %}
 
 // hint: use _.pluck, _.uniq, _.flatten in some order
+var favorites = _.pluck(data, 'favorites');
+return _.uniq(_.flatten(favorites));
 
-var result = 'not done'
-return result
 
 {% endlodashexercise %}
 
@@ -499,7 +537,14 @@ What are all the unique last names?
 
 {% solution %}
 
-var result = 'not done'
-return result
+var lastNames =  _.map(data, function(entry){
+  // assume first name is always one word, the rest is last name
+  var nameArr = _.words(entry.name);
+  var firstName = _.first(nameArr);
+  var lastName = _.rest(nameArr).join(' ');
+  return lastName;
+  });
+  return _.uniq(lastNames);
+
 
 {% endlodashexercise %}

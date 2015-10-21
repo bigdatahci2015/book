@@ -13,16 +13,25 @@ Color the bar corresponding to USA
 
 {% solution %}
 
+var height = 400; // svg window height
+var maxPop = _.max(data,function(d){
+    return d.pop;
+    });
+var scale = 400 / maxPop.pop;
+
 function computeX(d, i) {
     return i * 20
 }
 
 function computeHeight(d, i) {
-    return i * 20 + 20 // TODO
+    return d.pop * scale;
 }
 
 function computeColor(d, i) {
-    return 'red' // TODO
+    if (d.name == 'USA'){
+        return 'blue';
+    }   
+    return 'red' 
 }
 
 var viz = _.map(data, function(d, i){

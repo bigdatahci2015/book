@@ -21,8 +21,9 @@ function computeHeight(d, i) {
     return 20
 }
 
-function computeWidth(d, i) {
-    return 20 * i + 100
+function computeWidth(d, i, scale) {
+    
+    return d.pop * scale;
 }
 
 function computeY(d, i) {
@@ -34,17 +35,28 @@ function computeColor(d, i) {
 }
 
 function computeLabel(d, i) {
-    return 'label'
+    return d.pop
 }
 
-var viz = _.map(data, function(d, i){
+function computeLabelX(d, i, width) {
+    
+    return width+30;
+}
+var viz = _.map(data, function(d, i, data){
+            var width = 300; // max desired width
+            var maxPop = _.max(data,function(d){
+                return d.pop;
+                });
+            var scale = width / maxPop.pop;
+            
             return {
                 x: computeX(d, i),
                 y: computeY(d, i),
                 height: computeHeight(d, i),
-                width: computeWidth(d, i),
+                width: computeWidth(d, i, scale),
                 color: computeColor(d, i),
-                label: computeLabel(d, i)
+                label: computeLabel(d, i),
+                labelx: computeLabelX(d,i,width)
             }
          })
 console.log(viz)
@@ -63,7 +75,7 @@ return result.join('\n')
      style="fill:${d.color};
             stroke-width:3;
             stroke:rgb(0,0,0)" />
-<text x="100" y="10">${d.label}</text>
+<text x="${d.labelx}" y="10">${d.label}</text>
 </g>
 
 {% output %}

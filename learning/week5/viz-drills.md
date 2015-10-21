@@ -1,5 +1,6 @@
 # More Drills
 
+
 This and the next page contain several exercises to set you up on a path to
 become proficient in generating SVGs for visualizing data. For each exercise,
 a "desired viz" is given. You need to modify the _code_ block and the _template_ block
@@ -29,3 +30,4 @@ page in order to put all Javascript code in the same code block.
 {% include "./drills/reverse.md" %}
 {% include "./drills/horizontal.md" %}
 {% include "./drills/number.md" %}
+

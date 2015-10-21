@@ -17,32 +17,36 @@ including the controls, widgets ...etc.
 
 # How big the deal Tableau really is?
 
-(write your answer based on the statistics you can find online)
+Tableau had approximately 4,400 customers by the end of 2010 and this increased to 26,000 in 2014.
+(http://www.forbes.com/sites/greatspeculations/2015/04/15/a-closer-look-at-tableaus-customer-base-growth/)
 
-# (Question 1)
+Tableau's revenue growth during the past few years has very rapidly passed through the $100 million, $200 million and $300 million revenue thresholds at an extraordinary rate compared with other software and technology companies.  Tableau has a strong position on the Ability to Execute axis of the Leaders quadrant, because of the company's successful "land and expand" strategy that has driven much of its growth momentum.
+(http://www.gartner.com/technology/reprints.do?id=1-2ACLP1P&ct=150220&st=sb)
 
-![screenshot](screenshot.png)
+More than 23,000 customer accounts and growing. (http://www.tableau.com/about/customers)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+Company’s fifth consecutive year of revenue growth over 75% fueled by 9,100 new customer accounts
 
-# (Question 2)
+Publish Date:
+February 19, 2015 (All day)
+On the heels of its 2014 earnings announcement, Tableau shared figures on the record growth of its business analytics products. After five years of exponential growth, the company reached $913 million in lifetime revenue – $413 million of which was generated in 2014. With that achievement, Tableau has become one of the fastest growing companies in the fifty-year history of business analytics software. (https://www.tableau.com/about/press-releases/2015/tableau-sees-exponential-growth-tipping-point-year-2014)
+# How many students submitted personal information on or before the class deadline of 8/24/15?
 
-![screenshot](screenshot.png)
+![screenshot](deadline.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+The bar chart show how many students submitted comments each day.  The deadline was the end of August 24, 2015, represented by the black vertical line. To get the answer of the question, add the orange bars.  The sum is 22 students. 
+# How many students are computer science majors?
 
-# (Question 3)
+![screenshot](majors.png)
 
-![screenshot](screenshot.png)
+13 students are Computer Science majors.  A few others have computer science combined with other majors.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# Who has the user id 13950166?
+![screenshot](id.png)
 
-# (Question 4)
+TJ Romanowski has ID 13950166. His name is in red. To add a little more interesting information, the user IDs, which are correlated to time (the larger the number the more recently issued userID), are sorted from smallest to largest.  And the students are grouped by preferred language.  Python users typically have been using github for longer than other language users.
 
-![screenshot](screenshot.png)
+# Who used their lastname as part of their github user ID?
+![screenshot](lastname.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+UserIDs that are green have the lastname in the ID. Red userIDs do not have the lastnames as part of the ID.

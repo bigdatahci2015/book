@@ -115,8 +115,7 @@ function computeX(d, i) {
 }
 
 function computeHeight(d, i){
-    // TODO: fix this to return the correct height
-    return 10 + i * 50
+    return d.pop/1000000/4;
 }
 
 data.viz = _.map(data.countries, function(d, i){
@@ -176,22 +175,30 @@ data.countries = [{name: 'China', pop: 1393783836},
 
 {% lodash %}
 
-function computeX(d, i) {
-    return i * 20
+var scale = 1/1000000/4;
+
+// set the x  based on the sum of the preceding widths (there's got to be a better way...)
+function computeX(d, i, countries) {
+    if (i== 0) {return 0;}
+    var shortArr = _.slice(countries,0,i);
+    var x = _.reduce(shortArr, function(total,e){
+        return total + e.pop*scale;
+        }, 0); // accum = 0
+    return x;
 }
 
-function computeHeight(d, i){
-    // TODO: fix this to return the correct height
-    return 10 + i * 50
+function computeSize(d, i){
+    return d.pop*scale;
 }
 
 // TODO: add a new mapper function for width
 
-data.viz = _.map(data.countries, function(d, i){
-        // TODO: add a new attribute to each viz object
+data.viz = _.map(data.countries, function(d, i, countries){
+        var squareSide = computeSize(d, i);
         return {
-            x: computeX(d, i),
-            height: computeHeight(d, i)
+            x: computeX(d, i, countries),
+            height: squareSide,
+            width: squareSide
         }    
     })
 
@@ -203,8 +210,8 @@ data.viz = _.map(data.countries, function(d, i){
 {% template name='foo' %}
 
 <rect x="${d.x}"
-     width="20"
-     height="20"
+     width="${d.width}"
+     height="${d.height}"
      style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
 
 {% endtemplate %}

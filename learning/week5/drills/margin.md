@@ -13,27 +13,44 @@ Add some margins between every two bars
 
 {% solution %}
 
+var height = 400; // svg window height
+var maxPop = _.max(data,function(d){
+    return d.pop;
+    });
+var scale = 400 / maxPop.pop;
+
 function computeX(d, i) {
-    return i * 20
+    return i * 30
 }
 
-function computeHeight(d, i) {
-    return i * 20 + 100
+function computeHeight(d, i, data) {
+    var height = 400; // svg window height
+    var maxPop = _.max(data,function(d){
+        return d.pop;
+    });
+    var scale = height / maxPop.pop;
+    return d.pop * scale;
 }
 
 function computeY(d, i) {
-    return 400 - i * 20 - 100
+    var height = 400; // svg window height
+    var maxPop = _.max(data,function(d){
+        return d.pop;
+    });
+    var scale = height / maxPop.pop;
+    return height - (d.pop * scale);
 }
 
 function computeColor(d, i) {
     return 'red'
 }
 
-var viz = _.map(data, function(d, i){
+
+var viz = _.map(data, function(d, i, data){
             return {
                 x: computeX(d, i),
-                y: computeY(d, i),
-                height: computeHeight(d, i),
+                y: computeY(d, i, data),
+                height: computeHeight(d, i, data),
                 color: computeColor(d, i)
             }
          })

@@ -6,53 +6,44 @@ bird strikes.
 # Authors
 
 This report is prepared by
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
+* [Kari Santos](https://github.com/karisantos)
+* [Heather Witte](https://github.com/hswitte)
+* [Zachary Lamb](https://github.com/ZachLamb)
+* [Fadhil Suhendi](https://github.com/fadhilfath)
+* [Denis Kazakov](https://github.com/94kazakov)
 
-# (Question 1)
+# Which airlines have the worst luck with birdstrikes in terms of damage caused?
+This question was asked by (calebhsu).
 
-This question was asked by (student's github id).
+![screenshot](airlinecost.png)
 
-![screenshot](screenshot.png)
+The airlines are sorted by sum of total cost. The top row shows that Business was the airline with the largest total cost, over $100M.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# What is the most common flight phase where a birdstrike occurred?
+This question was asked by (KevinKGifford).
 
-# (Question 2)
 
-This question was asked by (student's github id).
+![screenshot](phase.png)
 
-![screenshot](screenshot.png)
+Approach was the phase with the most incidents, as shown by the largest circle.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# What airports have the most expensive average accident?
+This question was asked by (satchelspencer ).
 
-# (Question 3)
+![screenshot](airportcost.png)
 
-This question was asked by (student's github id).
+The Airports are sorted by largest average cost. Nice had the highest cost of about $10M, as seen in the first column.
 
-![screenshot](screenshot.png)
+# Which plane strikes the most birds? 
+This question was asked by (twagar95).
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](aircraft.png)
 
-# (Question 4)
+The B-&737-300, closely followed by the A-320 and the CL-RJ100/200 had the most bird strikes, as depicted by circle size.
 
-This question was asked by (student's github id).
+# what state had the highest number of bird strikes?
+This question was asked by (drewdinger).
 
-![screenshot](screenshot.png)
+![screenshot](state.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
-
-# (Question 5)
-
-This question was asked by (student's github id).
-
-![screenshot](screenshot.png)
-
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)    
+Texas, cloesly followed by California has the most birdstrikes. The states are colored the darkest greens in the map. 

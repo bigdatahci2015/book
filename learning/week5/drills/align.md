@@ -13,27 +13,37 @@ Align the bars at the bottom
 
 {% solution %}
 
+
+
 function computeX(d, i) {
     return i * 20
 }
 
-function computeHeight(d, i) {
-    return i * 20 + 100
+function computeHeight(d, i, scale) {
+    
+    return d.pop * scale;
 }
 
-function computeY(d, i) {
-    return 400 - i * 20 - 100
+function computeY(d, i,scale) {
+    return 400 - (d.pop * scale);
 }
 
 function computeColor(d, i) {
     return 'red'
 }
 
-var viz = _.map(data, function(d, i){
+
+
+var viz = _.map(data, function(d, i, data){
+            var height = 400; // svg window height
+            var maxPop = _.max(data,function(d){
+                return d.pop;
+            });
+            var scale = height / maxPop.pop;
             return {
                 x: computeX(d, i),
-                y: computeY(d, i),
-                height: computeHeight(d, i),
+                y: computeY(d, i, scale),
+                height: computeHeight(d, i, scale),
                 color: computeColor(d, i)
             }
          })
