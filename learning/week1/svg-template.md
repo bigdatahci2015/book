@@ -1,6 +1,6 @@
 # Template Engine
 
-In the intro class, you made bar charts by writing plain `<svg>` tags. Imagine
+In the intro class, yoqu made bar charts by writing plain `<svg>` tags. Imagine
 having to do that for lots and lots of data points! No way.
 
 This week, your learning task is to learn how to utilize a template engine to
@@ -38,9 +38,24 @@ Now it's your team's turn to work together to complete the challenges below.
 Draw negative numbers in red and positive numbers in green.
 
 {% set numbers = [43,21,-13,32,20,5,-8,29,9] %}
+<svg width="500" height="200">
+
 {% for number in numbers %}
-<li>{{number}}</li>
+
+{% if number >0 %}   `   
+
+ <rect x="{{loop.index * 20}}" width="15" height="{{number}}" style="fill:rgb(255,0,0);stroke-width:3;stroke:rgb(0,0,0)" />
+
+{% else %}  
+
+ <rect x="{{loop.index * 20}}" width="15" height="{{number}}" style="fill:rgb(0,255,0);stroke-width:3;stroke:rgb(0,0,0)" />
+
+{% endif %}
+
+
 {% endfor %}
+
+</svg>
 
 (Hint: use the [if tag](https://mozilla.github.io/nunjucks/templating.html#if))
 
@@ -53,7 +68,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200">
 {% for number in numbers %}
-    <rect x="{{loop.index * 20}}" width="20" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    <rect x="{{loop.index * 20}}" width="20" height="{{number}}" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
 {% endfor %}
 </svg>
 
@@ -65,7 +80,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200">
 {% for number in numbers %}
-    <rect y="{{loop.index * 20}}" width="100" height="20" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+    <rect y="{{loop.index * 20}}" width="{{number}}" height="20" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
 {% endfor %}
 </svg>
 
@@ -79,10 +94,13 @@ Draw negative numbers in red and positive numbers in green.
 * You will need to create a nested for loop.
 
 <table>
-    {% for rows in data %}
+    {% for r,y in data %}
         <tr>
-            <!-- Add your code here  -->
-            <td>10</td><td>15</td>
+            
+            
+                        <td>{{ r }}</td><td>{{ y }}</td>
+            
+            
         </tr>
     {% endfor %}
 </table>
@@ -97,7 +115,7 @@ Draw negative numbers in red and positive numbers in green.
 
 <svg width="500" height="200" style="border:1px solid grey">
 {% for point in data %}
-    <circle cx="{{point[0]}}" cy="{{point[1]}}" r="2" stroke="black" stroke-width="3" fill="red" />
+    <circle cx="{{point[0]*2}}" cy="{{point[1]*2}}" r="4" stroke="black" stroke-width="3" fill="red" />
 {% endfor %}
 </svg>
 
@@ -110,6 +128,6 @@ of the circle to represent the third value.
 
 <svg width="500" height="200" style="border:1px solid grey">
 {% for point in data %}
-    <circle cx="{{point[0]}}" cy="{{point[1]}}" r="2" stroke="black" stroke-width="3" fill="red" />
+    <circle cx="{{point[0]*2}}" cy="{{point[1]*2}}" r="{{point[2]}}" stroke="black" stroke-width="3" fill="red" />
 {% endfor %}
 </svg>

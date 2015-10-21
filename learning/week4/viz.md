@@ -19,37 +19,36 @@ how to transform this JSON file into a format that can be fed into Tableau. As
 a junior and senior, you are expected to be able to look around the Internet
 to problem solve.
 
-# (Question 1)
+# # (Question 1)# Which department has the lowest enrollment? by John Raesly
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](q1.png)
 
-# (Question 2)
+The answer is indicated marker in diagram 
 
-![screenshot](screenshot.png)
+#  Which course has the highest enrollment?by andrew
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](q2.png)
 
-# (Question 3)
+The answer is indicated marker in diagram 
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# Which subject is most in demand,based on the total number of enrollment?by Sushant Mittal
 
-# (Question 4)
 
-![screenshot](screenshot.png)
+![screenshot](q3.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+The answer is indicated marker in diagram 
 
-# (Question 5)
 
-![screenshot](screenshot.png)
+# How many instructors have taught each subject?
+ by (KariSantos)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)    
+![screenshot](q4.png)
+If you see the marker on color blocks,there you can find tha answersw
+
+# Does the Instructor tends to give out higher grades if they teach more classes? or the reverse?(Question 5)
+
+![screenshot](q5.png)
+
+The graph shows avergae grade and the class size comparaion by the bar chart 

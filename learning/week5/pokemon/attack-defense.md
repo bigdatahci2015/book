@@ -84,7 +84,7 @@ function computeX(d, i) {
 }
 
 function computeWidth(d, i) {
-    return i * 10 + 10
+    return d.Attack
 }
 
 function computeY(d, i) {
@@ -94,13 +94,22 @@ function computeY(d, i) {
 function computeColor(d, i) {
     return 'red'
 }
-
+function computeName(d, i) {
+    return d.Name
+}
+function computeHeight(d, i) {
+    return d.Defense
+}
 var viz = _.map(data, function(d, i){
             return {
                 x: computeX(d, i),
                 y: computeY(d, i),
                 width: computeWidth(d, i),
-                color: computeColor(d, i)
+                color: computeColor(d, i),
+                name:  computeName(d,i),
+                height:computeHeight(d,i)
+                
+                
             }
          })
 console.log(viz)
@@ -120,6 +129,19 @@ return result.join('\n')
          style="fill:${d.color};
                 stroke-width:1;
                 stroke:rgb(0,0,0)" />
+
+
+    <rect
+         x="0"
+         width="${d.height}"
+         height="20"
+         style="fill:blue;
+                stroke-width:1;
+                stroke:rgb(0,0,0)" />
+
+    <text transform="translate(0 15)">
+        "${d.name}"
+    </text>
 </g>
 
 {% output %}

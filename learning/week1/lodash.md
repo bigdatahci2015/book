@@ -11,21 +11,21 @@ was it downloaded just last week alone?
 ### Array of numbers
 
 {% set data = [1,2,3,4,5] %}
-
+ var result
 Let's create a data array withthe contents: {{data}}. This array has {{ data.length }} items.
 
 To get the first item, we can use lodash's [_.first](https://lodash.com/docs#first).
 
-{% lodash %}
-return _.first(data)
-{% endlodash %}
+{% lodash %} return _.first(data) {% endlodash %}
 
 The result is {{ result }}.
+
 
 To get the first 3 elements, we can use lodash's [_.take](https://lodash.com/docs#take)
 
 {% lodash %}
-return _.take(data, 3)
+ var result=_.take(data, 3)
+ return result
 {% endlodash %}
 
 The result is {{ result }}.
@@ -44,7 +44,8 @@ To retrieve the name field from each object in this array, lodash's
 [_.pluck](https://lodash.com/docs#pluck) is very handy.
 
 {% lodash %}
-return _.pluck(data, 'name')
+var result= _.pluck(data, 'name')
+return result
 {% endlodash %}
 
 The result is {{ result }}.
@@ -64,7 +65,8 @@ Using [_.find](https://lodash.com/docs#find), we can look up an object by its fi
 Let's try to find out how old Mary is.
 
 {% lodash %}
-return _.find(data, {name: 'Mary'})
+var result= _.find(data, {name: 'Mary'})
+return result
 {% endlodash %}
 
 Mary is {{ result.age }} years-old.
@@ -84,20 +86,27 @@ The data is
 ### Q: What are the ages of these people?
 
 {% lodash %}
-// replace this code with your solution that uses lodash
-var result = [45, 32, 54, 12]
+
+var result=_.pluck(data, 'age')
 return result
 {% endlodash %}
 
-The names are {{ result }}
+<ul>
+{% for  d1 in result %}
+<li>
+    THe age is {{d1}}
+</li>
+{% endfor %}
+</ul>
 
 ### Q. What is the youngest age?
 
 {% lodash %}
-// replace this code with your solution that uses lodash
-// hint: use _.pluck and _.min
-var result = 12
-return result
+var result=_.pluck(data, 'age')
+var min_age=_.min(result)
+
+return min_age
+
 {% endlodash %}
 
 The youngest age is {{ result }}.
@@ -105,9 +114,9 @@ The youngest age is {{ result }}.
 ### Q. What is the oldest age?
 
 {% lodash %}
-// replace this code with your solution that uses lodash
-var result = 54
-return result
+var result=_.pluck(data, 'age')
+var max_age= _.max(result)
+return max_age
 {% endlodash %}
 
 The oldest age is {{ result }}.
@@ -117,8 +126,10 @@ The oldest age is {{ result }}.
 {% lodash %}
 // replace this code with your solution that uses lodash
 // hint: use your previous solution with _.find
-var result = data[3]
-return result
+var result=_.pluck(data, 'age')
+var min_age=_.min(result)
+var y= _.find(data, {age: min_age})
+return y 
 {% endlodash %}
 
 The youngest person is {{ result.name }}.

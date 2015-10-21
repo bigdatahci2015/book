@@ -14,34 +14,142 @@ This time, the data is not already prepared for you in a nice JSON format. You
 will need to do it on your own, replacing the placeholder `birdstrike.json` with
 real data.
 
-# (Question 1) by (Name)
+# Which airport has the highest number struck? by twagar95
 
 {% lodash %}
-return "[answer]"
+var groups = _.groupBy(data, function(n){
+    return n['Airport: Name']
+})
+
+var valuedGroups = _.values(groups)
+var result = _.chain(valuedGroups)
+                .map(function(arr){
+                    return [arr[0]["Airport: Name"], arr.length]
+                })
+                .reduce(function(n, p){
+                    if ((n[1] > p[1]) && (n[0] != "UNKNOWN")) { return n; } else {return p; }
+                }).value()
+
+return result
 {% endlodash %}
 
+<table>
 
-# (Question 2) by (Name)
+  <tr>
+      <td>{{result[0]}}</td>
+      <td>{{result[1]}}</td>
+  </tr>
+
+</table>
+
+
+#What states cost the airlines the most money? by SatchelSpencer
+
 
 {% lodash %}
-return "[answer]"
+return _.chain(data).groupBy('Origin State').mapValues(function(state){
+    return _.reduce(state, function(sum, incident){
+    	return sum+parseInt(incident['Cost: Total $'].toString().replace(',', ''));
+    }, 0);
+}).pairs().sortByOrder('1', 1).object().value();
 {% endlodash %}
+<table>
+{% for key, value in result %}
+  <tr>
+      <td>{{key}}</td>
+      <td>{{value}}</td>
+  </tr>
+{% endfor %}
+</table>
 
 
-# (Question 3) by (Name)
+# What is the frequency of bird strikes at various height ranges ? by sumi6109
 
 {% lodash %}
-return "[answer]"
-{% endlodash %}
+//filter all the data which have feet above the ground greater than zero
+var data_poistive=_.filter(data,function(r){return parseInt(r['Feet above ground'])> 0})
+//group all the data based on feet above the ground greater than zero
+var grps =_.groupBy(data_poistive,function(d){return d['Feet above ground']})
+var result=_.mapValues(grps,function(t){return t.length})
 
-# (Question 4) by (Name)
+var sorted = _.sortBy(_.pairs(result), function(d) {
+ 
+    return parseInt(d[0].replace(',', ''));
+});
+var desc = _(sorted).value()
+return desc
+//return result
+{% endlodash %}
+<table>
+
+  <tr>
+      <td>Height</td>
+      <td>Number of birds hit</td>
+  </tr>
+{% for key, value in result %}
+  <tr>
+      <td>{{key}}</td>
+      <td>{{value}}</td>
+  </tr>
+{% endfor %}
+</table>
+
+#What are the top 5 bird species that are involved? by nicolele
 
 {% lodash %}
-return "[answer]"
+var clean = _.reject(data, function(n){
+    return _.includes(n['Wildlife: Species'], 'Unknown')
+})
+
+var groups = _.groupBy(clean, function(d){
+    return d['Wildlife: Species']   
+})
+
+var birds = _.pairs(_.mapValues(groups, function(value){
+    return value.length
+}))
+
+var top = _.sortBy(birds, function(n) {
+    return n[1]
+}).reverse()
+
+return _.slice(top, [start=0], [end=5])
 {% endlodash %}
 
-# (Question 5) by (Name)
+<table>
+{% for key, value in result %}
+  <tr>
+      <td>{{key}}</td>
+      <td>{{value}}</td>
+  </tr>
+{% endfor %}
+</table>
+
+# (What Airline loses the most money to bird strikes every year?) by (John)
 
 {% lodash %}
-return "[answer]"
+var groups = _.groupBy(data, function(n){
+    return n['Aircraft: Airline/Operator']
+})
+var pairs =  _.pairs(_.mapValues(groups, function(item){
+	var costs =   _.map(item, function(value){ 		
+		return parseInt(value['Cost: Total $'].toString().replace(',', ''))		})
+	return _.sum(costs)
+	
+	}))
+var top = _.sortBy(pairs, function(n){
+	return n[1] 
+	}).reverse()
+top = _.slice(top, [start =0], [end=10])
+
+return top
 {% endlodash %}
+
+<table>
+{% for key, value in result %}
+  <tr>
+      <td>{{key}}</td>
+      <td>{{value}}</td>
+  </tr>
+{% endfor %}
+</table>

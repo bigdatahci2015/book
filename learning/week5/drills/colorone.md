@@ -18,17 +18,20 @@ function computeX(d, i) {
 }
 
 function computeHeight(d, i) {
-    return i * 20 + 20 // TODO
+    return d.pop/3484459.59
 }
 
 function computeColor(d, i) {
-    return 'red' // TODO
+    if(i==2)
+    return 'blue' 
+    else 
+    return 'red' 
 }
 
 var viz = _.map(data, function(d, i){
             return {
                 x: computeX(d, i),
-                height: computeHeight(d, i),
+                height:computeHeight(d, i),
                 color: computeColor(d, i)
             }
          })

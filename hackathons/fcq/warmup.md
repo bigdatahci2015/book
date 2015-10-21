@@ -8,8 +8,8 @@ Next, complete the following warmup exercises as a team.
 ## How many unique subject codes?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return 113
+var result =_.size(_.uniq(_.pluck(data,"Subject")))
+return result
 {% endlodash %}
 
 They are {{ result }} unique subject codes.
@@ -17,8 +17,8 @@ They are {{ result }} unique subject codes.
 ## How many computer science (CSCI) courses?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return 63
+return _.size(_.filter(data,'Subject','CSCI'))
+
 {% endlodash %}
 
 They are {{ result }} computer science courses.
@@ -26,8 +26,10 @@ They are {{ result }} computer science courses.
 ## What is the distribution of the courses across subject codes?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
+var groups =_.groupBy(data,function(d){return d.Subject})
+var result =_.mapValues(groups,function(t){return t.length})
+
+return result
 {% endlodash %}
 
 <table>
@@ -49,7 +51,7 @@ var ret = _.pick(_.mapValues(grps, function(d){
 }), function(x){
     return x > 100
 })
-return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
+return ret
 {% endlodash %}
 
 <table>
@@ -65,8 +67,16 @@ return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
-{% endlodash %}
+var grps = _.groupBy(data, 'Subject')
+//console.log(grps)
+var ret= _.mapValues(grps,function(d){return _.sum(_.pluck(d,'N.ENROLL'))
+
+})
+ret1=_.pick(ret,function(x){
+    return x > 5000
+})
+
+return ret1{% endlodash %}
 
 <table>
 {% for key, value in result %}
@@ -81,7 +91,15 @@ return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return ['4830','4830']
+var tomClass = _.filter(data,function(d){ 
+   x = _.where(d['Instructors'], { 'name': "YEH, PEI HSIU" });
+   //if (_.size(x) >0) {console.log(x)}
+   return _.size(x);
+});
+
+//console.log (tomClass)
+
+return _.pluck(tomClass,'Course')
 {% endlodash %}
 
 They are {{result}}.

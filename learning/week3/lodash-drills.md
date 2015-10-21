@@ -74,7 +74,7 @@ What names begin with the letter J?
 
 {% solution %}
 
-var result = 'not done'
+var result = _.pluck((_.filter(data,function(n){return _.contains(n.name,"J")})),"name");
 return result
 
 {% endlodashexercise %}
@@ -96,7 +96,7 @@ How many Johns?
 3
 
 {% solution %}
-var result = 'not done'
+var result = _.size((_.filter(data,function(n){return _.contains(n.name,"John")})),"name");
 return result
 
 {% endlodashexercise %}
@@ -119,7 +119,7 @@ What are all the first names?
 ["John","Mary","Peter","Ben"]
 
 {% solution %}
-var result = 'not done'
+var result = _.map(data,function(n){return _.first(n.name.split(" "))})
 return result
 
 {% endlodashexercise %}
@@ -146,7 +146,8 @@ What are the first names of Smith?
 
 {% solution %}
 var result = 'not done'
-return result
+var fullname= _.pluck(_.filter(data,function(n){return _.contains(n.name,"Smith")}),"name")
+return _.map(fullname,function(n){return _.first(n.split(" "))})
 {% endlodashexercise %}
 
 
@@ -170,7 +171,9 @@ Change the format to lastname, firstname
 [{name: 'Smith, John'}, {name: 'Kay, Mary'}, {name: 'Pan, Peter'}]
 
 {% solution %}
-var result = 'not done'
+var result=_.map(data,function(n){var split =_.words(n.name)
+return {name : _.last(split).concat(", ").concat(_.first(split))}
+})
 return result
 {% endlodashexercise %}
 
@@ -192,7 +195,7 @@ How many women?
 
 {% solution %}
 
-var result = 'not done'
+var result = _.size(_.filter(data,'gender','f'))
 return result
 
 {% endlodashexercise %}
@@ -218,9 +221,10 @@ How many men whose last name is Smith?
 2
 
 {% solution %}
+var fullname =_.filter(data,'gender','m')
+var people =_.filter(fullname,function(n){return _.contains(n.name ,"Smith")})
+return _.size(people);
 
-var result = 'not done'
-return result
 
 {% endlodashexercise %}
 
@@ -244,8 +248,14 @@ true
 
 {% solution %}
 
-var result = 'not done'
-return result
+var male =_.size(_.filter(data,'gender','m'))
+var female =_.size(_.filter(data,'gender','f'))
+if(male>female)
+{
+return true
+}
+else{
+return false}
 
 {% endlodashexercise %}
 
@@ -271,7 +281,7 @@ What is Peter Pan's gender?
 
 {% solution %}
 
-var result = 'not done'
+var result =_.find(data,function(n){return n.name=='Peter Pan'}).gender
 return result
 
 {% endlodashexercise %}
@@ -296,7 +306,7 @@ What is the oldest age?
 
 {% solution %}
 
-var result = 'not done'
+var result = _.last(_.pluck(_.sortBy(data,"age"),'age'))
 return result
 
 {% endlodashexercise %}
@@ -323,7 +333,7 @@ true
 {% solution %}
 
 // use _.all
-var result = 'not done'
+var result = _.all(data,function(n){ return n.age<60})
 return result
 
 {% endlodashexercise %}
@@ -348,7 +358,7 @@ true
 {% solution %}
 
 // use _.some
-var result = 'not done'
+var result = _.some(data,function(n){ return n.age<18})
 return result
 
 {% endlodashexercise %}
@@ -375,7 +385,7 @@ How many people whose favorites include food?
 
 {% solution %}
 
-var result = 'not done'
+var result = _.size(_.filter(data,function(n){return _.any(n.favorites,function(t){return t=='food'})}))
 return result
 
 {% endlodashexercise %}
@@ -404,7 +414,7 @@ Who are over 40 and love travel?
 
 {% solution %}
 
-var result = 'not done'
+var result =_.pluck(_.filter(data,function(n){return (n.age>40 )&&  _.any(n.favorites,function(t){return t=='travel'})}),"name")
 return result
 
 {% endlodashexercise %}
@@ -431,8 +441,8 @@ Who is the oldest person loving food?
 'John Smith'
 
 {% solution %}
-
-var result = 'not done'
+var foodypeople=_.filter(data,function(n){return _.any(n.favorites,function(t){return t=='food'})})
+var result = _.last(_.pluck(_.sortBy(foodypeople,'age'),'name'))
 return result
 
 {% endlodashexercise %}
@@ -468,7 +478,7 @@ What are all the unique favorites?
 
 // hint: use _.pluck, _.uniq, _.flatten in some order
 
-var result = 'not done'
+var result = _.uniq(_.flatten(_.pluck(data,"favorites")))
 return result
 
 {% endlodashexercise %}
@@ -498,8 +508,9 @@ What are all the unique last names?
 ]
 
 {% solution %}
+var lastname = _.map(data,function(n){return _.last(n.name.split(" "))})
 
-var result = 'not done'
+var result = _.uniq(lastname)
 return result
 
 {% endlodashexercise %}

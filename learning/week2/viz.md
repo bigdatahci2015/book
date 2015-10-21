@@ -16,33 +16,31 @@ your own image. Please makes sure your screenshot includes the _entire_ Tableau 
 including the controls, widgets ...etc.
 
 # How big the deal Tableau really is?
+Tableau is being used by many big comapnies for their data analysis part,here bellow the screenshot of 1 stats showing the number of companies which uses the Tableau 
 
-(write your answer based on the statistics you can find online)
 
-# (Question 1)
+![Stats](t.png)
 
-![screenshot](screenshot.png)
+#
+# who has used their last name as the user github id?
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
 
-# (Question 2)
+![screenshot](Q1.png)
 
-![screenshot](screenshot.png)
+Answer of this question is given on the ToolTip in the above screenshot i.e. 14.
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# who has the id 13950166
 
-# (Question 3)
+![screenshot](Q2.png)
+Answer of this question is in the second column i.e  TJ Romanowski in the ablove screenshot 
 
-![screenshot](screenshot.png)
+#How many people are from  computer science major
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](Q3.png)
 
-# (Question 4)
+Answer of this question is given on the ToolTip in the above screenshot i.e. 22.
 
-![screenshot](screenshot.png)
+#How many ppl submitted on and befor the deadline 8/24/15
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+![screenshot](Q4.png)
+Answer of this question is written in front of the yellow bar in the ablove screenshot i.e. 21.
