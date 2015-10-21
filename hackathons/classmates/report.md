@@ -6,27 +6,27 @@ As a class, we brainstormed and came up with a long list of further questions we
 on the "self-introduction" data. Out of these questions, our team chose to tackle on
 the following:
 
-# (Question 1)
+# How many people submitted comments before the first class?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
 
-# (Question 2)
+# What percent of students are in the CS department?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
 
-# (Question 3)
+# Who has the oldest Github account?
 
 {% lodash %}
 return "[answer]"
 {% endlodash %}
 
-# (Question 4)
+# What is the most popular programming language?
 
 {% lodash %}
 return "[answer]"
