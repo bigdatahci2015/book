@@ -6,53 +6,42 @@ bird strikes.
 # Authors
 
 This report is prepared by
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
-* [Full name](link to github account)
+* [fadhil fathurrahman suhendi](https://github.com/fadhilfath)
+* [Zachary Lamb](https://github.com/ZachLamb)
+* [Heather Witte](https://github.com/hswitte)
+* [Kari Santos](https://github.com/karisantos)
+* [Denis Kazakov](https://github.com/94kazakov)
 
-# (Question 1)
+# Which airlines have the worst luck with birdstrikes in terms of damage caused? 
+This question was asked by (calebhsu).
 
-This question was asked by (student's github id).
+![screenshot](worstluck.png)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
 
-# (Question 2)
+# What is the most common flight phase where a birdstrike occurred?
+This question was asked by (KevinKGifford).
 
-This question was asked by (student's github id).
+![screenshot](phase.png)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# What airports have the most expensive average accident?
 
-# (Question 3)
+This question was asked by (satchelspencer ).
 
-This question was asked by (student's github id).
+![screenshot](avgaccident.png)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# Which plane strikes the most birds?
 
-# (Question 4)
+This question was asked by (twagar95).
 
-This question was asked by (student's github id).
+![screenshot](planestrike.png)
 
-![screenshot](screenshot.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+# What state had the highest number of bird strikes? (Departure State)
 
-# (Question 5)
+This question was asked by (drewdinger).
 
-This question was asked by (student's github id).
-
-![screenshot](screenshot.png)
-
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)    
+![screenshot](state.png)
+  

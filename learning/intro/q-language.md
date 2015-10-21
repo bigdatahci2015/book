@@ -7,13 +7,16 @@
 
 | Language | # of Students |
 | -- | -- |
-| Assembly | 0 |
+| C | 4 |
+| Java     | 2 |
+| Phyton   | 7 |
+| C++      | 3 |
 
-((more rows to complete the table))
+
 
 ## Answer
 
-((answer))
+Phyton and C Programming Language
 
 ## Visualization
 
@@ -22,7 +25,9 @@
 {% svg %}
 
 <!-- extend this into a barchart -->
-<rect x="0" width="20" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-<rect x="30" width="20" height="50" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+<rect x="0" width="20" height="40" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+<rect x="30" width="20" height="20" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+<rect x="60" width="20" height="70" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+<rect x="90" width="20" height="30" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
 
 {% endsvg %}

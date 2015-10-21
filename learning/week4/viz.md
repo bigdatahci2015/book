@@ -19,37 +19,32 @@ how to transform this JSON file into a format that can be fed into Tableau. As
 a junior and senior, you are expected to be able to look around the Internet
 to problem solve.
 
-# (Question 1)
+# How many courses in IPHY that have 4 credits hours ?
 
-![screenshot](screenshot.png)
+![screenshot](IPHY.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+For this question, I used side by side circle view to display the total number of IPHY's courses that have 4 credits hour. The result is shown by the number of circle.
 
-# (Question 2)
+# What departments offer the most 4000 level classess? By Brian
 
-![screenshot](screenshot.png)
+![screenshot](4000Lcourse.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+For this question, I used treemaps to display the result. The treemaps will display the result by showing the box with the darkest green. The result is shown on the top left corner with the darkest color.
 
-# (Question 3)
+# Which instructor's course has the highest enrollment? By Zhilli
 
-![screenshot](screenshot.png)
+![screenshot](instructor-highestenroll.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+For this question, I used bar chart to display the instructor's course with the highest enrollment. The result is shown with the longest bar, which has 491 enrollments.
 
-# (Question 4)
+# Which department has the highest enrollment? By Tristan
 
-![screenshot](screenshot.png)
+![screenshot](subjecthighestenroll.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+For this question, I used treemaps to display department with the highest enrollment. From the graph above, the department with the highest enrollment is marked with the color dark green. 
 
-# (Question 5)
+# What instructors has the highest rating? By Andrew
 
-![screenshot](screenshot.png)
+![screenshot](instructor-rating.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)    
+I used a barchart to display the highest rating for instructor. The result can be seen from chart with long bar. In this visualization we have many instructors with the highest rating. However, in our report we just pick one which is STEVEN L. 

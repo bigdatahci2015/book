@@ -9,7 +9,12 @@ Next, complete the following warmup exercises as a team.
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return 113
+var subject = _.map(data,function(d){
+    return d['Subject']
+})
+
+return _.size(_.uniq(subject))
+    
 {% endlodash %}
 
 They are {{ result }} unique subject codes.
@@ -18,7 +23,10 @@ They are {{ result }} unique subject codes.
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return 63
+var cs = _.filter(data,function(d){
+    return d['CrsPBADept'] == 'CSCI'
+})
+return _.size(cs)
 {% endlodash %}
 
 They are {{ result }} computer science courses.
@@ -27,7 +35,13 @@ They are {{ result }} computer science courses.
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
+
+var subject = _.groupBy(data,'Subject')
+
+var result = _.mapValues(subject,function(n){
+    return n.length
+})
+return result
 {% endlodash %}
 
 <table>
@@ -44,12 +58,21 @@ return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
 {% lodash %}
 // TODO: replace with code that computes the actual result
 var grps = _.groupBy(data, 'Subject')
-var ret = _.pick(_.mapValues(grps, function(d){
+/*var ret = _.pick(_.mapValues(grps, function(d){
     return d.length
 }), function(x){
     return x > 100
+})*/
+var result = _.mapValues(grps,function(n){
+    return n.length 
 })
-return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
+
+return _.pick(result,function(n){
+    return n > 100
+})
+
+
+
 {% endlodash %}
 
 <table>
@@ -65,7 +88,26 @@ return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
+//return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
+
+var groups = _.groupBy(data,function(n){
+    return n['Subject']
+})
+
+var enroll = _.mapValues(groups, function(a){
+    return _.map(a,function(b){
+        return b['N']['ENROLL']
+    })
+})
+
+var total = _.mapValues(enroll, function(n){
+    return _.sum(n)
+})
+
+return _.pick(total,function(tot){
+    return tot > 5000
+})
+
 {% endlodash %}
 
 <table>
@@ -81,7 +123,19 @@ return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return ['4830','4830']
+//return ['4830','4830']
+
+var courses= _.filter(data, function(course){
+  var instructor= _.filter(course['Instructors'], function(instructor){
+    return instructor['name'] == 'YEH, PEI HSIU'
+  })
+  return _.size(instructor) > 0
+})
+return _.map(courses, function(course){
+  return course['Course']
+})
 {% endlodash %}
+
+
 
 They are {{result}}.

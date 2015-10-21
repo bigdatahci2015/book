@@ -17,32 +17,27 @@ including the controls, widgets ...etc.
 
 # How big the deal Tableau really is?
 
-(write your answer based on the statistics you can find online)
+Tableau is one of the most popular data visualization. Tableau changes the way we see our data. It can represents the data that is complex and hard to understand becoming the data that is more readable and makes sense. Also, Tableau has a good perfomance to build a beautiful graphical analysis very quick. 
 
-# (Question 1)
+# How many students are in Computer Science?
 
-![screenshot](screenshot.png)
+![screenshot](major.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+In this chart, I used a bar chart to represents the data. As you can see that the result is shown with the long bar where it represents the number of students who are taking Computer Science major.
 
-# (Question 2)
+# How many student's name start with 'A'?
 
-![screenshot](screenshot.png)
+![screenshot](names.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+In this chart, I also used a bar chart to represents data. And the bar represents the number of student's name with their first letter. And the tallest bar shows the highest number that represents student's name start with 'A'
 
-# (Question 3)
+# How many students are not in Computer Science?
 
-![screenshot](screenshot.png)
+![screenshot](nonmajor.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+For this data, I presents using pie chart. And the pie charts that are not in orange color represents the data of students who are not in Computer Science major
 
-# (Question 4)
+# Student's favorite programming language
+![screenshot](programmingd.png)
 
-![screenshot](screenshot.png)
-
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+For this data, I also presents using pie chart. Phyton with the purple color has the largest number of students who like python as their favorite programming language.
