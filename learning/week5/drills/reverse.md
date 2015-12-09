@@ -12,9 +12,9 @@ Reverse the order of the bars
  {name: 'Indonesia', pop: 252812243}]
 
 {% solution %}
-
+var size=(_.size(data)-1)*20
 function computeX(d, i) {
-    return i * 20
+    return size-i * 20
 }
 
 function computeHeight(d, i) {

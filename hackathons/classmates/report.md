@@ -6,28 +6,44 @@ As a class, we brainstormed and came up with a long list of further questions we
 on the "self-introduction" data. Out of these questions, our team chose to tackle on
 the following:
 
-# (Question 1)
+# How many students are Computer Science major?
 
 {% lodash %}
-return "[answer]"
+var list=_.filter(_.pluck(data.comments, 'body'), function(text){
+	return _.includes(text, "Computer Science") || _.includes(text, "CS")
+})
+return _.size(list)
 {% endlodash %}
+The answer is {{result}}.
 
-
-# (Question 2)
+# How many students' names start with 'A'?
 
 {% lodash %}
-return "[answer]"
+var list=_.filter(_.pluck(data.comments, 'body'), function(text){
+	var a=text.split("\r\n")[0]
+	var name=_.last(text.split("Name:"))
+	return name.charAt(1) == 'A'
+})
+return _.size(list)
 {% endlodash %}
+The answer is {{result}}.
 
-
-# (Question 3)
+# How many students are not Computer Science major?
 
 {% lodash %}
-return "[answer]"
+var list=_.filter(_.pluck(data.comments, 'body'), function(text){
+	return _.includes(text, "Computer Science") || _.includes(text, "CS")
+})
+return data.comments.length-_.size(list)
 {% endlodash %}
+The answer is {{result}}.
 
-# (Question 4)
+# What's the github id of zhya215?
 
 {% lodash %}
-return "[answer]"
+var list=_.filter(data.comments, function(text){
+	return _.includes(text.user, "zhya215")
+})
+return _.pluck(list, 'user.id')
 {% endlodash %}
+The answer is {{result}}.

@@ -1,0 +1,2243 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book book -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mongodb Drills | book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-bigdata/highlight.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-bigdata/jquery.jsonview.css">
+        
+    
+        
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../hackathons/index.html" />
+    
+    
+    <link rel="prev" href="../../learning/week6/mongodb-setup.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book" data-level="1.7.3" data-basepath="../.." data-revision="Sun Oct 04 2015 17:54:10 GMT-0600 (MDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="learning/index.html">
+            
+                
+                    <a href="../../learning/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Learning
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="learning/intro/index.html">
+            
+                
+                    <a href="../../learning/intro/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Intro
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="learning/intro/q-big-data.html">
+            
+                
+                    <a href="../../learning/intro/q-big-data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        Q. Big data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="learning/intro/q-language.html">
+            
+                
+                    <a href="../../learning/intro/q-language.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        Q. Programming language
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="learning/intro/q-packages.html">
+            
+                
+                    <a href="../../learning/intro/q-packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        Q. Packages
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="learning/week1/index.html">
+            
+                
+                    <a href="../../learning/week1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Week 1
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="learning/week1/svg-template.html">
+            
+                
+                    <a href="../../learning/week1/svg-template.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.1.</b>
+                        
+                        Template Engine
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="learning/week1/lodash.html">
+            
+                
+                    <a href="../../learning/week1/lodash.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.2.</b>
+                        
+                        Lodash
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="learning/week2/index.html">
+            
+                
+                    <a href="../../learning/week2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Week 2
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="learning/week2/report.html">
+            
+                
+                    <a href="../../learning/week2/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="learning/week2/viz.html">
+            
+                
+                    <a href="../../learning/week2/viz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.2.</b>
+                        
+                        Tableau Viz
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="learning/week3/index.html">
+            
+                
+                    <a href="../../learning/week3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Week 3
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="learning/week3/github-api.html">
+            
+                
+                    <a href="../../learning/week3/github-api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.1.</b>
+                        
+                        Github API
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="learning/week3/lodash-drills.html">
+            
+                
+                    <a href="../../learning/week3/lodash-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.2.</b>
+                        
+                        Lodash Drills
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="learning/week3/lodash-groupby.html">
+            
+                
+                    <a href="../../learning/week3/lodash-groupby.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.3.</b>
+                        
+                        Lodash GroupBy
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="learning/week4/index.html">
+            
+                
+                    <a href="../../learning/week4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Week 4
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="learning/week4/report.html">
+            
+                
+                    <a href="../../learning/week4/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.1.</b>
+                        
+                        FCQ Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="learning/week4/viz.html">
+            
+                
+                    <a href="../../learning/week4/viz.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.2.</b>
+                        
+                        FCQ Viz
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="learning/week5/index.html">
+            
+                
+                    <a href="../../learning/week5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        Week 5
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="learning/week5/birdstrike-report.html">
+            
+                
+                    <a href="../../learning/week5/birdstrike-report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.1.</b>
+                        
+                        Birdstrike Report
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="learning/week5/viz-steps.html">
+            
+                
+                    <a href="../../learning/week5/viz-steps.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.2.</b>
+                        
+                        Viz Intro
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="learning/week5/viz-drills.html">
+            
+                
+                    <a href="../../learning/week5/viz-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.3.</b>
+                        
+                        Viz Drills
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="learning/week5/viz-pokemon.html">
+            
+                
+                    <a href="../../learning/week5/viz-pokemon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.4.</b>
+                        
+                        Viz Pokemon
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="learning/week6/index.html">
+            
+                
+                    <a href="../../learning/week6/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        Week 6
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="learning/week6/design-study.html">
+            
+                
+                    <a href="../../learning/week6/design-study.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.1.</b>
+                        
+                        Design pattern changes
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="learning/week6/mongodb-setup.html">
+            
+                
+                    <a href="../../learning/week6/mongodb-setup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.2.</b>
+                        
+                        Mongodb Setup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.3" data-path="learning/week6/mongodb-drills.html">
+            
+                
+                    <a href="../../learning/week6/mongodb-drills.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.3.</b>
+                        
+                        Mongodb Drills
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="hackathons/index.html">
+            
+                
+                    <a href="../../hackathons/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Hackathons
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="hackathons/tinker/index.html">
+            
+                
+                    <a href="../../hackathons/tinker/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Tinker
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="hackathons/tinker/method.html">
+            
+                
+                    <a href="../../hackathons/tinker/method.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        Method
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="hackathons/tinker/report.html">
+            
+                
+                    <a href="../../hackathons/tinker/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="hackathons/classmates/index.html">
+            
+                
+                    <a href="../../hackathons/classmates/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Classmates
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="hackathons/classmates/data.html">
+            
+                
+                    <a href="../../hackathons/classmates/data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.1.</b>
+                        
+                        Data
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="hackathons/classmates/warmup.html">
+            
+                
+                    <a href="../../hackathons/classmates/warmup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.2.</b>
+                        
+                        Warmup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="hackathons/classmates/analysis.html">
+            
+                
+                    <a href="../../hackathons/classmates/analysis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.3.</b>
+                        
+                        Analysis
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="hackathons/classmates/report.html">
+            
+                
+                    <a href="../../hackathons/classmates/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.4.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="hackathons/fcq/index.html">
+            
+                
+                    <a href="../../hackathons/fcq/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        FCQ
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="hackathons/fcq/warmup.html">
+            
+                
+                    <a href="../../hackathons/fcq/warmup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.1.</b>
+                        
+                        Warmup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="hackathons/fcq/report.html">
+            
+                
+                    <a href="../../hackathons/fcq/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.2.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="hackathons/birdstrikes/index.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Birdstrikes
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="hackathons/birdstrikes/report.html">
+            
+                
+                    <a href="../../hackathons/birdstrikes/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.1.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="hackathons/open/index.html">
+            
+                
+                    <a href="../../hackathons/open/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Open
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="hackathons/open/warmup.html">
+            
+                
+                    <a href="../../hackathons/open/warmup.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                        Warmup
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="hackathons/open/report.html">
+            
+                
+                    <a href="../../hackathons/open/report.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.2.</b>
+                        
+                        Report
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="mongodb-drills">Mongodb Drills</h1>
+<h2 id="1-find-the-listing-detail-information-for-the-evernote-app">1- Find the listing detail information for the Evernote app?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;n&quot;:&quot;com.evernote&quot;}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528ce6&quot;,
+  &quot;cadd&quot;: &quot;305 Walnut Street\nRedwood City, CA 94063&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Evernote Corporation&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Evernote+Corporation&quot;,
+  &quot;dct&quot;: 100000000,
+  &quot;desc&quot;: &quot;Evernote is the modern workspace that syncs between all of your devices. Work everywhere and stay productive: &#x2022; Write notes, checklists, and research &#x2022; Organize web articles, docs, and photos  &#x2022; Discuss your work with others, right within the app ---  &#x201C;When it comes to taking all manner of notes and getting work done, Evernote is an indispensable tool.&#x201D; &#x2013; PC Mag --- 100 million people use it to move projects forward: WRITE &amp; ORGANIZE &#x2022; Stay focused: write in an uncluttered workspace &#x2022; Get things done: make to-do&apos;s and checklists &#x2022; Attach files: keep Office docs, PDFs, and photos &#x2022; Get organized: notebooks and tags keep work tidy &#x2022; Find anything: searchable text in notes and photos  DISCUSS &amp; COLLABORATE &#x2022; Work chat: discuss notes without leaving the app &#x2022; Work together: share notebooks for team projects &#x2022; Meeting prep: create agendas and action items YOUR DIGITAL ASSISTANT &#x2022; Make connections: turn biz cards into contacts  &#x2022; Track expenses: organize receipts, bills &amp; invoices &#x2022; Plan travel: save research and reservations ACCOMPLISH EVEN MORE WITH EVERNOTE PREMIUM Evernote is free to download and use. Evernote Premium unlocks even more productivity: &#x2605; Offline access - work anywhere, even without a connection &#x2605; More space - get more done with 10 GB of new uploads each month &#x2605; Better search - search inside Office docs and attachments &#x2605; Greater privacy - add a passcode lock on mobile &#x2605; PDF annotation - use shapes and comments to give visual feedback &#x2605; Unlimited business card scans - scan biz cards, save to contacts, and connect on LinkedIn  Two subscription levels: 1) Evernote Premium 2) Evernote Plus --- \&quot;Use Evernote as the place you put everything...don&#x2019;t ask yourself which device it&#x2019;s on&#x2014;it&#x2019;s in Evernote\&quot; &#x2013; The New York Times --- Price may vary by location. Subscriptions will be charged to your credit card through your Google Play account. Your subscription will automatically renew unless canceled at least 24 hours before the end of the current period. You will not be able to cancel the subscription once activated. Manage your subscriptions in Account Settings after purchase.&quot;,
+  &quot;dtp&quot;: &quot;September 22, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100,000,000 - 500,000,000&quot;,
+  &quot;n&quot;: &quot;com.evernote&quot;,
+  &quot;new&quot;: &quot;Bug fixes and miscellaneous improvements&quot;,
+  &quot;os&quot;: &quot;Varies with device&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://evernote.com/privacy/&amp;sa=D&amp;usg=AFQjCNHTyefT6GQ6A6mnOKPeqKUA_qjesg&quot;,
+  &quot;rate&quot;: 4.6,
+  &quot;rct&quot;: 1313925,
+  &quot;sz&quot;: &quot;Varies with device&quot;,
+  &quot;t&quot;: &quot;Evernote&quot;,
+  &quot;verc&quot;: &quot;5432&quot;,
+  &quot;id&quot;: &quot;com.evernote-5432&quot;
+ }
+]</pre>
+
+<p>There are 1 apps.
+The star rating of the first Evernote app is: 4.6</p>
+<h2 id="2-how-many-apps-developed-by-go-launcher-ex">2- How many apps developed by GO Launcher EX?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;crt&quot;:&quot;GO Launcher EX&quot;},{&quot;n&quot;:1}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529122&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.sw.dynamicsbg.penguin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529123&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.graceskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529128&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.ro&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912c&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.tr&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529131&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.bottleskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529132&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.conciseblack&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529135&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.miuistyleskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529139&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.theme.gowidget.quietlyelegantskinfree&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52913d&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.id&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290d5&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.theme.defaultthemethree&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911b&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.dynamicsbg.enjoylife&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529120&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.tasteskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529121&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.unknowplanetskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529125&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.venusskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529126&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.dynamicsbg.defaultv1&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529127&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.pt_br&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52913c&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.sr&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5273cc&quot;,
+  &quot;n&quot;: &quot;com.jiubang.goscreenlock.plugin.lockscreen&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290ab&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.gowidget.weatherwidget&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911a&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.dynamicsbg.Peanuts&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911f&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.peanuts&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912d&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.uk&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912e&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.vi&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912f&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.blacktransparentskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529130&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.bluegearskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529133&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.concisewhite&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529134&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.defaultskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529136&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.moonlightskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529137&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.systemwidgetskin.scenery.semele&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529138&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.theme.gowidget.blacktransparentskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5272f3&quot;,
+  &quot;n&quot;: &quot;com.jb.gosms.theme.getjar.savagelagoon&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5273cd&quot;,
+  &quot;n&quot;: &quot;com.jiubang.goscreenlock.plugin.side&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290a6&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.gowidget.gopowermaster&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290a7&quot;,
+  &quot;n&quot;: &quot;com.gau.go.launcherex.gowidget.newcalendarwidget.fullscreen&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911c&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.dynamicsbg.nature&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52911e&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.outsideskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529124&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.appbilling.systemwidgetskin.elegantskin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529129&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.dynamicsbg.defaultv2&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912a&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.dynamicsbg.defaultv3&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52912b&quot;,
+  &quot;n&quot;: &quot;com.gau.go.weatherex.language.sk&quot;
+ }
+]</pre>
+
+<p>There are 40 apps.</p>
+<h2 id="3-how-many-apps-have-been-downloaded-more-than-10-000-000">3- How many apps have been downloaded more than 10,000,000?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;dct&quot;: {&quot;$gt&quot;: 10000000}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527e4e&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Books &amp; Reference&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;LifeChurch.tv&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=LifeChurch.tv&quot;,
+  &quot;dct&quot;: 50000000,
+  &quot;desc&quot;: &quot;On more than 180 million devices around the world, people are reading, listening to, watching, and sharing the Bible using the #1 rated Bible App&#x2014;completely free. 1,000+ Bible versions, hundreds of languages. Listen to audio Bibles. Hundreds of Reading Plans &amp; Devotionals, in 40+ languages. Download the best rated Bible App now. Customize your Bible with Highlights, Bookmarks, and public/private Notes. Access everything online or download select versions to use offline. Read, study, and share with friends. Enjoy honest conversations about faith in trusted community. Grow together every day with friends, sharing your discoveries. Create shareable art: add Scripture verses to your photos. READ THE BIBLE DAILY &#x25CF; Experience the Bible App in any of 30+ languages &#x25CF; Switch between hundreds of Bible versions, 775+ languages &#x25CF; Popular versions: King James Version KJV, New International Version NIV, New King James Version NKJV, New Living Translation NLT, English Standard Version ESV, NASB, The Message, more &#x25CF; Offline Bibles: Read even w/o network access (select versions) &#x25CF; Audio Bibles: Audio for select versions. Not downloadable &#x25CF; Verse of the Day USE THE BIBLE WITH FRIENDS &#x25CF; Center your Christian friendships around holy Scripture in the Bible App &#x25CF; Home Feed: See what you and friends bookmark &amp; highlight &#x25CF; Comments: Connect with friends each day as you study Bible truths together, sharing ideas, asking questions STUDY THE BIBLE &#x25CF; Reading Plans: Hundreds of Devotionals, Bible Plans. Study topics or portions of the Bible. Read the entire Bible (both One Year&#xAE; Bible and Bible in One Year). &#x25CF; Video: Watch/share clips from TV series like The Bible, the JESUS film, Lumo Project, more CUSTOMIZE YOUR BIBLE &#x25CF; Verse Images: Turn Scripture into shareable art &#x25CF; Highlights: Like a paper Bible with custom colors &#x25CF; Bookmarks: Sharing, memorizing, finding your favorite verses &#x25CF; Share verses with friends: social media, email, or SMS (text) &#x25CF; Notes: Keep them private so only you can see them, or public to share with friends &#x25CF; Cloud Sync: With a free YouVersion account, see all of your Notes, Highlights, Bookmarks, and Reading Plans on any supported device &#x25CF; Easy Reading: Adjust font, text size, and contrast for bright or low-light CONNECT WITH YOUVERSION &#x25CF; Contact support from inside the Bible App &#x25CF; Like us on Facebook: http://facebook.com/youversion &#x25CF; Follow us on Twitter: http://twitter.com/youversion &#x25CF; Keep current on our blog: http://blog.youversion.com &#x25CF; YouVersion online: http://bible.com 1000+ Bible versions: King James Version KJV New International Version NIV New Living Translation NLT English Standard Version ESV Holman Christian Standard Bible HCSB New King James Version NKJV New American Bible, revised edition (Catholic) Chinese Bible -Chinese Simplified &amp; Traditional Zulu Bible Xhosa Bible  Audio Bible versions: King James Version KJV New International Version NIV New Living Translation NLT English Standard Version ESV Holman Christian Standard Bible HCSB Chinese Bible -Chinese Simplified &amp; Traditional More than 700 languages: English, Spanish, Portuguese, Chinese, Korean, German, French, Russian, Indonesian, Arabic, Zulu, Xhosa, Yoruba, Swahili, Urdu, Bengali, Tagalog, and more Thanks to generous content partners, we offer hundreds of Reading Plans, Devotionals, and Bible Study Plans: Billy Graham, Francis Chan, One Hope: Bible App for Kids devotionals, FCA Fellowship of Christian Athletes, Our Daily Bread, One Year&#xAE; Bible, Jesus Film, Lead Like Jesus, Daily Guideposts, Deeper into Scripture, Ligonier, Joseph Prince, Scripture Union, Focus on the Family, John Piper: Desiring God, Hillsong Church, Audio devotionals, Rick Warren: Daily Hope, Family Life, Elevation Church, NewSpring Church, 21 Days of Our Daily Bread, Hope International, Marriage Today, New Life Christian, Daily Walk with the Lord, Once a Day Bible, Jesus Calling, Shepherd Church, Growing Leaders, Bible Plans.org, Love God Greatly, Our Daily Bread: China&quot;,
+  &quot;dtp&quot;: &quot;September 13, 2015&quot;,
+  &quot;dtxt&quot;: &quot;50,000,000 - 100,000,000&quot;,
+  &quot;n&quot;: &quot;com.sirma.mobile.bible.android&quot;,
+  &quot;new&quot;: &quot;Bug fix&quot;,
+  &quot;os&quot;: &quot;Varies with device&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;https://www.google.com/url?q=http://www.youversion.com/privacy&amp;sa=D&amp;usg=AFQjCNEi1Arjg_n3pAx2xHr6lTiX_9HIXQ&quot;,
+  &quot;rate&quot;: 4.6,
+  &quot;rct&quot;: 1389189,
+  &quot;sz&quot;: &quot;Varies with device&quot;,
+  &quot;t&quot;: &quot;Bible&quot;,
+  &quot;verc&quot;: &quot;9633&quot;,
+  &quot;id&quot;: &quot;com.sirma.mobile.bible.android-9633&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528eb1&quot;,
+  &quot;cadd&quot;: &quot;1, 22nd St, Hong Lok Yuen, Tai Po,HK&quot;,
+  &quot;cat&quot;: &quot;Racing&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Runner Games&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Runner+Games&quot;,
+  &quot;dct&quot;: 50000000,
+  &quot;desc&quot;: &quot;Speeding Up, Jumping&#xFF0C;performing various tricks in the air and landing safety. The game \&quot;BMX Boy\&quot; is so easy but super fun.</pre>
+
+<p>There are 33 have been downloaded more than 10,000,000.</p>
+<h2 id="4-how-many-apps-have-the-word-share-in-their-description">4- How many apps have the word &quot;share&quot; in their description?</h2>
+<p>Hint: the desc field is indexed with a text index. Use the $text operator.</p>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$text&quot;:{&quot;$search&quot;: &quot;share&quot;}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526807&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Music &amp; Audio&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;LEX Andra&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=LEX+Andra&quot;,
+  &quot;dct&quot;: 100,
+  &quot;desc&quot;: &quot;Ottawa Music in HQ format. Download and enjoy the world of Music! This is a collection of Ottawa Music channels. Free Internet Radio Stations. Listen to all of the best Ottawa Radios!  - refresh list of streams - internet connexion starting with 24 Kbit/sec - instant Track Info - share button - most popular channels Receive a call and the radio is automatically off! Only the original broadcast with highest quality! Please use a fast internet connection for top app performance. If you find errors, please report and we will refresh the channels. We offer 24 hour customer support! KCRS - Kamloops Classic Rock Station Rythme FM 100.1 Mauricie 102.3 The Bear CJWW 600 CKZW 1650 AM RDI le Reseau de l&apos;Information The Island FM 100.7 Quebec Country The Tide 98.1 FM KG Country 95.5 FM Voices 4 Ability Radio Niagara Funny 820 AM Pure Rock Radio Crystal Radio CKVM 93.1 FM Quebec Radio FM Espace Musique Toronto CKWY Wayne 93.7 FM The Goat K93 FM Ancient FM Bandle City Radio Magic 97.1 FM Swisssh Holiday Radio QC La Tuque 97.1 CFLM Star 94.7 CKLF Fred FM 92.3 The Wave 97.3 FM Broken Neck Radio Swisssh Radio Drunk.FM 89.5 The Lake Retro Souvenirs Voiceprint Canada CHOC FM 104.9 Sun FM 99.9 CPAM 1610 AM Moose CFBG FM 99.5 NRJ Val-d&apos;Or 102.7 Planete 93.5 Planete 96.5 Hairball Canada ARMOR-RADIO.COM DRUM FM Claude For Ever MIX 96.5 FM Soundraum-Radio The EP Express Elvis Gold CITI 92 FM CO-OP Radio CFRO 100.5 FM Resplandece 94.3 The Goat AnimeNfo Radio Bob FM 103.7 105.1 Ed FM The Bounce 91.7 FM Funny 1410 AM Crucial Velocity Radio CJTR 91.3 FM 89 X FM Juice FM 103.5 FM CJLO 1690 AM laut.fm Shout-FM 1050 CJNB Z 98.9 CJAD 800 AM 93.5 Prairie FM Q 98 Dove Radio HOT105.7 iSpinLive Radio Techno FM Live CYUL Montreal ATC MIX 104 CKXD K Rock 98.7 FM 100.9 Canoe FM Power 99 FM Radio Ville Marie Eternal Gospel Radio Plan&#xC3;&#xA8;te Lov&apos; 102.1 NRJ Estrie 106.1 FM 2Day FM 101.1 The Port 1240 AM Kiss 92.5 Radio Humsafar Boom 97.3 FM Family Radio CHRI 99.1 FM Sikh Kirtan Radio Rendezvous Radio Rock 106.1 FM VM Radio Roots CHYZ 94.3 FM VOCM 650 AM Pur FM 94.1 94 Ottawa&apos;s New Country Hot 105.5 CIUT 89.5 FM 97.9 The Range SUN COUNTRY Calm Radio - Yo-Yo Ma Awesome 100 FM Classic Rock 95.7 Capitale Radio CKJH - Oldies! CK 750 AM Sun FM 97.1 LTD Radio Q104 Classical 103.1 CJVR FM Country AM 800 CKLW KYQ 95.7 FM The Haze FM Country 92.9 LU Radio 102.7 FM Sun FM 105.7 The Farm 101.1 FM Techno FM Techno 93.1 Chay Today The Boss Radio - Dance 102.9 K-Lite Calm Radio - Wagner Scratch Radio Rock 107 Sonic 104.9 The Wolf 100.3 FM Calm Radio - Zen News Talk 980 CJME Belleterre Radio 2 CAM-FM 98.1 96.1 BOB FM EZ Rock 101.5 M 103.5 FM KNR PodRadio Alpha HNE LoveHits.net CJSW 90.9 FM Paradise-Webradio PE Irish Radio Sun FM 89.7 Magic 98.3 Light It Up Radio CIHO FM 96.3 98.9 The Goat La Radio De Levis CILE MF 95.1 FM UMFM 101.5 FM CJTT 104.5 FM Khalsa FM Dimensions in Jazz CKBN 90.5 FM CKOC 1150 Classic Hits UP 93.1 XWave Radio 98.5 FM Montreal Artisan Radio 103.9 FM Sounds Of Portugal CJAM 91.5 FM LiVE 88.5 FM CJAI 92.1 FM Team 1040 95.7 Sun FM Onlyrockfm Capital FM 96.3 Hi-Tunes The Rig 96.7 The Lounge Sound Plan&#xC3;&#xA8;te 99.5 ADJ Dance News 1130 Sun FM 98.5 NetMusique Eletronica CJSO 101.7 FM Guru Nanak Gurdwara Lake FM 92.7 89.5 The Drive Country 840 CKOM 650 AM Star FM 97.5 Kemptville Life 100.3 Radio Kaos A2Zen.fm BleuFM CIDI 99.1 FM Radio The Valley Wolf Rythme FM 105.7 Montreal CKLM The Goat 106.1 FM Hindi Desi Bollywood Evergreen Hits The Bounce 101.3 Horizon FM CHMA 106.9 FM PodRadio Beta HNE RockXradio 890 CJDC Mix 107.9 FM QMFM 103.5 CIGN FM The EAGLE 94.1 O 97.3 COUNTRY 88.9 CJBK 1290 247 the mix DAP FM Vanakkam FM 105.9 CITR 101.9 FM 580 CFRA News Talk Radio The Humming Bird The X 92.5 FM Northern Manitoba Fire and EMS&quot;,
+  &quot;dtp&quot;: &quot;June 1, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100 - 500&quot;,
+  &quot;n&quot;: &quot;lex.ottawamusic.biz&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4,
+  &quot;rct&quot;: 1,
+  &quot;sz&quot;: &quot;2.7M&quot;,
+  &quot;t&quot;: &quot;Ottawa Music ONLINE&quot;,
+  &quot;verc&quot;: &quot;2889&quot;,
+  &quot;id&quot;: &quot;lex.ottawamusic.biz-2889&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527495&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Entertainment&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Hindi Applications&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Hindi+Applications&quot;,
+  &quot;dct&quot;: 10000,
+  &quot;desc&quot;: &quot;This app contains Hindi Language Status Messages for Social Media Apps. Keep updating your status on famous social apps with the help of this app. Key Features:: santa banta jokes santa banta sms jokes of santa banta santa banta sms jokes punjabi sms gujarati sms shayari love sms adult sms free sms collection hinde sms telugu sms sms sites sms mobile bollywood movies 2010 bollywood movies bollywood bollywood songs bollywood movies 2011 bollywood jokes in hindi sms jokes jokes sms gujarati jokes sardar jokes santabanta jokes telugu jokes tintumon jokes short f</pre>
+
+<p>There are 4197 have the world &quot;share&quot; in their description.</p>
+<h2 id="5-find-apps-that-are-categorized-in-any-of-the-following-categories-productivity-business-or-finance">5- Find apps that are categorized in any of the following categories: Productivity, Business, or Finance?</h2>
+<p>Hint: Use the $in operator.</p>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;cat&quot;: {&quot;$in&quot;: [&quot;Productivity&quot;, &quot;Business&quot;, &quot;Finance&quot;]}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a5261df&quot;,
+  &quot;cadd&quot;: &quot;Rushabh Gandhi\nSamyak Infotech Pvt. Ltd.\n905-908, Abhijeet - I,\nMithakhali Six Roads, Elish Bridge\nAhmedabad - 380 006, India, Ahmedabad&quot;,
+  &quot;cat&quot;: &quot;Business&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Samyak Infotech Pvt. Ltd.&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Samyak+Infotech+Pvt.+Ltd.&quot;,
+  &quot;dct&quot;: 500000,
+  &quot;desc&quot;: &quot;Any one can easily convert his/her document file to PDF format. Support .doc and .jpg format to convert .PDF formant. It is very easy to install and user friendly. This application support above Android 2.3 version Please type \&quot;...Filename.pdf...\&quot;, before click on the CONVERT to PDF Button User can open Converted PDF file directly from Application. Email facility to send PDF. ----&gt; Request Note: We request all our Application users who had not upgrade DOC to PDF converter to Version 10.0, Please Grade it to Version 10.0 there many bugs in below versions. <----", 1="" "dtp":="" "August="" 2,="" 2014",="" "dtxt":="" "500,000="" -="" 1,000,000",="" "n":="" "com.samyak",="" "new":="" "We="" request="" all="" our="" Application="" users="" who="" had="" not="" upgrade="" DOC="" to="" PDF="" converter="" Version="" 10.0,="" Please="" Grade="" it="" 10.0="" there="" many="" bugs="" in="" below="" versions.="" User="" can="" open Converted="" file="" directly="" from="" Application.="" Email="" facility="" send="" PDF.="" Note:="" We="" are="" inviting="" companies="" put="" their="" product="" advertisement="" banner="" application.",="" "os":="" "2.3.3="" and="" up",="" "pri":="" "Free",="" "purl":="" "",="" "rate":="" 3.6,="" "rct":="" 3059,="" "sz":="" "3.2M",="" "t":="" "Doc="" Converter",="" "verc":="" "6848",="" "id":="" "com.samyak-6848"="" },="" {="" "_id":="" "5604457c703498dd2a526267",="" "cadd":="" "cat":="" "Business",="" "crat":="" "Everyone",="" "crt":="" "THiNKNET="" Co.,="" Ltd.",="" "curl":="" "="" store="" apps="" developer?id="THiNKNET+Co.,+Ltd.&quot;," "dct":="" 100000,="" "desc":="" "Mobile="" application="" อัพเดทล่าสุดจาก="" JobThai.com="" เว็บไซต์หางานอันดับ="" ที่มีคนเข้าใช้งานมากที่สุดในประเทศไทย="" ช่วยให้คุณค้นหา="" ตำแหน่งงาน="" สมัครงาน="" ได้อย่างสะดวก="" รวดเร็ว="" มีตำแหน่งงานมากกว่า="" 70,000="" อัตรา="" อัพเดททุกวันจากบริษัทชั้นนำทั่วประเทศไทย="" ค้นหาและสมัครงานง่ายๆ="" ด้วยบริการเหล่านี้="" ค้นหางานได้หลายวิธี="" เช่น="" ประเภทงาน="" สถานที่ปฏิบัติงาน="" ความสะดวกในการเดินทาง="" (BTS,="" MRT,="" BRT,="" Airport="" Link="" และ="" สายรถเมล์)="" ตำแหน่ง(พิกัด)ปัจจุบัน="" หรือ="" ค้นหาจากคำที่ต้องการได้="" อัพเดทงานใหม่ทุกวันกับ="" HOT="" JOBS="" URGENT="" สมัครงานได้ทันที="" เรซูเม่ส่งตรงถึงบริษัท="" แสดงรายละเอียดบริษัทโดยละเอียด="" ประวัติที่ตั้ง="" สินค้าบริการ="" แผนที่="" สวัสดิการ="" และอื่นๆ="" ดูประวัติการสมัครงานที่ผ่านมาแล้วได้="" บันทึก="" เรียกดู="" ตำแหน่งงานที่สนใจได้="" แชร์ตำแหน่งงานผ่านทาง="" E-mail="" Facebook="" แสดงผลได้ทั้งภาษาไทยและภาษาอังกฤษ="" The="" most="" updated="" mobile="" JobThai.com,="" number="" Job="" Search="" Thailand,="" lets="" you="" search="" apply="" jobs="" within="" few="" clicks.="" There="" over="" job="" openings="" everyday="" top="" Thailand.="" Getting="" your="" dream="" is="" easy="" fast="" by="" following="" features;="" Various="" ways="" for="" jobs,="" example,="" categories,="" locations,="" transportations="" Bus="" Routes)="" or="" specific="" keyword="" (s)="" Keep="" with="" new="" Apply="" resume="" sent="" straight="" employers!="" Show="" company’s="" full="" details="" ;="" company="" profile,="" location,="" products="" &="" services,="" map="" ,="" benefits="" much="" more="" Check="" history="" of="" applied="" saved="" Favorite="" Jobs="" Share="" friends="" Available="" both="" Thai="" English="" --="" What's="" New="" In="" 1)="" Design="" แบบใหม่="" 2)="" สามารถค้นหางานตามสายรถเมล์="" 3)="" แก้ไข="" Bug="" และปรังปรุงประสิทธิภาพของแอพพลิเคชั่น="" Routes="" fixes="" performance="" improvements\"",="" "November="" 19,="" "100,000="" 500,000",="" "jobthai.androidv1",="" "What's="" V.="" 2.2.3="" ขอบคุณสำหรับการใช้งาน="" Mobile="" แอพพลิเคชั่นหางานสมัครงานซึ่งมีผู้ดาวน์โหลดมากที่สุด="" เรายังคงพัฒนาอย่างต่อเนื่องเพื่อให้การหางานเป็นเรื่องง่ายสำหรับคุณ="" นอกเหนือจากการแชร์ตำแหน่งงานที่น่าสนใจผ่าน="" E-Mail="" เราได้เพิ่ม="" Google="" +="" Twitter="" ในเวอร์ชั่นนี้="" รวมถึงเพิ่มประสิทธิภาพการใช้งานของระบบให้มีความสะดวกรวดเร็วยิ่งขึ้น="" หากคุณมีข้อเสนอแนะเพื่อการปรับปรุงและพัฒนาการใช้งานสามารถติดต่อเราได้เสมอที่="" Setting=""> Contact Us &gt; Android@jobthai.com&quot;,
+  &quot;os&quot;: &quot;4.0 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.3,
+  &quot;rct&quot;: 3558,
+  &quot;sz&quot;: &quot;11M&quot;,
+  &quot;t&quot;: &quot;JobThai - Thailand Jobs Search&quot;,
+  &quot;verc&quot;: &quot;6696&quot;,
+  &quot;id&quot;: &quot;jobthai.androidv1-6696&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a5262d6&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Business&quot;,
+  &quot;crat&quot;: &quot;Unrated&quot;,
+  &quot;crt&quot;: &quot;BTechLabo&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=BTechLabo&quot;,
+  &quot;dct&quot;: 1000,
+  &quot;desc&quot;: &quot;A simple application which records a memorandum for meeting, such as the when, where, who, and what. - Send data to all participants via e-mail application - Export data to external applications (such as saving to Evernote) - Save to SD Card - Search data (full-text searching) The intended purpose of this application is to be used by</----",></pre>
+
+<p>There are 3179 are in any of the following categories: Productivity, Business, or Finance.</p>
+<h2 id="6-find-apps-that-have-been-downloaded-10-000-000-or-more-but-have-star-rating-lower-than-3-stars">6- Find apps that have been downloaded 10,000,000 or more but have star rating lower than 3 stars?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;dct&quot;: {&quot;$gte&quot;: 10000000}}, {&quot;rate&quot;: {&quot;$lt&quot;: 3}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526fda&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Entertainment&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;RQ Droid&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=RQ+Droid&quot;,
+  &quot;dct&quot;: 10000000,
+  &quot;desc&quot;: &quot;XRay Scan application is a prank fake xray scanner to trick your friends that you have awesome phone app that can X-ray their left hand. This app XRay Scanner app display fake image xray skeletal left hand. Control the movement by touching your phone screen, scroll your finger will scroll the xray skelatal screen, retouch will reverse the scroll movement. This is a fake xray scanner, not a real X-ray, it&apos;s a prank xray app with moving x-ray skeletal left hand image, this app is for entertainment only.&quot;,
+  &quot;dtp&quot;: &quot;July 29, 2014&quot;,
+  &quot;dtxt&quot;: &quot;10,000,000 - 50,000,000&quot;,
+  &quot;n&quot;: &quot;xrayscan.regque&quot;,
+  &quot;new&quot;: &quot;Updated to latest sponsor library code.&quot;,
+  &quot;os&quot;: &quot;2.2 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 2.9,
+  &quot;rct&quot;: 88532,
+  &quot;sz&quot;: &quot;290k&quot;,
+  &quot;t&quot;: &quot;Xray Scan&quot;,
+  &quot;verc&quot;: &quot;8997&quot;,
+  &quot;id&quot;: &quot;xrayscan.regque-8997&quot;
+ }
+]</pre>
+
+<p>There are 1 apps.</p>
+<p>Hint: The query matches one app in the dataset and the link to its Google Play listing page is:
+<a href="https://play.google.com/store/apps/details?id=xrayscan.regque" target="_blank">https://play.google.com/store/apps/details?id=xrayscan.regque</a> Read the reviews to find out why?</p>
+<h2 id="7-find-the-title-and-creator-of-apps-that-have-been-rated-above-4-stars-by-1-000-000-or-more-users">7- Find the title and creator of apps that have been rated above 4 stars by 1,000,000 or more users?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;rct&quot;: {&quot;$gte&quot;: 1000000}}, {&quot;rate&quot;: {&quot;$gt&quot;: 4}}]},{&quot;t&quot;:1, &quot;crt&quot;: 1}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a52988a&quot;,
+  &quot;crt&quot;: &quot;Glu&quot;,
+  &quot;t&quot;: &quot;FRONTLINE COMMANDO: D-DAY&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f74&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Dungeon Hunter 4&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290ab&quot;,
+  &quot;crt&quot;: &quot;GO Launcher EX&quot;,
+  &quot;t&quot;: &quot;GO Weather Forecast &amp; Widgets&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f84&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Ice Age Adventures&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526687&quot;,
+  &quot;crt&quot;: &quot;LINE Corporation&quot;,
+  &quot;t&quot;: &quot;LINE Pokopang&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f83&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Blitz Brigade - Online FPS fun&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527877&quot;,
+  &quot;crt&quot;: &quot;SCIMOB&quot;,
+  &quot;t&quot;: &quot;94%&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525b56&quot;,
+  &quot;crt&quot;: &quot;RiliSoft&quot;,
+  &quot;t&quot;: &quot;Pixel Gun 3D&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ab703498dd2a52a9ce&quot;,
+  &quot;crt&quot;: &quot;GoldenShores Technologies, LLC&quot;,
+  &quot;t&quot;: &quot;Brightest Flashlight Free &#xAE;&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528ce6&quot;,
+  &quot;crt&quot;: &quot;Evernote Corporation&quot;,
+  &quot;t&quot;: &quot;Evernote&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f82&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Iron Man 3 - The Official Game&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528795&quot;,
+  &quot;crt&quot;: &quot;ELECTRONIC ARTS&quot;,
+  &quot;t&quot;: &quot;SimCity BuildIt&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a52545c&quot;,
+  &quot;crt&quot;: &quot;LINE Corporation&quot;,
+  &quot;t&quot;: &quot;LINE Rangers&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527e4e&quot;,
+  &quot;crt&quot;: &quot;LifeChurch.tv&quot;,
+  &quot;t&quot;: &quot;Bible&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f92&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;GT Racing 2: The Real Car Exp&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a528196&quot;,
+  &quot;crt&quot;: &quot;Notes&quot;,
+  &quot;t&quot;: &quot;ColorNote Notepad Notes&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f98&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Six-Guns: Gang Showdown&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526f2a&quot;,
+  &quot;crt&quot;: &quot;Wattpad.com&quot;,
+  &quot;t&quot;: &quot;Wattpad - Free Books &amp; Stories&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f7c&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Gangstar Vegas&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528819&quot;,
+  &quot;crt&quot;: &quot;eBay Mobile&quot;,
+  &quot;t&quot;: &quot;eBay&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f97&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Spider-Man Unlimited&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525eb6&quot;,
+  &quot;crt&quot;: &quot;Pretty Simple&quot;,
+  &quot;t&quot;: &quot;Criminal Case&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f80&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Ice Age Village&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525ff0&quot;,
+  &quot;crt&quot;: &quot;PSafe Tecnologia S.A.&quot;,
+  &quot;t&quot;: &quot;Antivirus Booster &amp; Cleaner&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ab703498dd2a52a88c&quot;,
+  &quot;crt&quot;: &quot;Nordeus&quot;,
+  &quot;t&quot;: &quot;Top Eleven Be a Soccer Manager&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525db3&quot;,
+  &quot;crt&quot;: &quot;ABISHKKING&quot;,
+  &quot;t&quot;: &quot;myCalendar - Period Tracker&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528411&quot;,
+  &quot;crt&quot;: &quot;Creative Mobile&quot;,
+  &quot;t&quot;: &quot;Drag Racing&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527290&quot;,
+  &quot;crt&quot;: &quot;GO Dev Team&quot;,
+  &quot;t&quot;: &quot;GO SMS Pro&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a529a12&quot;,
+  &quot;crt&quot;: &quot;GO Dev Team&quot;,
+  &quot;t&quot;: &quot;GO Keyboard Lite + Emoji&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ab703498dd2a52a7b9&quot;,
+  &quot;crt&quot;: &quot;socialpoint&quot;,
+  &quot;t&quot;: &quot;Dragon City&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044571703498dd2a52525d&quot;,
+  &quot;crt&quot;: &quot;Holaverse Group&quot;,
+  &quot;t&quot;: &quot;Omni Swipe&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ac703498dd2a52b137&quot;,
+  &quot;crt&quot;: &quot;Next Floor Corp.&quot;,
+  &quot;t&quot;: &quot;DragonFlight for Kakao&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527abb&quot;,
+  &quot;crt&quot;: &quot;Tango&quot;,
+  &quot;t&quot;: &quot;Tango - Free Video Call &amp; Chat&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525986&quot;,
+  &quot;crt&quot;: &quot;J2 Interactive&quot;,
+  &quot;t&quot;: &quot;MX Player&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a5251f6&quot;,
+  &quot;crt&quot;: &quot;AVG Mobile&quot;,
+  &quot;t&quot;: &quot;AntiVirus FREE - Security Scan&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f6e&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Asphalt 8: Airborne&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ab703498dd2a52a3a6&quot;,
+  &quot;crt&quot;: &quot;Surpax Inc.&quot;,
+  &quot;t&quot;: &quot;Super-Bright LED Flashlight&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f76&quot;,
+  &quot;crt&quot;: &quot;Gameloft&quot;,
+  &quot;t&quot;: &quot;Despicable Me&quot;
+ }
+]</pre>
+
+<p>There are 38 apps.</p>
+<h2 id="8-find-apps-whose-content-rating-is-teen-but-not-categorized-in-any-of-the-following-categories-card-entertainment-comics-and-puzzle">8- Find apps whose content rating is Teen but not categorized in any of the following categories: Card, Entertainment, Comics, and Puzzle?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;crat&quot;: &quot;Teen&quot;}, {&quot;cat&quot;:{&quot;$nin&quot;: [&quot;Card&quot;, &quot;Entertainment&quot;, &quot;Comics&quot;, &quot;Puzzle&quot;]}}]}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a52638a&quot;,
+  &quot;cadd&quot;: &quot;&#x6771;&#x4EAC;&#x90FD;&#x6E2F;&#x533A;&#x516D;&#x672C;&#x6728;6-10-1&#x516D;&#x672C;&#x6728;&#x30D2;&#x30EB;&#x30BA;&#x68EE;&#x30BF;&#x30EF;&#x30FC; 38F&quot;,
+  &quot;cat&quot;: &quot;Social&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;CROOZ, Inc.&quot;,
+  &quot;curl&quot;: &quot;/store/apps/dev?id=8765668180176066724&quot;,
+  &quot;dct&quot;: 100000,
+  &quot;desc&quot;: &quot;&#x25A0;CROOZblog&#x30D3;&#x30E5;&#x30FC;&#x30EF;&#x30FC;&#x30A2;&#x30D7;&#x30EA; &#x4EBA;&#x6C17;&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x8A8C;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x591A;&#x6570;&#x8F29;&#x51FA;&#x3057;&#x305F;&#x3001;&#x65E5;&#x672C;&#x6700;&#x5927;&#x7D1A;&#x306E;&#x5973;&#x6027;&#x5411;&#x3051;&#x30D6;&#x30ED;&#x30B0;&#x30B5;&#x30A4;&#x30C8;&#x300E;CROOZblog&#x300F;( http://blog.crooz.jp )&#x516C;&#x5F0F;&#x30D6;&#x30ED;&#x30B0;&#x6295;&#x7A3F;&#x30A2;&#x30D7;&#x30EA;&#x3067;&#x3059;&#x3002; CROOZblog&#x3068;&#x306F;&#x2026;&#xFF1F; &#x4EBA;&#x6C17;&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x8A8C;&#x30E2;&#x30C7;&#x30EB;&#x3001;&#x30BF;&#x30EC;&#x30F3;&#x30C8;&#x306A;&#x3069;&#x3092;&#x4E2D;&#x5FC3;&#x306B;&#x7F8E;&#x5BB9;&#x30FB;&#x30E1;&#x30A4;&#x30AF;&#x30FB;&#x30C0;&#x30A4;&#x30A8;&#x30C3;&#x30C8;&#x30FB;&#x30CD;&#x30A4;&#x30EB;&#x306A;&#x3069;&#x3001;&#x5973;&#x6027;&#x306E;&#x30C8;&#x30EC;&#x30F3;&#x30C9;&#x304C;&#x30EA;&#x30A2;&#x30EB;&#x30BF;&#x30A4;&#x30E0;&#x3067;&#x767A;&#x4FE1;&#x3055;&#x308C;&#x5E45;&#x5E83;&#x3044;&#x5973;&#x6027;&#x306B;&#x652F;&#x6301;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D6;&#x30ED;&#x30B0;&#x30B5;&#x30A4;&#x30C8;&#x3067;&#x3059;&#x3002; &#x307E;&#x305F;&#x3001;&#x4EBA;&#x6C17;&#x30BF;&#x30EC;&#x30F3;&#x30C8;&#x30FB;&#x30E2;&#x30C7;&#x30EB;&#x304C;&#x591A;&#x6570;&#x30D6;&#x30ED;&#x30B0;&#x3092;&#x958B;&#x8A2D;&#x4E2D;&#xFF01; &#x5973;&#x6027;&#x306B;&#x5927;&#x4EBA;&#x6C17;&#x306E;&#x96D1;&#x8A8C;&#x30E2;&#x30C7;&#x30EB;(ageha/egg/JJ/JELLY/jiggy/nuts/Popteen/Scawaii/ViVi&#x7B49;)&#x3084;&#x3001;&#x30C6;&#x30EC;&#x30D3;&#x306B;&#x591A;&#x6570;&#x51FA;&#x6F14;&#x4E2D;&#x306E;&#x30BF;&#x30EC;&#x30F3;&#x30C8;&#x30FB;&#x30A2;&#x30FC;&#x30C6;&#x30A3;&#x30B9;&#x30C8;&#x30FB;&#x30A2;&#x30A4;&#x30C9;&#x30EB;&#x30FB;&#x8AAD;&#x8005;&#x30E2;&#x30C7;&#x30EB;&#x306A;&#x3069;&#x6709;&#x540D;&#x4EBA;&#x306E;&#x30D6;&#x30ED;&#x30B0;&#x304C;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x25A0;&#x30D3;&#x30E5;&#x30FC;&#x30EF;&#x30FC;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x7279;&#x5FB4; &#x3010;1&#x3011;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x304C;&#x7C21;&#x5358;&#xFF01; &#x65B0;&#x898F;&#x767B;&#x9332;&#x306E;&#x65B9;&#x3082;&#x3059;&#x3067;&#x306B;&#x4F1A;&#x54E1;&#x306E;&#x65B9;&#x3082;&#x3001;ID&#x3068;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x3066;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3059;&#x308B;&#x3068;&#x3001;&#x6B21;&#x56DE;&#x4EE5;&#x964D;&#x306F;&#x81EA;&#x52D5;&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3010;2&#x3011;&#x30E9;&#x30F3;&#x30AD;&#x30F3;&#x30B0;&#x304B;&#x3089;&#x4EBA;&#x6C17;&#x306E;&#x30D6;&#x30ED;&#x30B0;&#x304C;&#x898B;&#x3064;&#x304B;&#x308B;&#x3002; &#x65E5;&#x8A18;&#x3001;&#x30D3;&#x30E5;&#x30FC;&#x30C6;&#x30A3;&#x30FC;&#x3001;&#x30D5;&#x30A1;&#x30C3;&#x30B7;&#x30E7;&#x30F3;&#x3001;&#x30B7;&#x30E7;&#x30C3;&#x30D4;&#x30F3;&#x30B0;&#x306A;&#x3069;&#x69D8;&#x3005;&#x306A;&#x30B8;&#x30E3;&#x30F3;&#x30EB;&#x306E;&#x30D6;&#x30ED;&#x30B0;&#x3092;&#x8AAD;&#x3081;&#x307E;&#x3059;&#x3002;&#x30E9;&#x30F3;&#x30AD;&#x30F3;&#x30B0;&#x306F;&#x300C;&#x5E74;&#x9F62;&#x5225;&#x300D;&#x300C;&#x5730;&#x57DF;&#x5225;&#x300D;&#x306B;&#x7D5E;&#x308A;&#x8FBC;&#x307F;&#x95B2;&#x89A7;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3010;3&#x3011;&#x30D4;&#x30C3;&#x30AF;&#x30A2;&#x30C3;&#x30D7;&#x304B;&#x3089;&#x4EBA;&#x6C17;&#x30E2;&#x30C7;&#x30EB;&#x30D6;&#x30ED;&#x30B0;&#x304C;&#x898B;&#x3064;&#x304B;&#x308B;&#x3002; &#x4EBA;&#x6C17;&#x30E2;&#x30C7;&#x30EB;&#x3084;&#x8AAD;&#x8005;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x30D6;&#x30ED;&#x30B0;&#x306E;&#x66F4;&#x65B0;&#x8A18;&#x4E8B;&#x3092;&#x30EA;&#x30A2;&#x30EB;&#x30BF;&#x30A4;&#x30E0;&#x3067;&#x30B5;&#x30AF;&#x3063;&#x3068;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3010;4&#x3011;&#x30C8;&#x30D4;&#x30C3;&#x30AF;&#x30B9;&#x304B;&#x3089;&#x4EBA;&#x6C17;&#x8A18;&#x4E8B;&#x304C;&#x898B;&#x3064;&#x304B;&#x308B;&#x3002; &#x4EBA;&#x6C17;&#x30D6;&#x30ED;&#x30AC;&#x30FC;&#x306E;&#x6700;&#x65B0;&#x8A18;&#x4E8B;&#x3092;&#x7C21;&#x5358;&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x25A0;&#x30B5;&#x30DD;&#x30FC;&#x30C8;  &#x3054;&#x610F;&#x898B;&#x3054;&#x8981;&#x671B;&#x306F;&#x4E0B;&#x8A18;&#x3088;&#x308A;&#x554F;&#x5408;&#x305B;&#x3092;&#x304A;&#x9858;&#x3044;&#x81F4;&#x3057;&#x307E;&#x3059;&#x3002; http://compasssupport.crooz.jp/?project_id=45&amp;support_id=1&amp;k=&amp;p=blog&quot;,
+  &quot;dtp&quot;: &quot;February 24, 2014&quot;,
+  &quot;dtxt&quot;: &quot;100,000 - 500,000&quot;,
+  &quot;n&quot;: &quot;jp.co.crooz.android.apploginblog&quot;,
+  &quot;new&quot;: &quot;Ver.2.13 &#x4FEE;&#x6B63;&#x30FB;&#x5909;&#x66F4;&#x70B9;&#xFF1A; &#x30FB;&#x30ED;&#x30B4;&#x3092;&#x65B0;&#x3057;&#x304F;&#x5909;&#x66F4;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; Ver.2.12 &#x4FEE;&#x6B63;&#x30FB;&#x5909;&#x66F4;&#x70B9;&#xFF1A; &#x30FB;&#x4E00;&#x90E8;&#x306E;&#x7AEF;&#x672B;&#x3067;&#x30E1;&#x30FC;&#x30EB;&#x304B;&#x3089;&#x30A2;&#x30D7;&#x30EA;&#x304C;&#x958B;&#x3051;&#x306A;&#x3044;&#x554F;&#x984C;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; Ver.2.11 &#x4FEE;&#x6B63;&#x30FB;&#x5909;&#x66F4;&#x70B9;&#xFF1A; &#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x8AAD;&#x307F;&#x8FBC;&#x307F;&#x6642;&#x306E;&#x9032;&#x6357;&#x3092;&#x30BF;&#x30A4;&#x30C8;&#x30EB;&#x30D0;&#x30FC;&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; &#x30FB;&#x305D;&#x306E;&#x4ED6;&#x4E0D;&#x5177;&#x5408;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; Ver.2.10 &#x4FEE;&#x6B63;&#x30FB;&#x5909;&#x66F4;&#x70B9;&#xFF1A; &#x30FB;&#x30E1;&#x30FC;&#x30EB;&#x306E;&#x66F4;&#x65B0;&#x901A;&#x77E5;&#x304B;&#x3089;&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3068;&#x30EA;&#x30F3;&#x30AF;&#x306E;&#x5185;&#x5BB9;&#x306B;&#x95A2;&#x308F;&#x3089;&#x305A;&#x5F37;&#x5236;&#x7684;&#x306B;&#x30C8;&#x30C3;&#x30D7;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x9077;&#x79FB;&#x3059;&#x308B;&#x554F;&#x984C;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; Ver.2.09 &#x4FEE;&#x6B63;&#x30FB;&#x5909;&#x66F4;&#x70B9;&#xFF1A; &#x30FB;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x753B;&#x9762;&#x3092;&#x4E00;&#x65B0;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; &#x30FB;&#x64CD;&#x4F5C;&#x6027;&#x306E;&#x5411;&#x4E0A;&#x3092;&#x884C;&#x3044;&#x307E;&#x3057;&#x305F;&#x3002; Ver.2.08 &#x4FEE;&#x6B63;&#x30FB;&#x5909;&#x66F4;&#x70B9;&#xFF1A; &#x30FB;&#x30AB;&#x30E1;&#x30E9;&#x30A2;&#x30D7;&#x30EA;&#x3001;&#x30AE;&#x30E3;&#x30E9;&#x30EA;&#x30FC;&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x5171;&#x6709;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x753B;&#x50CF;&#x3092;&#x6295;&#x7A3F;&#x3067;&#x304D;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; &#x30FB;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x51E6;&#x7406;&#x6642;&#x3001;&#x901A;&#x4FE1;&#x306E;&#x72B6;&#x614B;&#x306B;&#x3088;&#x3063;&#x3066;&#x7A00;&#x306B;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x304C;&#x5FDC;&#x7B54;&#x306A;&#x3057;&#x306B;&#x306A;&#x3063;&#x3066;&#x3057;&#x307E;&#x3046;&#x4E0D;&#x5177;&#x5408;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; &#x30FB;&#x305D;&#x306E;&#x4ED6;&#x4E0D;&#x5177;&#x5408;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&quot;,
+  &quot;os&quot;: &quot;1.6 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 2.9,
+  &quot;rct&quot;: 1260,
+  &quot;sz&quot;: &quot;265k&quot;,
+  &quot;t&quot;: &quot;CROOZblog for Android&quot;,
+  &quot;verc&quot;: &quot;8655&quot;,
+  &quot;id&quot;: &quot;jp.co.crooz.android.apploginblog-8655&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a5263b4&quot;,
+  &quot;cadd&quot;: &quot;&#x5927;&#x962A;&#x5E9C;&#x5927;&#x962A;&#x5E02;&#x4E2D;&#x592E;&#x533A;&#x6DE1;&#x8DEF;&#x753A;3&#x4E01;&#x76EE;2&#x756A;8&#x53F7;&#x30C8;&#x30FC;&#x30A2;&#x7D21;&#x7B2C;2&#x30D3;&#x30EB;2F&quot;,
+  &quot;cat&quot;: &quot;Arcade&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;fuate Co., Ltd.&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=fuate+Co.,+Ltd.&quot;,
+  &quot;dct&quot;: 10000,
+  &quot;desc&quot;: &quot;Comes to town for a lot of zombies. Beat a zombie game by manipulating the sight. The game is over and destroy the barricade. &#x25A0; How to Play &#xB7; Screen drag to move the crosshair. &#x2022; Tap in the gun. Rifle mode switch to multi-touch. &#xB7; There is no game over barricades life gauge. &#x25A0; Point Strategy Get your Head Shot You may come to a head shot and items. &#x2022; The item to use Bombs and mines to place the item, swoop the zombies!&quot;,
+  &quot;dtp&quot;: &quot;September 6, 2013&quot;,
+  &quot;dtxt&quot;: &quot;10,000 - 50,000&quot;,
+  &quot;n&quot;: &quot;jp.co.fuate.zombie&quot;,
+  &quot;new&quot;: &quot;&#x25A0;v1.1.3(2013/09/06) &#x30FB;Fixed bug.&quot;,
+  &quot;os&quot;: &quot;2.1 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 3.8,
+  &quot;rct&quot;: 40,
+  &quot;sz&quot;: &quot;2.0M&quot;,
+  &quot;t&quot;: &quot;Endless zombie&quot;,
+  &quot;verc&quot;: &quot;2248&quot;,
+  &quot;id&quot;: &quot;jp.co.fuate.zombie-2248&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a5263bc&quot;,
+  &quot;cadd&quot;: &quot;&#x6771;&#x4EAC;&#x90FD;&#x6E0B;&#x8C37;&#x533A;&#x9053;&#x7384;&#x5742;1-15-3-422&quot;,
+  &quot;cat&quot;: &quot;Education&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;&#x5B66;&#x6821;&#x30CD;&#x30C3;&#x30C8;&#x682A;&#x5F0F;&#x4F1A;&#x793E;&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=%E5%AD%A6%E6%A0%A1%E3%83%8D%E3%83%83%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE&quot;,
+  &quot;dct&quot;: 100000,
+  &quot;desc&quot;: &quot;Let&apos;s solve plane figures problems!  Once you have completed the basic questions from Stage 1 to Stage 4,  try to solve the challenging problems on the Final Stage !  If you can&apos;t solve a ploblem, you can check the hint of the question or ask the answer to your friends via Twitter.  &apos;Angles?&apos; contains following contents:  ---  -The sum of the Angles of a triangle  -Exterior angle of a triangle  -Isosceles triangle  -Right-angled triangle  -Vertical angle  -Corresponding angle  -Alternate angle  -Parallelogram  -The sum of the Angles of a quadrilateral  -The sum of the Angles of a polygon  -Inscribed angles  -Alternate segment theorem  ---&quot;,
+  &quot;dtp&quot;: &quot;September 9, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100,000 - 500,000&quot;,
+  &quot;n&quot;: &quot;jp.co.gakkonet.quizqaangles&quot;,
+  &quot;new&quot;: &quot;Ver 2.8.6 &#x30FB;Fix bugs. Ver 2.2.1 Fix the bug that prevents inquiry. Ver1.4 Fix some bugs.&quot;,
+  &quot;os&quot;: &quot;4.0 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4,
+  &quot;rct&quot;: 760,
+  &quot;sz&quot;: &quot;11M&quot;,
+  &quot;t&quot;: &quot;Angles? solve figures problems&quot;,
+  &quot;verc&quot;: &quot;4864&quot;,
+  &quot;id&quot;: &quot;jp.co.gakkonet.quizqaangles-4864&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a5265ab&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;cat&quot;: &quot;Social&quot;,
+  &quot;crat&quot;: &quot;Teen&quot;,
+  &quot;crt&quot;: &quot;Hobby Bowl&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=Hobby+Bowl&quot;,
+  &quot;dct&quot;: 100,
+  &quot;desc&quot;: &quot;Honest is anonymous post message application without having to worry about the public eye now of their feelings.  Post messages 24 hours a random display, you can post with confidence because there is no name or gender setting. No message is time display of the time line. Comments can not be also. Action from the other buttons only. \&quot;Empathy\&quot; is the only response &#x201C;Cheer\&quot; and three buttons of &#x201C;Like\&quot;, \&quot;Favorite\&quot;.&quot;,
+  &quot;dtp&quot;: &quot;August 20, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100 - 500&quot;,
+  &quot;n&quot;: &quot;jp.hobbybowl.honest&quot;,
+  &quot;new&quot;: &quot;&#x65B0;&#x3057;&#x3044;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x30FC;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002; &#x30E6;&#x30FC;&#x30B6;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x6A5F;&#x80FD;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x3092;&#x884C;&#x3046;&#x3068;&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x6295;&#x7A3F;&#x306F;&#x5168;&#x3066;&#x975E;&#x8868;&#x793A;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002; &#x5C65;&#x6B74;&#x306E;&#x5171;&#x611F;&#x6570;&#x306A;&#x3069;&#x306E;&#x5408;&#x8A08;&#x304C;&#x7570;&#x306A;&#x308B;&#x30D0;&#x30B0;&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;&quot;,
+  &quot;os&quot;: &quot;4.0 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 3,
+  &quot;rct&quot;: 7,
+  &quot;sz&quot;: &quot;5.6M&quot;,
+  &quot;t&quot;: &quot;Honest&quot;,
+  &quot;verc&quot;: &quot;7723&quot;,
+  &quot;id&quot;: &quot;jp.hobbybowl.honest-7723&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526680&quot;,
+  &quot;cadd&quot;: &quot;</pre>
+
+<p>There are 1520 apps.</p>
+<h2 id="9-find-the-title-category-download-count-and-star-rating-of-apps-with-the-phrase-in-app-purchase-in-their-description-and-download-count-greater-than-10-000-000">9- Find the title, category, download count, and star rating of apps with the phrase &quot;in-app purchase&quot; in their description and download count greater than 10,000,000?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;$text&quot;:{&quot;$search&quot;: &quot;in-app purchase&quot;}}, {&quot;dct&quot;: {&quot;$gt&quot;: 10000000}}]},{&quot;t&quot;:1, &quot;cat&quot;: 1, &quot;rct&quot;: 1, &quot;rate&quot;: 1}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528819&quot;,
+  &quot;cat&quot;: &quot;Shopping&quot;,
+  &quot;rate&quot;: 4.2,
+  &quot;rct&quot;: 1479432,
+  &quot;t&quot;: &quot;eBay&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a529008&quot;,
+  &quot;cat&quot;: &quot;Music &amp; Audio&quot;,
+  &quot;rate&quot;: 4.3,
+  &quot;rct&quot;: 442334,
+  &quot;t&quot;: &quot;Walk Band - Music Studio&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a52563b&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 831578,
+  &quot;t&quot;: &quot;Lookout Security &amp; Antivirus&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a52566e&quot;,
+  &quot;cat&quot;: &quot;Social&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 588543,
+  &quot;t&quot;: &quot;Zello PTT Walkie Talkie&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525db3&quot;,
+  &quot;cat&quot;: &quot;Health &amp; Fitness&quot;,
+  &quot;rate&quot;: 4.7,
+  &quot;rct&quot;: 2152297,
+  &quot;t&quot;: &quot;myCalendar - Period Tracker&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f76&quot;,
+  &quot;cat&quot;: &quot;Casual Action &amp; Adventure&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 7679653,
+  &quot;t&quot;: &quot;Despicable Me&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527918&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;rate&quot;: 4.1,
+  &quot;rct&quot;: 121353,
+  &quot;t&quot;: &quot;Samsung Print Service Plugin&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525986&quot;,
+  &quot;cat&quot;: &quot;Media &amp; Video&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 3099564,
+  &quot;t&quot;: &quot;MX Player&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527e4e&quot;,
+  &quot;cat&quot;: &quot;Books &amp; Reference&quot;,
+  &quot;rate&quot;: 4.6,
+  &quot;rct&quot;: 1389189,
+  &quot;t&quot;: &quot;Bible&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528ce6&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;rate&quot;: 4.6,
+  &quot;rct&quot;: 1313925,
+  &quot;t&quot;: &quot;Evernote&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ab703498dd2a52a9ce&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;rate&quot;: 4.7,
+  &quot;rct&quot;: 1252283,
+  &quot;t&quot;: &quot;Brightest Flashlight Free &#xAE;&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a529a12&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 2297756,
+  &quot;t&quot;: &quot;GO Keyboard Lite + Emoji&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f97&quot;,
+  &quot;cat&quot;: &quot;Action&quot;,
+  &quot;rate&quot;: 4.2,
+  &quot;rct&quot;: 1494456,
+  &quot;t&quot;: &quot;Spider-Man Unlimited&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528f80&quot;,
+  &quot;cat&quot;: &quot;Casual&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 1682181,
+  &quot;t&quot;: &quot;Ice Age Village&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044571703498dd2a525341&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;rate&quot;: 4.3,
+  &quot;rct&quot;: 908529,
+  &quot;t&quot;: &quot;LEO Privacy Guard - AppLock&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a529c81&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;rate&quot;: 4.2,
+  &quot;rct&quot;: 143233,
+  &quot;t&quot;: &quot;Smart Connect&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044569703498dd2a5251f6&quot;,
+  &quot;cat&quot;: &quot;Communication&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 4098486,
+  &quot;t&quot;: &quot;AntiVirus FREE - Security Scan&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044571703498dd2a52525d&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;rate&quot;: 4.5,
+  &quot;rct&quot;: 2864815,
+  &quot;t&quot;: &quot;Omni Swipe&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a528196&quot;,
+  &quot;cat&quot;: &quot;Productivity&quot;,
+  &quot;rate&quot;: 4.5,
+  &quot;rct&quot;: 1441676,
+  &quot;t&quot;: &quot;ColorNote Notepad Notes&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525ff0&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;rate&quot;: 4.5,
+  &quot;rct&quot;: 1945603,
+  &quot;t&quot;: &quot;Antivirus Booster &amp; Cleaner&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527290&quot;,
+  &quot;cat&quot;: &quot;Communication&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 2246806,
+  &quot;t&quot;: &quot;GO SMS Pro&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a52791b&quot;,
+  &quot;cat&quot;: &quot;Communication&quot;,
+  &quot;rate&quot;: 4,
+  &quot;rct&quot;: 369343,
+  &quot;t&quot;: &quot;Samsung Push Service&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a5290ab&quot;,
+  &quot;cat&quot;: &quot;Weather&quot;,
+  &quot;rate&quot;: 4.5,
+  &quot;rct&quot;: 1057245,
+  &quot;t&quot;: &quot;GO Weather Forecast &amp; Widgets&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044571703498dd2a52533c&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;rate&quot;: 4.4,
+  &quot;rct&quot;: 665894,
+  &quot;t&quot;: &quot;SHAREit - Connect &amp; Transfer&quot;
+ }
+]</pre>
+
+<p>There are 24 apps.</p>
+<h2 id="10-find-the-title-and-address-of-the-creator-of-apps-with-download-count-greater-than-1-000-000-and-star-rating-greater-than-4-5">10- Find the title and address of the creator of apps with download count greater than 1,000,000 and star rating greater than 4.5?</h2>
+<p>Hint: ensure that the results include apps that have creator address (not equal &quot;&quot;)</p>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;rate&quot;: {&quot;$gt&quot;: 4.5}}, {&quot;dct&quot;: {&quot;$gt&quot;: 1000000}}]},{&quot;t&quot;:1, &quot;cadd&quot;: 1}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526263&quot;,
+  &quot;cadd&quot;: &quot;4880 Santa Rosa Rd\nCamarillo, CA 93012&quot;,
+  &quot;t&quot;: &quot;Daily Bible&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a52a07b&quot;,
+  &quot;cadd&quot;: &quot;Strava, Inc\n500 Third Street, Suite 110\nSan Francisco, CA 94107&quot;,
+  &quot;t&quot;: &quot;Strava Running and Cycling GPS&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a529893&quot;,
+  &quot;cadd&quot;: &quot;500 Howard St. Suite 300\nSan Francisco CA 94105&quot;,
+  &quot;t&quot;: &quot;SAMURAI vs ZOMBIES DEFENSE&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ac703498dd2a52ade5&quot;,
+  &quot;cadd&quot;: &quot;Reggio Calabria, Italy&quot;,
+  &quot;t&quot;: &quot;ElectroDroid&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044594703498dd2a52901a&quot;,
+  &quot;cadd&quot;: &quot;999 N Sepulveda Blvd, Ste 150, El Segundo, CA, United States&quot;,
+  &quot;t&quot;: &quot;Cartoon Wars: Gunner+&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528dfc&quot;,
+  &quot;cadd&quot;: &quot;Perth, Western Australia&quot;,
+  &quot;t&quot;: &quot;Diversion&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a52988c&quot;,
+  &quot;cadd&quot;: &quot;500 Howard St. Suite 300\nSan Francisco CA 94105&quot;,
+  &quot;t&quot;: &quot;BLOOD &amp; GLORY: LEGEND&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a529890&quot;,
+  &quot;cadd&quot;: &quot;500 Howard St. Suite 300\nSan Francisco CA 94105&quot;,
+  &quot;t&quot;: &quot;ETERNITY WARRIORS 2&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a529dda&quot;,
+  &quot;cadd&quot;: &quot;Mussenstraat 15\n1223 RB Hilversum&quot;,
+  &quot;t&quot;: &quot;My Dolphin Show&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526a46&quot;,
+  &quot;cadd&quot;: &quot;SOLEC 81B LOK A-51, Warsaw, Poland.&quot;,
+  &quot;t&quot;: &quot;Audiko ringtones&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527892&quot;,
+  &quot;cadd&quot;: &quot;Zippora street, Dekk House\nProvidence industrial estate\nMahe\nSeychelles&quot;,
+  &quot;t&quot;: &quot;Football Scores - 365Scores&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527a5c&quot;,
+  &quot;cadd&quot;: &quot;Suite 05, 20th Floor, Tower One, Lippo Centre, 89 Queensway\nHong Kong&quot;,
+  &quot;t&quot;: &quot;Paradise Island&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604459c703498dd2a52988b&quot;,
+  &quot;cadd&quot;: &quot;500 Howard St. Suite 300\nSan Francisco CA 94105&quot;,
+  &quot;t&quot;: &quot;BLOOD &amp; GLORY&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ab703498dd2a52a935&quot;,
+  &quot;cadd&quot;: &quot;9737 Washingtonian Blvd, Suite 200\nGaithersburg, MD 20878&quot;,
+  &quot;t&quot;: &quot;GasBuddy - Find Cheap Gas&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ac703498dd2a52b137&quot;,
+  &quot;cadd&quot;: &quot;8F, 479, Gangnam-daero, Seocho-gu, Seoul\n06541&quot;,
+  &quot;t&quot;: &quot;DragonFlight for Kakao&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527e4e&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;t&quot;: &quot;Bible&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044572703498dd2a525db3&quot;,
+  &quot;cadd&quot;: &quot;UNIT04&#xFF0C; 7/F, BRIGHT WAY TOWER, NO.33 MONG KOK ROAD , KOWLOON , HK&quot;,
+  &quot;t&quot;: &quot;myCalendar - Period Tracker&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;560445ab703498dd2a52a9ce&quot;,
+  &quot;cadd&quot;: &quot;&quot;,
+  &quot;t&quot;: &quot;Brightest Flashlight Free &#xAE;&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044593703498dd2a528ce6&quot;,
+  &quot;cadd&quot;: &quot;305 Walnut Street\nRedwood City, CA 94063&quot;,
+  &quot;t&quot;: &quot;Evernote&quot;
+ }
+]</pre>
+
+<p>There are 19 apps.</p>
+<h2 id="11-find-the-title-category-download-count-and-rating-of-apps-with-download-count-of-1-000-000-or-more-but-have-no-privacy-ststements">11- Find the title, category, download count, and rating of apps with download count of 1,000,000 or more but have no privacy ststements?</h2>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;$and&quot;: [{&quot;purl&quot;: &quot;&quot;}, {&quot;dct&quot;: {&quot;$gte&quot;: 1000000}}]},{&quot;t&quot;:1, &quot;cat&quot;: 1, &quot;dct&quot;: 1, &quot;rate&quot;: 1}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526236&quot;,
+  &quot;cat&quot;: &quot;Casual&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.9,
+  &quot;t&quot;: &quot;Jewels World&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a5262fb&quot;,
+  &quot;cat&quot;: &quot;Personalization&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.1,
+  &quot;t&quot;: &quot;Eiffel Tower [+]HOME Theme&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a52647a&quot;,
+  &quot;cat&quot;: &quot;Photography&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.8,
+  &quot;t&quot;: &quot;Manga-Camera&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526503&quot;,
+  &quot;cat&quot;: &quot;Puzzle&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.4,
+  &quot;t&quot;: &quot;PIYOMORI&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a5265d1&quot;,
+  &quot;cat&quot;: &quot;Puzzle&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.9,
+  &quot;t&quot;: &quot;ZOOKEEPER BATTLE&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526715&quot;,
+  &quot;cat&quot;: &quot;Action&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.3,
+  &quot;t&quot;: &quot;Destroy Gunners F&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526936&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.4,
+  &quot;t&quot;: &quot;AndFTP (your FTP client)&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526979&quot;,
+  &quot;cat&quot;: &quot;Racing&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.8,
+  &quot;t&quot;: &quot;Racing Games&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526ab8&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.4,
+  &quot;t&quot;: &quot;Microphone&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526ac7&quot;,
+  &quot;cat&quot;: &quot;Adventure&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.9,
+  &quot;t&quot;: &quot;Hidden Object Mystery Guardian&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526b69&quot;,
+  &quot;cat&quot;: &quot;Personalization&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4,
+  &quot;t&quot;: &quot;StickMan LWallpaper [FL ver.]&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526b86&quot;,
+  &quot;cat&quot;: &quot;Personalization&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.3,
+  &quot;t&quot;: &quot;sweet tree LWallpaper[FL ver.]&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526c5d&quot;,
+  &quot;cat&quot;: &quot;Photography&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.1,
+  &quot;t&quot;: &quot;Vignette&#x30FB;photo effects&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526df8&quot;,
+  &quot;cat&quot;: &quot;Media &amp; Video&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.4,
+  &quot;t&quot;: &quot;Video Player HD&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526e29&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.4,
+  &quot;t&quot;: &quot;Word To Text&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526e90&quot;,
+  &quot;cat&quot;: &quot;Media &amp; Video&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.8,
+  &quot;t&quot;: &quot;weekly chart top 50&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a527167&quot;,
+  &quot;cat&quot;: &quot;Casual&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.3,
+  &quot;t&quot;: &quot;Bam fu&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527291&quot;,
+  &quot;cat&quot;: &quot;Social&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.3,
+  &quot;t&quot;: &quot;GO SMS Pro FBChat plug-in&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5272e1&quot;,
+  &quot;cat&quot;: &quot;Communication&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.4,
+  &quot;t&quot;: &quot;GO SMS Pro Widget&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527432&quot;,
+  &quot;cat&quot;: &quot;Entertainment&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4,
+  &quot;t&quot;: &quot;Earth 3D&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a52747a&quot;,
+  &quot;cat&quot;: &quot;Arcade&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.1,
+  &quot;t&quot;: &quot;John NES Lite - NES Emulator&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527509&quot;,
+  &quot;cat&quot;: &quot;Personalization&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.2,
+  &quot;t&quot;: &quot;Christmas Ringtones&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527510&quot;,
+  &quot;cat&quot;: &quot;Personalization&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.1,
+  &quot;t&quot;: &quot;LOUD Alarm Ringtones&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527577&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.1,
+  &quot;t&quot;: &quot;Transparent Screen For Tablet&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527904&quot;,
+  &quot;cat&quot;: &quot;Photography&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.1,
+  &quot;t&quot;: &quot;Sea Photo Frames&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527947&quot;,
+  &quot;cat&quot;: &quot;Books &amp; Reference&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.3,
+  &quot;t&quot;: &quot;English Tagalog Dictionary Fr&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a5279ab&quot;,
+  &quot;cat&quot;: &quot;Tools&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.5,
+  &quot;t&quot;: &quot;SeLoger - location, immobilier&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527a5a&quot;,
+  &quot;cat&quot;: &quot;Puzzle&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.8,
+  &quot;t&quot;: &quot;Monsters Blast&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527a8f&quot;,
+  &quot;cat&quot;: &quot;Card&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.9,
+  &quot;t&quot;: &quot;Mahjong Solitaire&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527ba9&quot;,
+  &quot;cat&quot;: &quot;Arcade&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4,
+  &quot;t&quot;: &quot;Space Wars 3D&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527bae&quot;,
+  &quot;cat&quot;: &quot;Personalization&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4,
+  &quot;t&quot;: &quot;PicSay Pro Font Pack - B&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527d94&quot;,
+  &quot;cat&quot;: &quot;Simulation&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.7,
+  &quot;t&quot;: &quot;Air Supremacy Jet Fighter&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527e19&quot;,
+  &quot;cat&quot;: &quot;Music &amp; Audio&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.3,
+  &quot;t&quot;: &quot;Caustic 3&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527ebf&quot;,
+  &quot;cat&quot;: &quot;Lifestyle&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 3.9,
+  &quot;t&quot;: &quot;Lovely Day(D-day)&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527ec7&quot;,
+  &quot;cat&quot;: &quot;Simulation&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.2,
+  &quot;t&quot;: &quot;Public Transport Simulator&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527f23&quot;,
+  &quot;cat&quot;: &quot;Sports&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.2,
+  &quot;t&quot;: &quot;Drunken Wrestlers&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527f75&quot;,
+  &quot;cat&quot;: &quot;Shopping&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.1,
+  &quot;t&quot;: &quot;Shopping list&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a528013&quot;,
+  &quot;cat&quot;: &quot;Media &amp; Video&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.3,
+  &quot;t&quot;: &quot;Video Downloader for Facebook&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a528069&quot;,
+  &quot;cat&quot;: &quot;Travel &amp; Local&quot;,
+  &quot;dct&quot;: 1000000,
+  &quot;rate&quot;: 4.2,
+  &quot;t&quot;: &quot;Voice Translat</pre>
+
+<p>There are 913 apps.</p>
+<h2 id="12-find-apps-that-have-been-released-or-updated-this-month-september-2015">12- Find apps that have been released or updated this month (September 2015)?</h2>
+<p>Hint: You can use the $regex operator</p>
+<p><div class="mongodb"><h4>mongodb query</h4><pre><code>{&quot;dtp&quot;: {&quot;$regex&quot;: &quot;September.*2015&quot;}}</code></pre></div></p>
+<pre style="font-size:11px;line-height:1;max-height:300px;">[
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526490&quot;,
+  &quot;cadd&quot;: &quot;&#x6771;&#x4EAC;&#x90FD;&#x6E0B;&#x8C37;&#x533A;&#x6E0B;&#x8C37;3-25-18&quot;,
+  &quot;cat&quot;: &quot;Adventure&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;transcosmos inc.&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=transcosmos+inc.&quot;,
+  &quot;dct&quot;: 500,
+  &quot;desc&quot;: &quot;&#x3010;It is the first time in history!&#x3011;The Escape game which is approved by Tokyo Tower officially has been released! &#x3010;A picture of an actual event!&#x3011;Let&apos;s explorer the beautiful Tokyo Tower building! &#x3010;Only this apps!&#x3011;There are many mysteries which you can enjoy! &#x3010;The appropriate degree of difficulty&#x3011;People who seldom play the game can enjoy! &#x3010;Your hearts are beaten!&#x3011;The wonderful ending is prepared! &#x25A0;Story&#x25A0; Ryo(main character) went to Tokyo Tower for the dating with his girlfriend, Mika. However, Mika disappeared when Ryo lets go of some eyes. Ryo picked up a letter. The letter said... ----------------------------------- I&apos;ll go ahead! Find me by the power of the love! -Your lovely Mika- ----------------------------------- At a height of 150 meters! The location is Tokyo Tower Large observatory! The \&quot;Hide and Seek\&quot; begins! &#x25A0;Recommend for &#x25A0; &#x30FB;People who would like to go to Tokyo tower &#x30FB;People who seldom play the escape game (People who like the escape game) &#x30FB;People who like love stories ------------------------------------  &#x25A0;Shibusan Apps &#x25A0; Shibusan Appls is the appli service which is provided by the transcosmos, inc. We are planning to release many apps. ------------------------------------  &#x203B;Our apps are not available for iPad, iPod touch.&quot;,
+  &quot;dtp&quot;: &quot;September 1, 2015&quot;,
+  &quot;dtxt&quot;: &quot;500 - 1,000&quot;,
+  &quot;n&quot;: &quot;jp.co.transcosmos.TokyoTowerKakurenbo&quot;,
+  &quot;new&quot;: &quot;&quot;,
+  &quot;os&quot;: &quot;2.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 2.7,
+  &quot;rct&quot;: 13,
+  &quot;sz&quot;: &quot;43M&quot;,
+  &quot;t&quot;: &quot;hide and seek in Tokyo Tower&quot;,
+  &quot;verc&quot;: &quot;8179&quot;,
+  &quot;id&quot;: &quot;jp.co.transcosmos.TokyoTowerKakurenbo-8179&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;5604457c703498dd2a526854&quot;,
+  &quot;cadd&quot;: &quot;742/1/1, Galle Road, Kalutara 12000, Sri Lanka&quot;,
+  &quot;cat&quot;: &quot;News &amp; Magazines&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;Bhasha Lanka (Pvt) Ltd&quot;,
+  &quot;curl&quot;: &quot;/store/apps/dev?id=5199002234047276661&quot;,
+  &quot;dct&quot;: 100000,
+  &quot;desc&quot;: &quot;Hiru News Android app is the first Sri Lankan Trilingual Mobile News app with Audio Video Photo &amp; Text news within one app in all 3 languages Sinhala, Tamil &amp; English.  Hiru News Android app is powered by Asian Broadcasting Corporation (Hiru TV, Hiru FM, Sha FM, Sun FM, Gold FM, Sooriyan FM) &amp; technically powered by Bhasha Lanka (Pvt) Ltd. &#xDC1;&#xDCA;&#x200D;&#xDBB;&#xDD3; &#xDBD;&#xD82;&#xD9A;&#xDCF;&#xDC0;&#xDDA; &#xDB4;&#xDCA;&#x200D;&#xDBB;&#xDAE;&#xDB8; &#xDAD;&#xDCA;&#x200D;&#xDBB;&#xDDB;&#xDB7;&#xDCF;&#xDC2;&#xDD2;&#xD9A; &#xD87;&#xDC3;&#xDD2; &#xDAF;&#xDD2;&#xDC3;&#xDD2; &#xDBB;&#xDD2;&#xDC3;&#xDD2; &#xDA2;&#xD82;&#xD9C;&#xDB8; &#xDB4;&#xDCA;&#x200D;&#xDBB;&#xDC0;&#xDD8;&#xDAD;&#xDCA;&#xDAD;&#xDD2; &#xDBA;&#xDD9;&#xDAF;&#xDD4;&#xDB8;. Exclusive: First time in History Hiru News Mobile provides you breaking news in Sinhala &amp; Tamil local languages as push notifications. Features:  - Read, listen or watch news in your own language; Sinhala, Tamil or English  - Read Text news in categories; Local, Foreign, Sports, Business &amp; Entertainment  - Watch telecasted Hiru TV News  - Watch Video news articles; CIA, &#xDBB;&#xDAD;&#xDD4; &#xDB8;&#xDD2;&#xDB1;&#xDD2;&#xDAD;&#xDCA;&#xDAD;&#xDD4;&#xDC0;, &#xDC3;&#xDD3;&#xDB8;&#xDCF;&#xDC0;&#xDA7;&#xDAD;&#xDCA; &#xD91;&#xDC4;&#xDCF;, &#xDAF;&#xDD2;&#xDB1;&#xDB1; &#xDC5;&#xDB8;&#xDBA;&#xDD2;, Hots Spot, &#xDB8;&#xDD0;&#xDAD;&#xDD2; &#xDC3;&#xDB6;&#xDBA;  - Receive breaking news as Push Notifications in your language  - Share news with your friends  - Enable/Disable breaking news notifications  - Customize the news text font size  - Enable/Disable loading news images (to save your data)  - Submit news to Hiru Hiru News Android app is a solution by Bhasha for Hiru TV / Hiru FM. &#xA9; 2014 Bhasha Lanka (Pvt) Ltd&quot;,
+  &quot;dtp&quot;: &quot;September 1, 2015&quot;,
+  &quot;dtxt&quot;: &quot;100,000 - 500,000&quot;,
+  &quot;n&quot;: &quot;lk.bhasha.hirunews&quot;,
+  &quot;new&quot;: &quot;Smooth side bar&quot;,
+  &quot;os&quot;: &quot;2.2 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;&quot;,
+  &quot;rate&quot;: 4.2,
+  &quot;rct&quot;: 1857,
+  &quot;sz&quot;: &quot;3.4M&quot;,
+  &quot;t&quot;: &quot;Hiru News - Sri Lanka&quot;,
+  &quot;verc&quot;: &quot;2556&quot;,
+  &quot;id&quot;: &quot;lk.bhasha.hirunews-2556&quot;
+ },
+ {
+  &quot;_id&quot;: &quot;56044588703498dd2a527444&quot;,
+  &quot;cadd&quot;: &quot;&#xC8FC;&#xC18C;: &#xC11C;&#xC6B8;&#xD2B9;&#xBCC4;&#xC2DC; &#xAE08;&#xCC9C;&#xAD6C; &#xAC00;&#xC0B0; &#xB514;&#xC9C0;&#xD138; 1&#xB85C; 131 BYC &#xD558;&#xC774;&#xC2DC;&#xD2F0; B&#xB3D9; 2104&#xD638;\n&#xC5F0;&#xB77D;&#xCC98;: 1544-5935&quot;,
+  &quot;cat&quot;: &quot;Entertainment&quot;,
+  &quot;crat&quot;: &quot;Everyone&quot;,
+  &quot;crt&quot;: &quot;&#xC870;&#xC544;&#xB77C;&quot;,
+  &quot;curl&quot;: &quot;/store/apps/developer?id=%EC%A1%B0%EC%95%84%EB%9D%BC&quot;,
+  &quot;dct&quot;: 500000,
+  &quot;desc&quot;: &quot;&#xBB50; &#xC77D;&#xC9C0;? &#xC77D;&#xC744; &#xB9CC;&#xD55C; &#xC18C;&#xC124; &#xC5C6;&#xC744;&#xAE4C;? &#xC774;&#xB7F4; &#xB550; &#xC870;&#xC544;&#xB77C;!! &#xC870;&#xC544;&#xB77C;(www.joara.com)&#xB294; 2000&#xB144; &#xC124;&#xB9BD;, 96&#xB9CC;&#xBA85;&#xC758; &#xD68C;&#xC6D0;&#xACFC; 27&#xB9CC;&#xC885; &#xC774;&#xC0C1;&#xC758; &#xC791;&#xD488;&#xC744; &#xBCF4;&#xC720;&#xD55C; &#xAD6D;&#xB0B4; &#xCD5C;&#xACE0;(&#x6700;&#x53E4;), &#xCD5C;&#xB300; &#xADDC;&#xBAA8;&#xC758; &#xC6F9;&#xC18C;&#xC124; &#xC5F0;&#xC7AC; &#xD50C;&#xB7AB;&#xD3FC;&#xC785;&#xB2C8;&#xB2E4;.  &#xD558;&#xB8E8; 2,000&#xD3B8;&#xC774; &#xC5F0;&#xC7AC;&#xB418;&#xB294; &#xC870;&#xC544;&#xB77C;&#xC758; &#xC6F9;&#xC18C;&#xC124; &#xC138;&#xACC4;&#xB97C; &#xB9CC;&#xB098;&#xBCF4;&#xC138;&#xC694;.  &#xBB34;&#xB8CC; &#xC791;&#xD488;&#xC740; &#xBB3C;&#xB860;, &#x2018;&#xB178;&#xBE14;&#xB808;&#xC2A4;&#x2019;&#xC640; &#x2018;&#xD504;&#xB9AC;&#xBBF8;&#xC5C4;&#x2019;&#xC5D0;&#xC11C; &#xC870;&#xC544;&#xB77C;&#xC758; &#xB808;&#xC804;&#xB4DC; &#xC720;&#xB8CC;&#xC18C;&#xC124;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  [&#xBB34;&#xB8CC;&#xC18C;&#xC124;] &#xC6F9;&#xC18C;&#xC124;&#xACC4; &#xC228;&#xC740; &#xACE0;&#xC218;&#xB4E4;&#xC774; &#xC5F0;&#xC7AC;&#xD558;&#xB294; &#xBCF4;&#xC11D; &#xAC19;&#xC740; &#xC791;&#xD488;&#xC744; &#xB9CC;&#xB098;&#xBCF4;&#xC138;&#xC694;.   [&#xB178;&#xBE14;&#xB808;&#xC2A4;] &#xD558;&#xB8E8; 2&#xC2DC;&#xAC04; &#xC774;&#xC0C1; &#xC6F9;&#xC18C;&#xC124;&#xC744; &#xBCF4;&#xB294; &#xC560;&#xB3C5;&#xC790;&#xB77C;&#xBA74;! &#xC870;&#xC544;&#xB77C;&#xC5D0;&#xC11C;&#xB9CC; &#xB9CC;&#xB0A0; &#xC218; &#xC788;&#xB294; &#xC815;&#xC561;&#xAD8C;&#xC73C;&#xB85C; &#xD310;&#xD0C0;&#xC9C0;, &#xBB34;&#xD611;, &#xB85C;&#xB9E8;&#xC2A4;&#xAE4C;&#xC9C0; &#xC5B4;&#xB514;&#xC5D0;&#xC11C;&#xB3C4; &#xCC3E;&#xC544;&#xBCFC; &#xC218; &#xC5C6;&#xB294; 1&#xB9CC;3&#xCC9C;&#xC5EC;&#xAC1C;&#xC758; &#xB2E4;&#xCC44;&#xB85C;&#xC6B4; &#xC791;&#xD488;&#xC744; &#xBCF4;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.   [&#xD504;&#xB9AC;&#xBBF8;&#xC5C4;] &#xB0B4;&#xAC00; &#xC88B;&#xC544;&#xD558;&#xB294; &#xC791;&#xD488;&#xB9CC; &#xC3D9;&#xC3D9;! &#xD3B8;&#xB2F9; &#xAD6C;&#xB9E4;&#xB97C; &#xD1B5;&#xD574; &#xC6D0;&#xD558;&#xB294; &#xC791;&#xD488;&#xB9CC; &#xACE8;&#xB77C;&#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  &#x25B6; &#xC0C8;&#xB85C;&#xC6CC;&#xC9C4; &#xC870;&#xC544;&#xB77C; &#xBAA8;&#xBC14;&#xC77C; &#xC571; 2.0&#xC740; &#xC774;&#xB807;&#xAC8C; &#xB2E4;&#xB985;&#xB2C8;&#xB2E4;. 1. &#xC18C;&#xC124;&#xC744; &#xC77D;&#xAE30;&#xC5D0; &#xBD88;&#xD3B8;&#xD568;&#xC774; &#xC788;&#xC5B4;&#xC11C;&#xB294; &#xC548; &#xB41C;&#xB2E4;&#xB294; &#xC870;&#xC544;&#xB77C;&#xC758; &#xAE30;&#xBCF8; &#xCCA0;&#xD559;&#xC744; &#xC801;&#xC6A9;&#xD55C; &#xC11C;&#xBE44;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;. 2. &#xC774;&#xC6A9;&#xC790; &#xC911;&#xC2EC;&#xC758; UI/UX &#xC124;&#xACC4;&#xC640; &#xAE54;&#xB054;&#xD558;&#xACE0; &#xC2EC;&#xD50C;&#xD55C; &#xB514;&#xC790;&#xC778;&#xC774; &#xC801;&#xC6A9;&#xB418;&#xC5B4; Android App&#xC5D0; &#xCD5C;&#xC801;&#xD654;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;. 3. &#xBDF0;&#xC5B4;&#xC5D0;&#xC11C; 3&#xBC88;&#xC758; &#xD130;&#xCE58; &#xC774;&#xB0B4;&#xC5D0; &#xC18C;&#xC124;&#xC77D;&#xAE30;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xBAA8;&#xB4E0; &#xAE30;&#xB2A5;&#xC744; &#xC774;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; Powerful&#xD55C; Viewer&#xB97C; &#xC81C;&#xACF5;&#xD569;&#xB2C8;&#xB2E4;. 4. &#xB354; &#xC774;&#xC0C1; &#xBCF4;&#xAE30; &#xC2EB;&#xC740; &#xC7A5;&#xB974;&#xB294; &#xADF8;&#xB9CC;! &apos;&#xC120;&#xD638; &#xC7A5;&#xB974; &#xC120;&#xD0DD;&apos; &#xBA54;&#xB274;&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xBCF4;&#xACE0; &#xC2F6;&#xC740; &#xC7A5;&#xB974;&#xC758; &#xC18C;&#xC124;&#xB9CC; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  5. &#xD55C;&#xCE35; &#xAC15;&#xB825;&#xD574;&#xC9C4; &apos;&#xC774;&#xC5B4;&#xBCF4;&#xAE30;&apos; &#xAE30;&#xB2A5;&#xC73C;&#xB85C;, &#xCD5C;&#xADFC; &#xC77D;&#xC5C8;&#xB358; &#xC791;&#xD488;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xC774;&#xC804;&#xC5D0; &#xBCF4;&#xB358; &#xD398;&#xC774;&#xC9C0;&#xBD80;&#xD130; &#xC774;&#xC5B4;&#xC11C; &#xC77D;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  6. Mobile App&#xC5D0;&#xC11C; &#xC2E4;&#xC2DC;&#xAC04;&#xC73C;&#xB85C; &#xBD88;&#xD3B8;&#xD55C; &#xC810;&#xC774;&#xB098; &#xBB38;&#xC758; &#xC0AC;&#xD56D;&#xC744; 1:1 &#xBB38;&#xC758;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. 7. &#xC774;&#xC804; &#xBC84;&#xC804;&#xC5D0; &#xBE44;&#xD574; &#xC18D;&#xB3C4;&#xAC00; &#xB354;&#xC6B1; &#xBE68;&#xB77C;&#xC84C;&#xC2B5;&#xB2C8;&#xB2E4;. ---- &#xAC1C;&#xBC1C;&#xC790; &#xC5F0;&#xB77D;&#xCC98; : &#xC8FC;&#xC18C;: &#xC11C;&#xC6B8;&#xD2B9;&#xBCC4;&#xC2DC; &#xAE08;&#xCC9C;&#xAD6C; &#xAC00;&#xC0B0; &#xB514;&#xC9C0;&#xD138; 1&#xB85C; 131 BYC &#xD558;&#xC774;&#xC2DC;&#xD2F0; B&#xB3D9; 2104&#xD638;  &#xC5F0;&#xB77D;&#xCC98;: 1544-5935&quot;,
+  &quot;dtp&quot;: &quot;September 1, 2015&quot;,
+  &quot;dtxt&quot;: &quot;500,000 - 1,000,000&quot;,
+  &quot;n&quot;: &quot;com.joara.mobile&quot;,
+  &quot;new&quot;: &quot;v2.0.6 1. &#xC0C1;&#xC138;&#xAC80;&#xC0C9;&#xC5D0; &#xC120;&#xC791;&#xC21C; &#xC815;&#xB82C; &#xCD94;&#xAC00; 2. &#xBDF0;&#xC5B4; &#xB0B4; &#xC774;&#xBAA8;&#xD2F0;&#xCF58; &#xBC0F; &#xD2B9;&#xC218;&#xBB38;&#xC790; &#xC624;&#xB958; &#xAC1C;&#xC120;&quot;,
+  &quot;os&quot;: &quot;2.3.3 and up&quot;,
+  &quot;pri&quot;: &quot;Free&quot;,
+  &quot;purl&quot;: &quot;</pre>
+
+<p>There are 3202 apps</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../learning/week6/mongodb-setup.html" class="navigation navigation-prev " aria-label="Previous page: Mongodb Setup"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../hackathons/index.html" class="navigation navigation-next " aria-label="Next page: Hackathons"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/bigdata.js"></script>
+    
+
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-bigdata/jquery.jsonview.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book book -->
+</html>

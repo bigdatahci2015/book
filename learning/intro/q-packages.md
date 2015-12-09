@@ -4,7 +4,8 @@
 
 * Manually collect data from online resources
 
-((Markdown table))
+| Language | # of Packages |
+| -- | -- |
 
 ## Top five
 

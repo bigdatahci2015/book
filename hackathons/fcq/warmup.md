@@ -8,8 +8,11 @@ Next, complete the following warmup exercises as a team.
 ## How many unique subject codes?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return 113
+var codes=_.map(data, function(college){
+    return college['Subject']
+})
+var uniqCodes=_.uniq(codes)
+return _.size(uniqCodes)
 {% endlodash %}
 
 They are {{ result }} unique subject codes.
@@ -17,8 +20,10 @@ They are {{ result }} unique subject codes.
 ## How many computer science (CSCI) courses?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return 63
+var courses=_.filter(data, function(college){
+    return college['CrsPBADept'] == 'CSCI'
+})
+return _.size(courses)
 {% endlodash %}
 
 They are {{ result }} computer science courses.
@@ -27,7 +32,12 @@ They are {{ result }} computer science courses.
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
+var list=_.groupBy(data, function(college){
+    return college['Subject']
+})
+return _.mapValues(list, function(courses){
+    return courses.length
+})
 {% endlodash %}
 
 <table>
@@ -43,13 +53,15 @@ return {"HIST": 78,"HONR": 20,"HUMN": 17,"IAFS": 20,"IPHY": 134}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-var grps = _.groupBy(data, 'Subject')
-var ret = _.pick(_.mapValues(grps, function(d){
-    return d.length
-}), function(x){
-    return x > 100
+var groups=_.groupBy(data, function(college){
+    return college['Subject']
 })
-return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
+var coursesSize= _.mapValues(groups, function(courses){
+    return courses.length
+})
+return _.pick(coursesSize, function(size){
+    return size > 100
+})
 {% endlodash %}
 
 <table>
@@ -64,8 +76,21 @@ return {"IPHY": 134,"MATH": 232,"MCDB": 117,"PHIL": 160,"PSCI": 117}
 ## What subset of these subject codes have more than 5000 total enrollments?
 
 {% lodash %}
-// TODO: replace with code that computes the actual result
-return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
+var groups=_.groupBy(data, function(college){
+    return college['Subject']
+})
+var coursesEnroll= _.mapValues(groups, function(courses){
+    return _.map(courses, function(course){
+        return course['N']['ENROLL']
+    })
+})
+var enroll=_.mapValues(coursesEnroll, function(enrolls){
+    return _.sum(enrolls)
+})
+return _.pick(enroll, function(number){
+    return number > 5000
+})
+/*return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}*/
 {% endlodash %}
 
 <table>
@@ -81,7 +106,16 @@ return {"IPHY": 5507,"MATH": 8725,"PHIL": 5672,"PHYS": 8099,"PSCI": 5491}
 
 {% lodash %}
 // TODO: replace with code that computes the actual result
-return ['4830','4830']
+var courses=_.filter(data, function(course){
+    var instructor=_.filter(course['Instructors'], function(instructor){
+        return instructor['name'] == 'YEH, PEI HSIU'
+    })
+    return _.size(instructor) > 0
+})
+return _.map(courses, function(course){
+    return course['Course']
+})
+//return ['4830','4830']
 {% endlodash %}
 
 They are {{result}}.

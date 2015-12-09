@@ -19,30 +19,26 @@ including the controls, widgets ...etc.
 
 (write your answer based on the statistics you can find online)
 
-# (Question 1)
+# How many students are Computer Science major?
 
-![screenshot](screenshot.png)
+![screenshot](question1.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+There are 22 students are Computer Science major. I excluded the majors are not Computer Science in the chart, and only left the majors contain 'CS' or 'Computer Science'. The sum of all rows is the final result.
 
-# (Question 2)
+# How many students' names start with 'A'?
 
-![screenshot](screenshot.png)
+![screenshot](question2.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+As we can see from the chart, four people's names start with 'A'. I used ascending sort for the chart, therefore, I can get the names I look for on the top of the chart.
 
-# (Question 3)
+# How many students are not Computer Science major?
 
-![screenshot](screenshot.png)
+![screenshot](question3.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+Similar to the question 1, the only difference is I excluded the majors contain 'CS' or 'Computer Science'. The answer is 6.
 
-# (Question 4)
+# How many people's favorite programmging language is Python?
 
-![screenshot](screenshot.png)
+![screenshot](question4.png)
 
-(write your explanation for the reader as to where to look at this chart in order
-    to see the answer)
+I used filter for the chart, and only leave the programming languages contain 'Python'. The answer is 11.

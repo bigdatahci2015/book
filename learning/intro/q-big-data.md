@@ -4,24 +4,21 @@
 * Discuss and determine a ranking in terms of "bigness".
 * Fill the template below. Replace all (( )) with your answers.
 
-## Rank 1: ((name of the dataset))
+## Rank 1: Google Map
 
-(( a brief description of the dataset))
+Generally, it is a oneline map service.
 
-((a brief justification why this dataset is bigger than the next one))
+It contains variable information around the world, including traffic systems, pictures users posted, information of stores and scenes and so on.
 
-## Rank 2: ((name of the dataset))
+## Rank 2: Amazon web services
 
-(( a brief description of the dataset))
+It is a website for oneline shopping.
+The data is not as much as google map, but it contains different kinds of commodities, such as books, clothes, dramas and so on.
 
-((a brief justification why this dataset is bigger than the next one))
+## Rank 3: Barns & Noble
 
-## Rank 3: ((name of the dataset))
+The varieties of data is less than Amazon's.
 
-(( a brief description of the dataset))
+## Rank 4: A Local Hospital Records
 
-((a brief justification why this dataset is bigger than the next one))
-
-## Rank 4: ((name of the dataset))
-
-(( a brief description of the dataset))
+It only contains the data of patients, docotors, nurses and staffs.
