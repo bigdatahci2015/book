@@ -6,10 +6,14 @@ for making the decision.
 
 From the class discussion, we wrote down five specific questions that are particularly interesting.
 
-* ((question))
-* ((question))
-* ((question))
-* ((question))
-* ((question))
+* What are the requirement of app?
+* What do developers already know?
+* How much time to develop?
+* What platforms does the app need to run on?
+* What is popular on github
 
 From the above list, my team chose a question, worked on it, and created a report on the next page.
+
+* What web frameworks have the most downloads from github?
+* What web frameowrks have the most questions and replies on stackoverflow?
+* Both above questions but for just the past year or past 2 years
